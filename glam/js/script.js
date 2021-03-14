@@ -3,8 +3,8 @@ $(document).ready(function(){
     $('.brands__slider').slick({
         slidesToShow: 5,
         slidesToScroll: 1,
-        prevArrow: '<button type="button" class="slick-prev"><img src="../img/slider/left-arrow.svg"></button>',
-        nextArrow: '<button type="button" class="slick-next"><img src="../img/slider/right-arrow.svg"></button>',
+        prevArrow: '<button type="button" class="slick-prev"><img src="img/slider/left-arrow.svg"></button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="img/slider/right-arrow.svg"></button>',
         responsive: [
             {
                 breakpoint: 1080,
