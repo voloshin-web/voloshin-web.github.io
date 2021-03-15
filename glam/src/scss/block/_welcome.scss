@@ -1,0 +1,43 @@
+.welcome {
+    padding: 60px 0;
+    .title {
+        font-size: 40px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        text-align: center;
+        margin: 0;
+    }
+    .subtitle {
+        font-size: 26px;
+        text-align: center;
+        font-weight: 400;
+        font-family: 'Raleway', sans-serif;
+        margin: 25px 0 0 0;
+    }
+    .descr {
+        font-size: 16px;
+        margin: 30px 0 0 0;
+        line-height: 35px;
+    }
+
+    #more {
+        display: none;
+    }
+
+    .show {
+        cursor: pointer;
+        width: 290px;
+        height: 40px;
+        background-color: #fff;
+        border: 1px solid #000;
+        font-size: 16px;
+        display: block;
+        margin: 40px auto 0 auto;
+        outline: none;
+        &:hover {
+            color: #fff;
+            background-color: #000;
+            transition: .5s;
+        }
+    }
+}

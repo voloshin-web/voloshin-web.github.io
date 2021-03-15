@@ -1,0 +1,39 @@
+@import 'libs/normalize.scss'; 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway&display=swap');
+
+.container {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+@import 'block/slick';
+
+@import 'block/header';
+@import 'block/promo';
+@import 'block/welcome';
+@import 'block/info';
+@import 'block/special';
+@import 'block/reviews';
+@import 'block/brands';
+@import 'block/footer';
+
+
+
+// contact page
+@import 'block/contact';
+
+// cooperation page
+@import 'block/cooperation';
+
+//size 
+@import 'block/size';
+
+// shipping
+@import 'block/shipping';
+
+// media 
+@import 'block/media';

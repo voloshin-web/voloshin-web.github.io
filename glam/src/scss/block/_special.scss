@@ -1,0 +1,158 @@
+.special {
+    padding: 60px 0 0 0;
+    h2 {
+        margin: 0 auto;
+        text-align: center;
+        font-size: 32px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+    }
+
+    .tabs {
+        &__header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 70px auto 0 auto;
+            .tab {
+                cursor: pointer;
+                width: 25%;
+                &_img {
+                    box-shadow: 5px 6px 22px rgba(0, 0, 0, 0.25);
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100px;
+                    width: 100px;
+                    margin: 0 auto;
+                    svg {
+                        height: 60px;
+                        width: 60px;
+                    }
+                }
+                &_title {
+                    text-align: center;
+                    text-transform: uppercase;
+                    margin-top: 20px;
+                    font-family: 'Raleway', sans-serif;
+                    font-weight: 500;
+                    font-size: 18px;
+                }
+                &:hover {
+                    .tab_img {
+                        background-color: #000;
+                        svg {
+                            fill: white;
+                        }
+                    }
+                    .tab_title {
+                        color: #5a5a5a;
+                    }
+                }
+                &_active {
+                    .tab_img {
+                        background-color: #000;
+                        svg {
+                            fill: white;
+                        }
+                    }
+                    .tab_title {
+                        color: #5a5a5a;
+                    }
+                }
+            }
+        }
+
+        &__body {
+            margin-top: 60px;
+            // position: relative;
+            .content__block {
+                flex-wrap: wrap;
+                // visibility: hidden;
+                width: 100%;
+                display: none;
+                justify-content: space-evenly;
+                // position: absolute;
+                // top: -200px;
+                // opacity: 0;
+                // transform: scale(0.9);
+                // transition: opacity 500ms ease-in-out 0ms, transform 500ms ease-in-out 0ms;
+                .content {
+                    padding-bottom: 15px;
+                    width: 20%;
+                    margin: 0 20px 40px 20px;
+                    a {
+                        text-decoration: none;
+                        display: block;
+                    }
+                    &_img {
+                        width: 256px;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    &_name {
+                        color: #666666;
+                        font-family: 'Raleway', sans-serif;
+                        margin-top: 15px;
+                        text-align: center;
+                    }
+                    &_price {
+                        margin-top: 5px;
+                        text-align: center;
+                        color: #000000;
+                        font-size: 18px;
+                        font-weight: 600;
+                        font-family: 'Raleway', sans-serif;
+                        .old {
+                            text-decoration-line: line-through;
+                            color: #666666;
+                            font-size: 15px;
+                            margin-right: 5px;
+                            line-height: 30px;
+                            font-family: 'Raleway', sans-serif;
+                        }
+                    }
+                    .add {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin: 10px auto 0 auto;
+                        width: 65%;
+                        height: 30px;
+                        border: 2px solid black;
+                        cursor: pointer;
+                        background-color: #fff;
+                        font-family: 'Raleway', sans-serif;
+                        font-size: 13px;
+                        font-weight: 600;
+                        opacity: 0;
+                        visibility: hidden;
+                        transition: .3s;
+                        &:hover {
+                            background-color: #000;
+                            color: #fff;
+                        }
+
+                    }
+                    &:hover {
+                        transition: .5s;
+                        background-color: #f7f7f7;
+                        .add {
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                    }
+                }
+                &_active {
+                    display: flex;
+                    // visibility: visible;
+                    // top: 0px;
+                    // opacity: 1;
+                    // transform: scale(1);
+                }
+            }
+        }
+    }
+}

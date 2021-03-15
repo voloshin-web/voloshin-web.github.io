@@ -1,0 +1,48 @@
+.size {
+    &__header {
+        position: relative;
+        z-index: -1;
+        img {
+            width: 100%;
+            z-index: 1;
+        }
+        .title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            font-size: 54px;
+            font-family: 'Raleway', sans-serif;
+            margin: 0;
+            font-weight: 400;
+        }
+    }
+    &__body {
+        padding: 80px 0;
+        h2 {
+            text-align: center;
+            margin: 0;
+            font-weight: 400;
+            font-size: 35px;
+            line-height: 30px;
+            font-family: Raleway,sans-serif;
+            color: #000;
+            width: 100%;
+        }
+        img {
+            width: 70%;
+            display: block;
+            margin: 40px auto 0 auto;
+        }
+
+        p {
+            font-size: 16px;
+            width: 100%;
+            text-align: center;
+            line-height: 30px;
+            color: #000000;
+            margin-top: 40px;
+        }
+    }
+}
