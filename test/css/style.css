@@ -4374,6 +4374,7 @@ template {
   .about__img {
     width: 425px;
     height: 500px;
+    margin-left: -5%;
   }
   .about__info {
     width: 50% !important;
@@ -4424,6 +4425,9 @@ template {
   .promo__descr {
     width: 80%;
   }
+  .about {
+    padding-bottom: 56px;
+  }
   .about__wrapper {
     flex-direction: column;
   }
@@ -4433,9 +4437,10 @@ template {
     margin: 0 auto;
   }
   .about__info {
-    margin: -5px auto 0 auto !important;
+    margin: 0 auto;
     width: 84% !important;
     padding-left: 40px;
+    margin-top: -4px;
   }
   .about__info .descr {
     font-size: 17px;
@@ -4524,7 +4529,8 @@ template {
     margin-bottom: 40px;
   }
   .contacts {
-    background-size: 20% 100%;
+    background-size: 100% 100%;
+    background-position-x: 280px;
   }
   .contacts__info {
     width: 100%;
