@@ -3849,7 +3849,13 @@ template {
 }
 
 .header {
-  padding: 20px 0;
+  padding: 11px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 200;
+  background-color: #ffffff;
 }
 
 .header__wrapper {
@@ -3881,22 +3887,15 @@ template {
   color: #18191F;
 }
 
-.cloud {
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  height: auto;
+.promo {
+  padding: 252px 0;
   background: url("../img/bg/promoBG.png") bottom right no-repeat;
   background-color: #E8EFFD;
-}
-
-.cloudcontent {
-  padding: 180px 0;
   position: relative;
-  z-index: 100;
+  z-index: 10;
 }
 
-.cloudcontent .promo__descr {
+.promo__descr {
   font-family: 'Inter', sans-serif;
   font-weight: normal;
   font-size: 18px;
@@ -3906,54 +3905,35 @@ template {
   width: 49%;
 }
 
-.cloud img {
-  width: 100%;
-  left: 0;
-  top: 0;
+.promo .cloud {
   position: absolute;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  pointer-events: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../img/clouds/cloud-01.png"), url("../img/clouds/cloud-01.png"), url("../img/clouds/cloud-01.png"), url("../img/clouds/cloud-01.png");
+  -webkit-animation: anim 200s linear infinite;
+          animation: anim 200s linear infinite;
+  opacity: .8;
+  z-index: -1;
 }
 
-@-webkit-keyframes animCloud {
-  from {
-    -webkit-transform: translateX(100%);
+@-webkit-keyframes anim {
+  0% {
+    background-position: 0px;
   }
-  to {
-    -webkit-transform: translateX(-100%);
-  }
-}
-
-@keyframes animCloud {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(-100%);
+  100% {
+    background-position: -5440px;
   }
 }
 
-.cloud1 {
-  -webkit-animation: animCloud 40s infinite linear;
-  animation: animCloud 40s infinite linear;
-}
-
-.cloud2 {
-  -webkit-animation: animCloud 60s infinite linear;
-  animation: animCloud 60s infinite linear;
-}
-
-.cloud3 {
-  -webkit-animation: animCloud 80s infinite linear;
-  animation: animCloud 80s infinite linear;
-}
-
-.cloud4 {
-  -webkit-animation: animCloud 100s infinite linear;
-  animation: animCloud 100s infinite linear;
+@keyframes anim {
+  0% {
+    background-position: 0px;
+  }
+  100% {
+    background-position: -5440px;
+  }
 }
 
 .advantages {
@@ -4078,9 +4058,11 @@ template {
 }
 
 .reviews {
-  background: url("../img/bg/reviewsBG.png") bottom right no-repeat, url("../img/cloud.png") center/100% no-repeat;
+  background: url("../img/bg/reviewsBG.png") bottom right no-repeat;
   padding: 64px 0 162px 0;
   background-color: #E8EFFD;
+  position: relative;
+  z-index: 10;
 }
 
 .reviews__wrapper {
@@ -4152,6 +4134,28 @@ template {
   margin-top: 4px;
 }
 
+.reviews .cloud {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../img/clouds/cloud-01.png"), url("../img/clouds/cloud-01.png"), url("../img/clouds/cloud-01.png"), url("../img/clouds/cloud-01.png");
+  -webkit-animation: anim 200s linear infinite;
+          animation: anim 200s linear infinite;
+  opacity: .4;
+  z-index: -1;
+}
+
+@keyframes anim {
+  0% {
+    background-position: 0px;
+  }
+  100% {
+    background-position: -5440px;
+  }
+}
+
 .products {
   padding: 64px 0 16px 0;
 }
@@ -4184,8 +4188,10 @@ template {
 
 .contacts {
   padding: 64px 0 86px 0;
-  background: url("../img/bg/contactsBG.png") right no-repeat, url("../img/cloud.png") center/100% no-repeat;
+  background: url("../img/bg/contactsBG.png") right no-repeat;
   background-color: #E8EFFD;
+  position: relative;
+  z-index: 10;
 }
 
 .contacts__info {
@@ -4230,6 +4236,28 @@ template {
   display: block;
   width: 32px;
   height: 32px;
+}
+
+.contacts .cloud {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../img/clouds/cloud-01.png"), url("../img/clouds/cloud-01.png"), url("../img/clouds/cloud-01.png"), url("../img/clouds/cloud-01.png");
+  -webkit-animation: anim 200s linear infinite;
+          animation: anim 200s linear infinite;
+  opacity: .4;
+  z-index: -1;
+}
+
+@keyframes anim {
+  0% {
+    background-position: 0px;
+  }
+  100% {
+    background-position: -5440px;
+  }
 }
 
 .footer {
