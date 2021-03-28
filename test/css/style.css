@@ -3881,6 +3881,81 @@ template {
   color: #18191F;
 }
 
+.cloud {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: auto;
+  background: url("../img/bg/promoBG.png") bottom right no-repeat;
+  background-color: #E8EFFD;
+}
+
+.cloudcontent {
+  padding: 180px 0;
+  position: relative;
+  z-index: 100;
+}
+
+.cloudcontent .promo__descr {
+  font-family: 'Inter', sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: #18191F;
+  margin: 16px 0 0 0;
+  width: 49%;
+}
+
+.cloud img {
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+}
+
+@-webkit-keyframes animCloud {
+  from {
+    -webkit-transform: translateX(100%);
+  }
+  to {
+    -webkit-transform: translateX(-100%);
+  }
+}
+
+@keyframes animCloud {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.cloud1 {
+  -webkit-animation: animCloud 40s infinite linear;
+  animation: animCloud 40s infinite linear;
+}
+
+.cloud2 {
+  -webkit-animation: animCloud 60s infinite linear;
+  animation: animCloud 60s infinite linear;
+}
+
+.cloud3 {
+  -webkit-animation: animCloud 80s infinite linear;
+  animation: animCloud 80s infinite linear;
+}
+
+.cloud4 {
+  -webkit-animation: animCloud 100s infinite linear;
+  animation: animCloud 100s infinite linear;
+}
+
 .advantages {
   padding: 64px 0;
   background-color: #ffffff;
@@ -3924,6 +3999,7 @@ template {
 
 .about {
   background: url("../img/bg/aboutBG.jpg") center/cover no-repeat;
+  background-attachment: fixed;
 }
 
 .about__wrapper {
@@ -4255,80 +4331,55 @@ template {
   .products .products__wrapper .product a img {
     width: 100%;
   }
-}
-
-.cloud {
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%;
-  height: 0;
-  background: url("../img/bg/promoBG.png") bottom right no-repeat;
-  background-color: #E8EFFD;
-}
-
-.cloudcontent {
-  position: relative;
-  z-index: 100;
-  padding: 180px 0;
-}
-
-.cloudcontent .promo__descr {
-  font-family: 'Inter', sans-serif;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 25px;
-  color: #18191F;
-  margin: 16px 0 0 0;
-  width: 49%;
-}
-
-.cloud img {
-  width: 100%;
-  left: 0;
-  top: 0;
-  position: absolute;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  pointer-events: none;
-}
-
-@-webkit-keyframes animCloud {
-  from {
-    -webkit-transform: translateX(100%);
+  .contacts {
+    padding: 35px 0 80px 0;
   }
-  to {
-    -webkit-transform: translateX(-100%);
+  .contacts__info {
+    width: 50%;
   }
 }
 
-@keyframes animCloud {
-  from {
-    transform: translateX(100%);
+@media (max-width: 991px) {
+  .cloud {
+    height: auto;
+    padding: 0;
   }
-  to {
-    transform: translateX(-100%);
+  .advantages__wrapper {
+    flex-direction: column;
+  }
+  .advantages__wrapper .advantage {
+    width: 100%;
+  }
+  .reviews {
+    padding-bottom: 56px;
+  }
+  .reviews .reviews__wrapper {
+    flex-wrap: wrap;
+  }
+  .reviews .reviews__wrapper .review {
+    width: 70%;
+    margin-bottom: 24px;
+  }
+  .reviews .reviews__wrapper .review:last-child {
+    margin: 0 0 0 135px;
+  }
+  .products .products__wrapper .product {
+    width: 48%;
+  }
+  .contacts {
+    background-size: 45% 100%;
+  }
+  .contacts__info {
+    width: 70%;
   }
 }
 
-.cloud1 {
-  -webkit-animation: animCloud 40s infinite linear;
-  animation: animCloud 40s infinite linear;
-}
-
-.cloud2 {
-  -webkit-animation: animCloud 60s infinite linear;
-  animation: animCloud 60s infinite linear;
-}
-
-.cloud3 {
-  -webkit-animation: animCloud 80s infinite linear;
-  animation: animCloud 80s infinite linear;
-}
-
-.cloud4 {
-  -webkit-animation: animCloud 100s infinite linear;
-  animation: animCloud 100s infinite linear;
+@media (max-width: 991px) {
+  .cloud {
+    background-size: 80%;
+  }
+  .about__img {
+    width: 530px;
+    height: 500px;
+  }
 }
