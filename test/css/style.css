@@ -4367,10 +4367,16 @@ template {
   }
 }
 
-@media (max-width: 991px) {
-  .cloud {
-    height: auto;
-    padding: 0;
+@media (max-width: 992px) {
+  .promo {
+    background-position-x: 165px;
+  }
+  .about__img {
+    width: 425px;
+    height: 500px;
+  }
+  .about__info {
+    width: 50% !important;
   }
   .advantages__wrapper {
     flex-direction: column;
@@ -4389,7 +4395,7 @@ template {
     margin-bottom: 24px;
   }
   .reviews .reviews__wrapper .review:last-child {
-    margin: 0 0 0 135px;
+    margin-left: 23%;
   }
   .products .products__wrapper .product {
     width: 48%;
@@ -4402,12 +4408,142 @@ template {
   }
 }
 
-@media (max-width: 991px) {
-  .cloud {
-    background-size: 80%;
+@media (max-width: 768px) {
+  .container {
+    width: calc(100% - 48px);
+  }
+  .header .menu__item {
+    margin-right: 23px;
+  }
+  .header .menu__link {
+    font-size: 13px;
+  }
+  .promo {
+    background-position-x: 0;
+  }
+  .promo__descr {
+    width: 80%;
+  }
+  .about__wrapper {
+    flex-direction: column;
   }
   .about__img {
-    width: 530px;
-    height: 500px;
+    height: auto;
+    width: auto;
+    margin: 0 auto;
+  }
+  .about__info {
+    margin: -5px auto 0 auto !important;
+    width: 84% !important;
+    padding-left: 40px;
+  }
+  .about__info .descr {
+    font-size: 17px;
+    text-align: center;
+  }
+  .about__info .name, .about__info .position {
+    text-align: center;
+  }
+  .footer .menu__item {
+    margin: 0 20px;
+  }
+  .footer .menu__link {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: calc(100% - 32px);
+  }
+  .title {
+    font-size: 44px;
+  }
+  .title_h2 {
+    text-align: center;
+    font-size: 39px;
+  }
+  .promo {
+    background-size: 100%;
+    padding-top: 114px;
+  }
+  .promo__descr {
+    width: 100%;
+    font-size: 16px;
+  }
+  .advantages {
+    padding: 44px 0;
+  }
+  .advantages .advantages__wrapper .advantage {
+    margin-top: 20px;
+  }
+  .advantages .advantages__wrapper .advantage .advantage__img {
+    margin-right: 23px;
+  }
+  .advantages .advantages__wrapper .advantage .advantage__title {
+    font-size: 21px;
+  }
+  .advantages .advantages__wrapper .advantage .advantage__descr {
+    font-size: 14px;
+  }
+  .about {
+    padding: 26px 0;
+  }
+  .about__info {
+    width: 95% !important;
+    margin: 0 auto;
+    padding: 27px 5px 23px 5px;
+    margin-top: -4px;
+  }
+  .about__info .descr, .about__info .position {
+    font-size: 15px !important;
+  }
+  .about__info .name {
+    font-size: 18px;
+  }
+  .about__info .descr::before {
+    left: -5px;
+    top: -25px;
+  }
+  .reviews {
+    padding: 44px 0;
+  }
+  .reviews__wrapper {
+    margin-top: 92px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .reviews__wrapper .review {
+    margin-left: 0 !important;
+  }
+  .products__wrapper {
+    margin-top: 32px;
+  }
+  .products .product {
+    width: 100% !important;
+    margin-bottom: 40px;
+  }
+  .contacts {
+    background-size: 20% 100%;
+  }
+  .contacts__info {
+    width: 100%;
+    margin: 28px 0 0 0;
+  }
+  .footer .menu__list {
+    flex-wrap: wrap;
+  }
+  .footer .menu__item {
+    margin: 0 5px;
+  }
+  .footer .menu__link {
+    font-size: 13px;
+  }
+  .footer__bottom span {
+    width: 45%;
+    font-size: 10px !important;
+  }
+  .footer__bottom span:first-child {
+    width: 30%;
   }
 }
