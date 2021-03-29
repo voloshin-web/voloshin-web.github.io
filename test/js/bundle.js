@@ -1084,6 +1084,8 @@ const menu = (triggerSelector, menuSelector, overlaySelector) => {
         overlay.classList.toggle('overlay_active');
         document.body.classList.toggle('active');
     }
+
+    
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (menu);

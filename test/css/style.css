@@ -340,6 +340,15 @@ template {
   margin: 0 auto;
 }
 
+section {
+  position: relative;
+}
+
+section .anchor {
+  position: absolute;
+  top: -56px;
+}
+
 /*!
  * animate.css - https://animate.style/
  * Version - 4.1.1
@@ -1196,10 +1205,11 @@ template {
     height: 100vh;
     background-color: #fff;
     top: 0;
-    right: -100%;
+    right: 0;
+    transform: translateX(100%);
     z-index: 100;
     margin: 0;
-    transition: all 0.7s ease 0s;
+    transition: all .7s ease 0s;
   }
   .header .menu__item {
     line-height: 20px;
@@ -1211,7 +1221,7 @@ template {
     margin-bottom: 0;
   }
   .header .menu_active .menu__list {
-    right: 0;
+    transform: translateX(0);
   }
   .header .menu__link {
     font-size: 16px;
