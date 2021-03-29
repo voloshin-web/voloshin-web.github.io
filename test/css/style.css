@@ -340,6 +340,11 @@ template {
   margin: 0 auto;
 }
 
+html {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
 /*!
  * animate.css - https://animate.style/
  * Version - 4.1.1
@@ -1193,7 +1198,7 @@ template {
     align-items: center;
     position: fixed;
     width: 70%;
-    height: 100%;
+    height: 100vh;
     background-color: #fff;
     top: 0;
     right: -100%;
