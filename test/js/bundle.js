@@ -1072,21 +1072,6 @@ const menu = (triggerSelector, menuSelector, overlaySelector) => {
         overlay.classList.toggle('overlay_active');
         document.body.classList.toggle('active');
     }
-
-    const anchors = document.querySelectorAll('a[href*="#"]')
-
-        for (let anchor of anchors) {
-            anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-        
-        const blockID = anchor.getAttribute('href').substr(1);
-    
-        document.getElementById(blockID).scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-        });
-    });
-}
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (menu);
@@ -1195,6 +1180,36 @@ window.addEventListener('DOMContentLoaded', () => {
     const relax = new (rellax__WEBPACK_IMPORTED_MODULE_1___default())('.rellax');
 
     (0,_menu__WEBPACK_IMPORTED_MODULE_2__.default)('.hamburger', '.menu', '.overlay');
+
+    (function() {
+        scrollTo();
+    })();
+    
+    function scrollTo() {
+        const links = document.querySelectorAll('.menu__link');
+        links.forEach(each => (each.onclick = scrollAnchors));
+    }
+    
+    function scrollAnchors(e, respond = null) {
+        const distanceToTop = el => Math.floor(el.getBoundingClientRect().top);
+        e.preventDefault();
+        var targetID = (respond) ? respond.getAttribute('href') : this.getAttribute('href');
+        const targetAnchor = document.querySelector(targetID);
+        if (!targetAnchor) {
+            return;
+        }
+        const originalTop = distanceToTop(targetAnchor);
+        window.scrollBy({ top: originalTop, left: 0, behavior: 'smooth' });
+        const checkIfDone = setInterval(function() {
+            const atBottom = window.innerHeight + window.pageYOffset >= document.body.offsetHeight - 2;
+            if (distanceToTop(targetAnchor) === 0 || atBottom) {
+                targetAnchor.tabIndex = '-1';
+                targetAnchor.focus();
+                window.history.pushState('', '', targetID);
+                clearInterval(checkIfDone);
+            }
+        }, 100);
+    }
 });
 
 })();
