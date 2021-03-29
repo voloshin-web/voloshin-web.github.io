@@ -3994,7 +3994,6 @@ template {
 
 .about {
   background: url("../img/bg/aboutBG.jpg") center/cover no-repeat;
-  background-attachment: fixed;
 }
 
 .about__wrapper {
@@ -4084,19 +4083,6 @@ template {
   display: flex;
   justify-content: space-between;
   margin-top: 130px;
-  position: relative;
-}
-
-.reviews__wrapper::before {
-  content: '';
-  background: url("../img/rev.svg") center no-repeat;
-  position: absolute;
-  top: -60px;
-  left: -75px;
-  display: block;
-  width: 105px;
-  height: 90px;
-  z-index: 1;
 }
 
 .reviews__wrapper .review {
@@ -4105,6 +4091,20 @@ template {
   width: 43%;
   border-radius: 10px;
   z-index: 5;
+}
+
+.reviews__wrapper .review:first-child {
+  position: relative;
+  z-index: 5;
+}
+
+.reviews__wrapper .review__img {
+  position: absolute;
+  top: -60px;
+  left: -75px;
+  width: 105px;
+  height: 90px;
+  z-index: 10;
 }
 
 .reviews__wrapper .review__title {
