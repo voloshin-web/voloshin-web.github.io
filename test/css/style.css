@@ -624,7 +624,7 @@ html {
   background: url("../img/clouds/cloud-01.png"), url("../img/clouds/cloud-01.png"), url("../img/clouds/cloud-01.png"), url("../img/clouds/cloud-01.png");
   -webkit-animation: anim 200s linear infinite;
           animation: anim 200s linear infinite;
-  opacity: .8;
+  opacity: .6;
   z-index: -1;
 }
 
@@ -688,22 +688,8 @@ html {
 }
 
 .about {
+  background: url("../img/bg/aboutBG.jpg") center/cover no-repeat;
   position: relative;
-}
-
-.about .bg {
-  width: 100%;
-  height: 1000px;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
-
-.about .bg img {
-  width: 100%;
-  height: 100%;
 }
 
 .about__wrapper {
@@ -858,7 +844,7 @@ html {
   background: url("../img/clouds/cloud-01.png"), url("../img/clouds/cloud-01.png"), url("../img/clouds/cloud-01.png"), url("../img/clouds/cloud-01.png");
   -webkit-animation: anim 200s linear infinite;
           animation: anim 200s linear infinite;
-  opacity: .4;
+  opacity: .6;
   z-index: -1;
 }
 
@@ -962,7 +948,7 @@ html {
   background: url("../img/clouds/cloud-01.png"), url("../img/clouds/cloud-01.png"), url("../img/clouds/cloud-01.png"), url("../img/clouds/cloud-01.png");
   -webkit-animation: anim 200s linear infinite;
           animation: anim 200s linear infinite;
-  opacity: .4;
+  opacity: .6;
   z-index: -1;
 }
 
@@ -1078,7 +1064,7 @@ html {
   .products .products__wrapper .product {
     width: 32%;
   }
-  .products .products__wrapper .product a img {
+  .products .products__wrapper .product img {
     width: 100%;
   }
   .contacts {
@@ -1092,9 +1078,6 @@ html {
 @media (max-width: 992px) {
   .promo {
     background-position-x: 165px;
-  }
-  .about .bg {
-    height: 150%;
   }
   .about__wrapper {
     flex-direction: column;
@@ -1289,9 +1272,6 @@ html {
   .advantages .advantages__wrapper .advantage .advantage__descr {
     font-size: 14px;
   }
-  .about .bg {
-    height: 170%;
-  }
   .about__info {
     padding: 32px;
   }
@@ -1324,8 +1304,8 @@ html {
     margin-bottom: 40px;
   }
   .contacts {
-    background-size: 100% 100%;
-    background-position-x: 280px;
+    background-size: cover;
+    background-position-x: 90px;
   }
   .contacts__info {
     width: 100%;
