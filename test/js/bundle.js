@@ -1039,6 +1039,38 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 });
 
 
+/***/ }),
+
+/***/ "./src/js/menu.js":
+/*!************************!*\
+  !*** ./src/js/menu.js ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+const menu = (triggerSelector, menuSelector, overlaySelector) => {
+    const trigger = document.querySelector(triggerSelector),
+          menu = document.querySelector(menuSelector),
+          overlay = document.querySelector(overlaySelector);
+
+    trigger.addEventListener('click', toggleMenu);
+
+    overlay.addEventListener('click', toggleMenu);
+
+    function toggleMenu() {
+        trigger.classList.toggle('hamburger_active');
+        menu.classList.toggle('menu_active');
+        overlay.classList.toggle('overlay_active');
+        document.body.classList.toggle('active');
+    }
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (menu);
+
 /***/ })
 
 /******/ 	});
@@ -1133,6 +1165,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var wow_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(wow_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var rellax__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rellax */ "./node_modules/rellax/rellax.js");
 /* harmony import */ var rellax__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(rellax__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./menu */ "./src/js/menu.js");
+
 
 
 
@@ -1140,6 +1174,8 @@ window.addEventListener('DOMContentLoaded', () => {
     new (wow_js__WEBPACK_IMPORTED_MODULE_0___default())().init();
 
     const relax = new (rellax__WEBPACK_IMPORTED_MODULE_1___default())('.rellax');
+
+    (0,_menu__WEBPACK_IMPORTED_MODULE_2__.default)('.hamburger', '.menu', '.overlay');
 });
 
 })();
