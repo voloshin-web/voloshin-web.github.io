@@ -1178,7 +1178,6 @@ __webpack_require__.r(__webpack_exports__);
 
 window.addEventListener('DOMContentLoaded', () => {
     new (wow_js__WEBPACK_IMPORTED_MODULE_0___default())().init();
-
     const relax = new (rellax__WEBPACK_IMPORTED_MODULE_1___default())('.rellax');
 
     (0,_menu__WEBPACK_IMPORTED_MODULE_2__.default)('.hamburger', '.menu', '.overlay');

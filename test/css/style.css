@@ -688,12 +688,22 @@ html {
 }
 
 .about {
-  background: url("../img/bg/aboutBG.jpg");
   position: relative;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+}
+
+.about .bg {
+  width: 100%;
+  height: 1000px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.about .bg img {
+  width: 100%;
+  height: 100%;
 }
 
 .about__wrapper {
@@ -1083,6 +1093,9 @@ html {
   .promo {
     background-position-x: 165px;
   }
+  .about .bg {
+    height: 150%;
+  }
   .about__wrapper {
     flex-direction: column;
     align-items: center !important;
@@ -1275,6 +1288,9 @@ html {
   }
   .advantages .advantages__wrapper .advantage .advantage__descr {
     font-size: 14px;
+  }
+  .about .bg {
+    height: 170%;
   }
   .about__info {
     padding: 32px;
