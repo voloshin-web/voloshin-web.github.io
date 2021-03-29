@@ -1090,6 +1090,57 @@ const menu = (triggerSelector, menuSelector, overlaySelector) => {
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (menu);
 
+/***/ }),
+
+/***/ "./src/js/toggleActiveClassByScroll.js":
+/*!*********************************************!*\
+  !*** ./src/js/toggleActiveClassByScroll.js ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+const toggleActiveClassByScroll = () => {
+    // window.addEventListener('scroll', () => {
+    //     let scrollDistance = window.scrollY;
+
+    //     document.querySelectorAll('.colored').forEach((elem, i) => {
+    //         if (elem.offsetTop - document.querySelector('header').clientHeight <= scrollDistance) {
+    //             document.querySelectorAll('header .menu .menu__link').forEach(elem => {
+    //                 if (elem.classList.contains('active')) {
+    //                     elem.classList.remove('active');
+    //                 }
+    //             });
+    //         }
+
+    //         document.querySelectorAll('header .menu .menu__item')[i].querySelector('.menu__link').classList.add('active');
+    //     });
+    // });
+
+    window.addEventListener('scroll', () => {
+        let scrollDistance = window.scrollY;
+    
+        if (window.innerWidth > 768) {
+            document.querySelectorAll('.colored').forEach((el, i) => {
+                if (el.offsetTop - document.querySelector('header').clientHeight <= scrollDistance) {
+                    document.querySelectorAll('header a').forEach((el) => {
+                        if (el.classList.contains('active')) {
+                            el.classList.remove('active');
+                        }
+                    });
+    
+                    document.querySelectorAll('header li')[i].querySelector('a').classList.add('active');
+                }
+            });
+        }
+    });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (toggleActiveClassByScroll);
+
 /***/ })
 
 /******/ 	});
@@ -1187,6 +1238,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var smooth_scroll__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! smooth-scroll */ "./node_modules/smooth-scroll/dist/smooth-scroll.polyfills.min.js");
 /* harmony import */ var smooth_scroll__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(smooth_scroll__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./menu */ "./src/js/menu.js");
+/* harmony import */ var _toggleActiveClassByScroll__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./toggleActiveClassByScroll */ "./src/js/toggleActiveClassByScroll.js");
+
 
 
 
@@ -1198,6 +1251,8 @@ window.addEventListener('DOMContentLoaded', () => {
     let scroll = new (smooth_scroll__WEBPACK_IMPORTED_MODULE_2___default())('a[href*="#"]');
 
     (0,_menu__WEBPACK_IMPORTED_MODULE_3__.default)('.hamburger', '.menu', '.overlay');
+
+    (0,_toggleActiveClassByScroll__WEBPACK_IMPORTED_MODULE_4__.default)();
 });
 
 })();
