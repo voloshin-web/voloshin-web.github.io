@@ -1056,14 +1056,13 @@ const menu = (triggerSelector, menuSelector, overlaySelector) => {
     const trigger = document.querySelector(triggerSelector),
           menu = document.querySelector(menuSelector),
           overlay = document.querySelector(overlaySelector),
-          links = document.querySelectorAll('.menu .menu__link');
+          links = document.querySelectorAll('.header .menu .menu__link');
 
     trigger.addEventListener('click', toggleMenu);
 
     links.forEach(link => {
         link.addEventListener('click', toggleMenu);
     });
-
 
     overlay.addEventListener('click', toggleMenu);
 
@@ -1073,6 +1072,21 @@ const menu = (triggerSelector, menuSelector, overlaySelector) => {
         overlay.classList.toggle('overlay_active');
         document.body.classList.toggle('active');
     }
+
+    const anchors = document.querySelectorAll('a[href*="#"]')
+
+        for (let anchor of anchors) {
+            anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+        
+        const blockID = anchor.getAttribute('href').substr(1);
+    
+        document.getElementById(blockID).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    });
+}
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (menu);
