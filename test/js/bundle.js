@@ -1055,9 +1055,15 @@ __webpack_require__.r(__webpack_exports__);
 const menu = (triggerSelector, menuSelector, overlaySelector) => {
     const trigger = document.querySelector(triggerSelector),
           menu = document.querySelector(menuSelector),
-          overlay = document.querySelector(overlaySelector);
+          overlay = document.querySelector(overlaySelector),
+          links = document.querySelectorAll('.menu .menu__link');
 
     trigger.addEventListener('click', toggleMenu);
+
+    links.forEach(link => {
+        link.addEventListener('click', toggleMenu);
+    });
+
 
     overlay.addEventListener('click', toggleMenu);
 

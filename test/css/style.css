@@ -340,6 +340,10 @@ template {
   margin: 0 auto;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /*!
  * animate.css - https://animate.style/
  * Version - 4.1.1
@@ -3993,6 +3997,7 @@ template {
 }
 
 .about {
+  background: url("../img/bg/aboutBG.jpg") center/cover no-repeat;
   position: relative;
 }
 
@@ -4019,23 +4024,16 @@ template {
 }
 
 .about__img {
+  display: block;
   z-index: 5;
-  margin-left: -15%;
-  width: 668px;
-  height: 596px;
-}
-
-.about__img img {
-  height: 100%;
-  width: 100%;
+  margin-left: -20%;
 }
 
 .about__info {
-  width: 50%;
   background-color: #FFFFFF;
   border-radius: 10px;
-  padding: 40px 40px 40px 120px;
-  margin: 0 0 85px -90px;
+  padding: 40px 40px 40px 195px;
+  margin: 0 0 8% -90px;
 }
 
 .about__info .descr {
@@ -4055,8 +4053,8 @@ template {
   background: url("../img/revLess.svg") center no-repeat;
   position: absolute;
   opacity: 0.3;
-  top: -25px;
-  left: -35px;
+  top: -23px;
+  left: -5px;
   display: block;
   width: 65px;
   height: 55px;
@@ -4098,6 +4096,17 @@ template {
   display: flex;
   justify-content: space-between;
   margin-top: 130px;
+  position: relative;
+  z-index: 20;
+}
+
+.reviews__wrapper .review__img {
+  position: absolute;
+  top: -60px;
+  left: -80px;
+  width: 105px;
+  height: 90px;
+  z-index: 1;
 }
 
 .reviews__wrapper .review {
@@ -4106,20 +4115,6 @@ template {
   width: 43%;
   border-radius: 10px;
   z-index: 5;
-}
-
-.reviews__wrapper .review:first-child {
-  position: relative;
-  z-index: 5;
-}
-
-.reviews__wrapper .review__img {
-  position: absolute;
-  top: -60px;
-  left: -75px;
-  width: 105px;
-  height: 90px;
-  z-index: 10;
 }
 
 .reviews__wrapper .review__title {
@@ -4360,9 +4355,12 @@ template {
   opacity: 0.5;
 }
 
-@media (max-width: 1320px) {
-  .about .about__info {
-    width: 42%;
+@media (max-width: 1400px) {
+  .container {
+    width: calc(100% - 60px);
+  }
+  .about .about__img {
+    margin-left: -5%;
   }
 }
 
@@ -4370,14 +4368,18 @@ template {
   .container {
     width: calc(100% - 60px);
   }
-  .about {
-    padding: 0;
+  .about__img {
+    width: 50%;
+    height: 100%;
   }
-  .about__info::before {
-    background-size: 480px 545px;
+  .about__info {
+    padding-left: 120px;
   }
   .reviews .reviews__wrapper .review {
     width: 42%;
+  }
+  .reviews .reviews__wrapper .review__img {
+    left: -15px;
   }
   .reviews .reviews__wrapper::before {
     top: -65px;
@@ -4401,13 +4403,20 @@ template {
   .promo {
     background-position-x: 165px;
   }
+  .about__wrapper {
+    flex-direction: column;
+    align-items: center !important;
+  }
   .about__img {
-    width: 425px;
-    height: 500px;
-    margin-left: -5%;
+    width: 80%;
   }
   .about__info {
-    width: 50% !important;
+    margin: 0;
+    margin-bottom: 76px;
+    padding: 40px;
+  }
+  .about__info .descr, .about__info .name, .about__info .position {
+    text-align: center;
   }
   .advantages__wrapper {
     flex-direction: column;
@@ -4456,28 +4465,16 @@ template {
     width: 80%;
   }
   .about {
-    padding-bottom: 56px;
-  }
-  .about__wrapper {
-    flex-direction: column;
-  }
-  .about__img {
-    height: auto;
-    width: auto;
-    margin: 0 auto;
+    padding-top: 64px;
   }
   .about__info {
-    margin: 0 auto;
-    width: 84% !important;
-    padding-left: 40px;
-    margin-top: -4px;
+    margin-bottom: 40px;
   }
   .about__info .descr {
     font-size: 17px;
-    text-align: center;
   }
-  .about__info .name, .about__info .position {
-    text-align: center;
+  .about__img {
+    width: 100%;
   }
   .footer .menu__item {
     margin: 0 20px;
@@ -4544,6 +4541,9 @@ template {
   .header .menu_active .menu__list {
     right: 0;
   }
+  .header .menu__link {
+    font-size: 16px;
+  }
   .header .hamburger {
     display: block;
     z-index: 150;
@@ -4575,7 +4575,7 @@ template {
   }
   .promo {
     background-size: 100%;
-    padding-top: 114px;
+    padding-top: 90px;
   }
   .promo__descr {
     width: 100%;
@@ -4596,37 +4596,29 @@ template {
   .advantages .advantages__wrapper .advantage .advantage__descr {
     font-size: 14px;
   }
-  .about {
-    padding: 26px 0;
-  }
   .about__info {
-    width: 95% !important;
-    margin: 0 auto;
-    padding: 27px 5px 23px 5px;
-    margin-top: -4px;
-  }
-  .about__info .descr, .about__info .position {
-    font-size: 15px !important;
-  }
-  .about__info .name {
-    font-size: 18px;
-  }
-  .about__info .descr::before {
-    left: -5px;
-    top: -25px;
+    padding: 32px;
   }
   .reviews {
     padding: 44px 0;
   }
   .reviews__wrapper {
+    margin-top: 32px !important;
+    flex-wrap: initial !important;
     margin-top: 92px;
     flex-direction: column;
     align-items: center;
   }
+  .reviews__wrapper .review__img {
+    display: none;
+  }
   .reviews__wrapper .review {
-    width: 100% !important;
-    padding: 25px 0 16px 0;
+    width: inherit !important;
+    padding: 25px 16px 18px 16px;
     margin-left: 0 !important;
+  }
+  .products {
+    padding: 44px 0 32px 0;
   }
   .products__wrapper {
     margin-top: 32px;
