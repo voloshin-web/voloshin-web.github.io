@@ -902,8 +902,7 @@ section .anchor {
 
 .contacts {
   padding: 64px 0 86px 0;
-  background: url("../img/bg/contactsBG.png") right no-repeat;
-  background-color: #E8EFFD;
+  background-color: #fff;
   position: relative;
   z-index: 10;
 }
