@@ -1033,6 +1033,10 @@ section .anchor {
   color: #D9DBE1;
 }
 
+.footer__bottom span a {
+  color: inherit;
+}
+
 .footer__bottom span:first-child {
   font-family: 'Manrope', sans-serif;
   font-style: normal;
