@@ -1104,37 +1104,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 const toggleActiveClassByScroll = () => {
-    // window.addEventListener('scroll', () => {
-    //     let scrollDistance = window.scrollY;
-
-    //     document.querySelectorAll('.colored').forEach((elem, i) => {
-    //         if (elem.offsetTop - document.querySelector('header').clientHeight <= scrollDistance) {
-    //             document.querySelectorAll('header .menu .menu__link').forEach(elem => {
-    //                 if (elem.classList.contains('active')) {
-    //                     elem.classList.remove('active');
-    //                 }
-    //             });
-    //         }
-
-    //         document.querySelectorAll('header .menu .menu__item')[i].querySelector('.menu__link').classList.add('active');
-    //     });
-    // });
-
     window.addEventListener('scroll', () => {
         let scrollDistance = window.scrollY;
     
-        if (window.innerWidth > 768) {
-            document.querySelectorAll('.colored').forEach((el, i) => {
-                if (el.offsetTop - document.querySelector('header').clientHeight <= scrollDistance) {
-                    document.querySelectorAll('header a').forEach((el) => {
-                        if (el.classList.contains('active')) {
-                            el.classList.remove('active');
-                        }
-                    });
-    
-                    document.querySelectorAll('header li')[i].querySelector('a').classList.add('active');
-                }
-            });
+        document.querySelectorAll('.colored').forEach((el, i) => {
+            if (el.offsetTop - document.querySelector('header').clientHeight <= scrollDistance) {
+                document.querySelectorAll('header a').forEach((el) => {
+                    if (el.classList.contains('active')) {
+                        el.classList.remove('active');
+                    }
+                });
+
+                document.querySelectorAll('header li')[i].querySelector('a').classList.add('active');
+            }
+        });
+
+        if (window.pageYOffset + document.documentElement.clientHeight >= document.documentElement.scrollHeight) {
+            document.querySelectorAll('header li')[document.querySelectorAll('header li').length - 2].querySelector('a').classList.remove('active');
+            document.querySelectorAll('header li')[document.querySelectorAll('header li').length - 1].querySelector('a').classList.add('active');
         }
     });
 };
