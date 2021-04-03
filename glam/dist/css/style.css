@@ -1321,9 +1321,7 @@ template {
 
 .cooperation__body_info .block h3 {
   font-weight: normal;
-  font-size: 22px;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  font-size: 23px;
   color: #000000;
   font-family: 'Raleway', sans-serif;
   text-align: center;
@@ -1419,7 +1417,6 @@ template {
 
 .shipping__body span.bold_under {
   font-weight: 600;
-  text-decoration: underline;
 }
 
 .shipping__body span.bold {
@@ -1454,7 +1451,7 @@ template {
   font-size: 28px;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1320px) {
   .container {
     width: calc(100% - 50px);
   }
