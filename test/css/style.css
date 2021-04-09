@@ -848,6 +848,19 @@ section .anchor {
   margin-top: 4px;
 }
 
+.reviews__wrapper .review .wrap {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-end;
+}
+
+.reviews__wrapper .review .wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 .reviews .cloud {
   position: absolute;
   top: 0;
