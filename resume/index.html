@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <section class='main'>
+        <div class="container">
+            <div class="main__info">
+                <h1 class='title'>Волошин Виталий</h1>
+                <p class='descr animate__animated animate__fadeInUp'>Junior Front-end разработчик</p>
+
+                <a href='#about' class="arrow-down">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+    
+    
+            <div class="left__img">
+                <svg class="hero-triangles" viewBox="0 0 263.07 394.61" preserveAspectRatio="xMinYMax meet">
+                    <polygon class="primary-triangle" points="0 394.61 0 0 263.07 263.07 131.53 394.61 0 394.61"></polygon>
+                    <polygon class="pr-triangle" points="0 394.61 0 263.07 131.53 394.61 0 394.61"></polygon>
+                    <polygon class="gray-triangle" points="131.53 394.61 197.3 328.84 263.07 394.61 131.53 394.61"></polygon>
+                </svg>
+            </div>
+    
+            <div class="overlay"></div>
+    
+            <div class="wrapper-menu">
+                <span class="line-menu half start"></span>
+                <span class="line-menu"></span>
+                <span class="line-menu half end"></span>
+            </div>
+
+            <nav class='menu'>
+                <ul class='menu__list'>
+                    <li class="menu__item">
+                        <a href="#about" class='menu__link' data-wow-duration="5s" data-wow-delay='5s'>
+                            Обо мне
+                        </a>
+                    </li>
+
+                    <li class="menu__item">
+                        <a href="#experience" class='menu__link' data-wow-duration="5s" data-wow-delay='5s'>
+                            Образование и опыт
+                        </a>
+                    </li>
+
+                    <li class="menu__item">
+                        <a href="#skills" class='menu__link' data-wow-duration="5s" data-wow-delay='5s'>
+                            навыки И знания
+                        </a>
+                    </li>
+
+                    <li class="menu__item">
+                        <a href="#portfolio" class='menu__link' data-wow-duration="5s" data-wow-delay='5s'>
+                            Портфолио
+                        </a>
+                    </li>
+
+                    <li class="menu__item">
+                        <a href="#process" class='menu__link' data-wow-duration="5s" data-wow-delay='5s'>
+                            рабочий процесс
+                        </a>
+                    </li>
+
+                    <li class="menu__item">
+                        <a href="#contact" class='menu__link' data-wow-duration="5s" data-wow-delay='5s'>
+                            контакты
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+    
+            <div class="socials">
+                <div class="socials__wrapper">
+                    <div class="social">
+                        <a href="tg://resolve?domain=voloshkin_v">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="telegram" class="svg-inline--fa fa-telegram fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm121.8 169.9l-40.7 191.8c-3 13.6-11.1 16.9-22.4 10.5l-62-45.7-29.9 28.8c-3.3 3.3-6.1 6.1-12.5 6.1l4.4-63.1 114.9-103.8c5-4.4-1.1-6.9-7.7-2.5l-142 89.4-61.2-19.1c-13.3-4.2-13.6-13.3 2.8-19.7l239.1-92.2c11.1-4 20.8 2.7 17.2 19.5z"></path></svg>
+                        </a>
+                    </div>
+                    <div class="social">
+                        <a href="https://instagram.com/_voloshkin_v?igshid=2nmyvmzqj9kk">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" class="svg-inline--fa fa-instagram fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
+                        </a>
+                    </div>
+                    <div class="social">
+                        <a href="https://github.com/voloshin-web">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" class="svg-inline--fa fa-github fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="about" id='about'>
+        <div class="about__wrapper">
+            <div class="about__img">
+                <div class="overlay"></div>
+                <img src="img/my-photo.jpg" alt="my-photo">
+
+                <svg class="triangle" viewBox="0 0 100 100" preserveAspectRatio="xMaxYMin meet">
+                    <path d="M0 0 L100 0 L100 100 Z"></path>
+                </svg>
+            </div>
+    
+            <div class="about__me">
+                <div class="block animate__animated animate__fadeInUp wow" data-wow-delay="0.1s" data-wow-offset="200">
+                    <div class='block__descr'>Имя</div>
+                    <div class='block__ans'>Волошин Виталий</div>
+                </div>
+    
+                <div class="block animate__animated animate__fadeInUp wow" data-wow-delay="0.2s" data-wow-offset="200">
+                    <div class='block__descr'>Дата рождения</div>
+                    <div class='block__ans'>07.04.2002</div>
+                </div>
+    
+                <div class="block animate__animated animate__fadeInUp wow" data-wow-delay="0.3s" data-wow-offset="200">
+                    <div class='block__descr'>Почта</div>
+                    <div class='block__ans'>
+                        <a href="mailto:voloshin.v.02@gmail.com">
+                            voloshin.v.02@gmail.com
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="block animate__animated animate__fadeInUp wow" data-wow-delay="0.4s" data-wow-offset="200">
+                    <div class='block__descr'>Номер телефона</div>
+                    <div class='block__ans'>
+                        <a href="tel:380677026502">
+                            +380677026502
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="block animate__animated animate__fadeInUp wow" data-wow-delay="0.5s" data-wow-offset="200">
+                    <div class='block__descr'>Город</div>
+                    <div class='block__ans'>Бровары, Киевская Область</div>
+                </div>
+    
+                <p class='descr'>
+                    Гений, будущий миллионер, плейбой, филантроп, энтузиаст и просто хороший человек &#128518;
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class='experience' id='experience'>
+        <svg class="holes" viewBox="0 0 1189 22" preserveAspectRatio="xMinYMin meet">
+            <circle class="cls-1" cx="37.15" cy="11" r="11"></circle><circle class="cls-1" cx="74.31" cy="11" r="11"></circle><circle class="cls-1" cx="111.46" cy="11" r="11"></circle><circle class="cls-1" cx="148.61" cy="11" r="11"></circle><circle class="cls-1" cx="185.77" cy="11" r="11"></circle><circle class="cls-1" cx="222.92" cy="11" r="11"></circle><circle class="cls-1" cx="260.07" cy="11" r="11"></circle><circle class="cls-1" cx="297.23" cy="11" r="11"></circle><circle class="cls-1" cx="334.38" cy="11" r="11"></circle><circle class="cls-1" cx="371.54" cy="11" r="11"></circle><circle class="cls-1" cx="408.69" cy="11" r="11"></circle><circle class="cls-1" cx="445.84" cy="11" r="11"></circle><circle class="cls-1" cx="483" cy="11" r="11"></circle><circle class="cls-1" cx="520.15" cy="11" r="11"></circle><circle class="cls-1" cx="557.3" cy="11" r="11"></circle><circle class="cls-1" cx="594.46" cy="11" r="11"></circle><circle class="cls-1" cx="631.61" cy="11" r="11"></circle><circle class="cls-1" cx="668.76" cy="11" r="11"></circle><circle class="cls-1" cx="705.92" cy="11" r="11"></circle><circle class="cls-1" cx="743.07" cy="11" r="11"></circle><circle class="cls-1" cx="780.22" cy="11" r="11"></circle><circle class="cls-1" cx="817.38" cy="11" r="11"></circle><circle class="cls-1" cx="854.53" cy="11" r="11"></circle><circle class="cls-1" cx="891.69" cy="11" r="11"></circle><circle class="cls-1" cx="928.84" cy="11" r="11"></circle><circle class="cls-1" cx="965.99" cy="11" r="11"></circle><circle class="cls-1" cx="1003.15" cy="11" r="11"></circle><circle class="cls-1" cx="1040.3" cy="11" r="11"></circle><circle class="cls-1" cx="1077.45" cy="11" r="11"></circle><circle class="cls-1" cx="1114.61" cy="11" r="11"></circle><circle class="cls-1" cx="1151.76" cy="11" r="11"></circle><path class="cls-1" d="M1253,389a11,11,0,0,0,0,22V389Z" transform="translate(-64 -389)"></path><path class="cls-1" d="M64,389v22A11,11,0,0,0,64,389Z" transform="translate(-64 -389)"></path>
+        </svg>
+
+        <div class="container">
+            <h2 class="title title_h2">Образование и опыт</h2>
+
+            <div class="experience__wrapper">
+                <ul>
+                    <li>
+                        <div class="experience animate__animated animate__fadeIn wow" data-wow-offset="200" data-wow-delay='0.3s'>
+                            <h3 class="experience__title">Броварская гимназии им. Степана Олейника</h3>
+                            <p class="experience__descr">Школа</p>
+                            <div class="experience__years">Сентябрь 2008 - Май 2019</div>
+                        </div>
+
+                        <div class="icon">
+                            <img src="img/experience/school.svg" alt="school">
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="icon">
+                            <img src="img/experience/university.svg" alt="university">
+                        </div>
+
+                        <div class="experience animate__animated animate__fadeIn wow" data-wow-offset="200" data-wow-delay='0.3s'>
+                            <h3 class="experience__title">Киевский Полетехнический университет (ФИВТ, 121)</h3>
+                            <p class="experience__descr">Университет</p>
+                            <div class="experience__years">Сентябрь 2019 - Сейчас...</div>
+                            <p class='experience__info'>
+                                Cтудент 2 курса КПИ. Специальность: инженерия программного обеспечения
+                            </p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="experience animate__animated animate__fadeIn wow" data-wow-offset="200" data-wow-delay='0.3s'>
+                            <h3 class="experience__title">Фриланс биржа и веб-студия</h3>
+                            <p class="experience__descr">Работа</p>
+                            <div class="experience__years">Сейчас </div>
+                            <p class='experience__info'>Подработка в веб-студии и на фриланс бирже Weblancer</p>
+                        </div>
+                        
+                        <div class="icon">
+                            <img src="img/experience/work-from-home.svg" alt="work">
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="experience animate__animated animate__fadeIn wow" data-wow-offset="200" data-wow-delay='0.3s'>
+                            <h3 class="experience__title">Надеюсь станете именно вы	&#128515;</h3>
+                            <p class="experience__descr">Постоянная работа</p>
+                            <div class="experience__years">Скоро...</div>
+                        </div>
+
+                        <div class="icon">
+                            <img src="img/experience/magic.svg" alt="magic">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="skills" id='skills'>
+        <div class="container">
+            <h2 class="title title_h2 title_h2_gray">НАВЫКИ И ЗНАНИЯ</h2>
+
+            <div class="skills__wrapper">
+                <div class="skill">
+                    <div class="skill__img animate__animated animate__zoomIn wow" data-wow-duration='0.5s' data-wow-offset="200">
+                        <img src="img/skills/graphic.svg" alt="graphic">
+                    </div>
+
+                    <h3 class="skill__title">Векторные графические редакторы</h3>
+
+                    <ul class='skill__list'>
+                        <li class='skill__list-descr'>Figma</li>
+                        <li class='skill__list-descr'>Avocode</li>
+                    </ul>
+                </div>
+
+                <div class="skill">
+                    <div class="skill__img animate__animated animate__zoomIn wow" data-wow-duration='0.5s' data-wow-offset="200">
+                        <img src="img/skills/front-end.svg" alt="front-end">
+                    </div>
+
+                    <h3 class="skill__title">Front-End Разработка</h3>
+
+                    <ul class='skill__list'>
+                        <li class='skill__list-descr'>HTML</li>
+                        <li class='skill__list-descr'>CSS / SCSS / SASS</li>
+                        <li class='skill__list-descr'>JavaScript</li>
+                        <li class='skill__list-descr'>Gulp</li>
+                        <li class='skill__list-descr'>Webpack</li>
+                        <li class='skill__list-descr'>Bootstrap</li>
+                        <li class='skill__list-descr'>Jquery</li>
+                    </ul>
+                </div>
+
+                <div class="skill">
+                    <div class="skill__img animate__animated animate__zoomIn wow" data-wow-duration='0.5s' data-wow-offset="200">
+                        <img src="img/skills/monitor.svg" alt="cms">
+                    </div>
+
+                    <h3 class="skill__title">CMS</h3>
+
+                    <ul class='skill__list'>
+                        <li class='skill__list-descr'>WordPress</li>
+                    </ul>
+                </div>
+
+                <div class="skill">
+                    <div class="skill__img animate__animated animate__zoomIn wow" data-wow-duration='0.5s' data-wow-offset="200">
+                        <img src="img/skills/strategic-plan.svg" alt="future">
+                    </div>
+
+                    <h3 class="skill__title">Ближайшее будущее</h3>
+
+                    <ul class='skill__list'>
+                        <li class='skill__list-descr'>React</li>
+                        <li class='skill__list-descr'>Vue</li>
+                        <li class='skill__list-descr'>Angular</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio" id='portfolio'>
+        <div class="container">
+            <div class="portfolio__wrapper">
+                <div class="portfolio__title">
+                    <h2 class="title title_h2 title_h2_white">Портфолио</h2>    
+                </div>
+
+                <div class="tabs">
+                    <div class="tabs__item">Все работы</div>
+                    <div class="tabs__item tabs__item_active">Landing page</div>
+                    <div class="tabs__item">Многостраничные сайты</div>
+                    <div class="tabs__item">WordPress</div>
+                </div>
+            </div>
+
+            <p class='animate__animated animate__flipInX wow' data-wow-duration="2s">Примеры работ и несколько моих любимых цитат</p>
+
+            <div class="tabcontent__wrapper">
+                <div class="tabcontent">
+                    <div class="tab">
+                        <div class="tab__overlay"></div>
+                        <div class="tab__img">
+                            <img src="img/portfolio/1.jpg" alt="project1">
+                        </div>   
+                        
+                        <div class="tab__links">
+                            <a href="#">
+                                <div class="block block_first">
+                                    <img src="img/portfolio/github.svg" alt="github">
+                                </div>
+                            </a>
+                            
+                            <a href="#">
+                                <div class="block block_second">
+                                    <img src="img/portfolio/srch.svg" alt="search">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="tab">
+                        <div class="tab__overlay"></div>
+                        <div class="tab__img">
+                            <img src="img/portfolio/2.jpg" alt="project2">
+                        </div>   
+                        
+                        <div class="tab__links">
+                            <a href="#">
+                                <div class="block block_first">
+                                    <img src="img/portfolio/github.svg" alt="github">
+                                </div>
+                            </a>
+                            
+                            <a href="#">
+                                <div class="block block_second">
+                                    <img src="img/portfolio/srch.svg" alt="search">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="tab">
+                        <div class="tab__overlay"></div>
+                        <div class="tab__img">
+                            <img src="img/portfolio/3.jpg" alt="project3">
+                        </div>   
+                        
+                        <div class="tab__links">
+                            <a href="#">
+                                <div class="block block_first">
+                                    <img src="img/portfolio/github.svg" alt="github">
+                                </div>
+                            </a>
+                            
+                            <a href="#">
+                                <div class="block block_second">
+                                    <img src="img/portfolio/srch.svg" alt="search">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tabcontent">
+                    <div class="tab">
+                        <div class="tab__overlay"></div>
+                        <div class="tab__img">
+                            <img src="img/portfolio/1.jpg" alt="project1">
+                        </div>   
+                        
+                        <div class="tab__links">
+                            <a href="#">
+                                <div class="block block_first">
+                                    <img src="img/portfolio/github.svg" alt="github">
+                                </div>
+                            </a>
+                            
+                            <a href="#">
+                                <div class="block block_second">
+                                    <img src="img/portfolio/srch.svg" alt="search">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="tab">
+                        <div class="tab__overlay"></div>
+                        <div class="tab__img">
+                            <img src="img/portfolio/2.jpg" alt="project2">
+                        </div>   
+                        
+                        <div class="tab__links">
+                            <a href="#">
+                                <div class="block block_first">
+                                    <img src="img/portfolio/github.svg" alt="github">
+                                </div>
+                            </a>
+                            
+                            <a href="#">
+                                <div class="block block_second">
+                                    <img src="img/portfolio/srch.svg" alt="search">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="tab">
+                        <div class="tab__overlay"></div>
+                        <div class="tab__img">
+                            <img src="img/portfolio/3.jpg" alt="project3">
+                        </div>   
+                        
+                        <div class="tab__links">
+                            <a href="#">
+                                <div class="block block_first">
+                                    <img src="img/portfolio/github.svg" alt="github">
+                                </div>
+                            </a>
+                            
+                            <a href="#">
+                                <div class="block block_second">
+                                    <img src="img/portfolio/srch.svg" alt="search">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tabcontent">
+                    <div class="tab">
+                        <div class="tab__overlay"></div>
+                        <div class="tab__img">
+                            <img src="img/portfolio/1.jpg" alt="project1">
+                        </div>   
+                        
+                        <div class="tab__links">
+                            <a href="#">
+                                <div class="block block_first">
+                                    <img src="img/portfolio/github.svg" alt="github">
+                                </div>
+                            </a>
+                            
+                            <a href="#">
+                                <div class="block block_second">
+                                    <img src="img/portfolio/srch.svg" alt="search">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="tab">
+                        <div class="tab__overlay"></div>
+                        <div class="tab__img">
+                            <img src="img/portfolio/2.jpg" alt="project2">
+                        </div>   
+                        
+                        <div class="tab__links">
+                            <a href="#">
+                                <div class="block block_first">
+                                    <img src="img/portfolio/github.svg" alt="github">
+                                </div>
+                            </a>
+                            
+                            <a href="#">
+                                <div class="block block_second">
+                                    <img src="img/portfolio/srch.svg" alt="search">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="tab">
+                        <div class="tab__overlay"></div>
+                        <div class="tab__img">
+                            <img src="img/portfolio/3.jpg" alt="project3">
+                        </div>   
+                        
+                        <div class="tab__links">
+                            <a href="#">
+                                <div class="block block_first">
+                                    <img src="img/portfolio/github.svg" alt="github">
+                                </div>
+                            </a>
+                            
+                            <a href="#">
+                                <div class="block block_second">
+                                    <img src="img/portfolio/srch.svg" alt="search">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tabcontent">
+                    <div class="tab">
+                        <div class="tab__overlay"></div>
+                        <div class="tab__img">
+                            <img src="img/portfolio/1.jpg" alt="project1">
+                        </div>   
+                        
+                        <div class="tab__links">
+                            <a href="#">
+                                <div class="block block_first">
+                                    <img src="img/portfolio/github.svg" alt="github">
+                                </div>
+                            </a>
+                            
+                            <a href="#">
+                                <div class="block block_second">
+                                    <img src="img/portfolio/srch.svg" alt="search">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="tab">
+                        <div class="tab__overlay"></div>
+                        <div class="tab__img">
+                            <img src="img/portfolio/2.jpg" alt="project2">
+                        </div>   
+                        
+                        <div class="tab__links">
+                            <a href="#">
+                                <div class="block block_first">
+                                    <img src="img/portfolio/github.svg" alt="github">
+                                </div>
+                            </a>
+                            
+                            <a href="#">
+                                <div class="block block_second">
+                                    <img src="img/portfolio/srch.svg" alt="search">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="tab">
+                        <div class="tab__overlay"></div>
+                        <div class="tab__img">
+                            <img src="img/portfolio/3.jpg" alt="project3">
+                        </div>   
+                        
+                        <div class="tab__links">
+                            <a href="#">
+                                <div class="block block_first">
+                                    <img src="img/portfolio/github.svg" alt="github">
+                                </div>
+                            </a>
+                            
+                            <a href="#">
+                                <div class="block block_second">
+                                    <img src="img/portfolio/srch.svg" alt="search">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="process" id='process'>
+        <div class="container">
+            <h2 class="title title_h2 title_h2_gray">Рабочий процесс</h2>
+
+
+            <div class="process__wrapper">
+                <div class="block animate__animated animate__bounceInUp wow" data-wow-delay='0.2s' data-wow-offset="200">
+                    <div class="block__img">
+                        <img src="img/process/research.svg" alt="research">
+                    </div>
+
+                    <h3 class="block__title">Интервью</h3>
+                    <div class="block__descr">
+                        Первый и один из самых главных этапов - интервью с клиентом. Детальное обсуждение всех тонкостей и нюансов.
+                    </div>
+                </div>
+
+                <div class="block animate__animated animate__bounceInUp wow" data-wow-delay='0.4s'>
+                    <div class="block__img">
+                        <img src="img/process/brainstorm.svg" alt="brainstorm">
+                    </div>
+
+                    <div class="block__title">Чёткое планирование задач</div>
+                    <div class="block__descr">На этом этапе чётко составляется план действий.</div>
+                </div>
+
+                <div class="block animate__animated animate__bounceInUp wow" data-wow-delay='0.6s' data-wow-offset="200">
+                    <div class="block__img">
+                        <img src="img/process/prototype.svg" alt="prototype">
+                    </div>
+
+                    <div class="block__title">Выполнение</div>
+                    <div class="block__descr">
+                        Этап разработки. Имплементация продукта. 
+                    </div>
+                </div>
+
+                <div class="block animate__animated animate__bounceInUp wow" data-wow-delay='0.8s'>
+                    <div class="block__img">
+                        <img src="img/process/fine-tune.svg" alt="fine-tune">
+                    </div>
+
+                    <div class="block__title">Результат</div>
+                    <div class="block__descr">
+                        Передача продукта заказчику, внесение правок и как итог, качественно разработанный продукт в руках клиента.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id='contact'>
+        <div class="container">
+            <div class="title title_h2 title_h2_white">Контакты</div>
+
+            <div class="contact__wrapper">
+                <div class="block animate__animated animate__fadeIn wow" data-wow-duration="2s">
+                    <div class="block__img">
+                        <img src="img/contact/telegram.svg" alt="telegram">
+                    </div>
+                    <div class="block__title">Telegram</div>
+                    <div class="block__info">voloshkin_v</div>
+                </div>
+
+                <div class="block animate__animated animate__fadeIn wow" data-wow-duration="2s">
+                    <div class="block__img">
+                        <img src="img/contact/tel.svg" alt="tel">
+                    </div>
+                    <div class="block__title">Телефон</div>
+                    <div class="block__info">+380677026502</div>
+                </div>
+
+                <div class="block animate__animated animate__fadeIn wow" data-wow-duration="2s">
+                    <div class="block__img">
+                        <img src="img/contact/mail.svg" alt="mail">
+                    </div>
+                    <div class="block__title">Почта</div>
+                    <div class="block__info">voloshin.v.02@gmail.com</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src='js/bundle.js'></script>
+</body>
+</html>
