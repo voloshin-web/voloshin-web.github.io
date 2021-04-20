@@ -4,7 +4,6 @@ import tabs from './modules/tabs';
 import contact from './modules/contact';
 
 
-
 window.addEventListener('DOMContentLoaded', () => {
     new Wow().init();
 

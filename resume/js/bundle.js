@@ -810,7 +810,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
 window.addEventListener('DOMContentLoaded', () => {
     new (wow_js__WEBPACK_IMPORTED_MODULE_0___default())().init();
 
