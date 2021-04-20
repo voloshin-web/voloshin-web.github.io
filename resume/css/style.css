@@ -4441,6 +4441,7 @@ body.lock {
 
 .portfolio__wrapper .tabs {
   display: flex;
+  z-index: 50;
 }
 
 .portfolio__wrapper .tabs .tabs__item {
@@ -4720,9 +4721,18 @@ body.lock {
   .process__wrapper .block .block__descr {
     text-align: center;
   }
+  .about .about__me {
+    padding: 80px 20px;
+  }
+  .about .about__me .block .block__ans, .about .about__me a {
+    font-size: 16px;
+  }
+  .skills__wrapper .skill__img img {
+    width: 25%;
+  }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .main .menu__link {
     font-size: 24px;
   }
@@ -4730,7 +4740,10 @@ body.lock {
     flex-direction: column;
   }
   .about__me {
-    padding: 30px 0 30px 25px;
+    padding: 30px 0 30px 25px !important;
+  }
+  .about__me .block:last-child {
+    margin-bottom: 0 !important;
   }
   .about__img img {
     display: block;
