@@ -3835,6 +3835,10 @@ template {
   margin: 0 auto;
 }
 
+body.lock {
+  overflow: hidden;
+}
+
 .title {
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
@@ -4008,7 +4012,7 @@ template {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 100%;
 }
 
 .main .menu__item {
@@ -4543,12 +4547,14 @@ template {
 }
 
 .portfolio .tabcontent__wrapper .tabcontent .tab__img img {
+  border-radius: 30px;
   width: 100%;
   display: block;
   height: 100%;
 }
 
 .portfolio .tabcontent__wrapper .tabcontent .tab__overlay {
+  border-radius: 30px;
   transition: .4s;
   position: absolute;
   top: 0;
@@ -4846,6 +4852,12 @@ template {
   }
   .main .socials {
     bottom: 40px;
+  }
+  .main .wrapper-menu {
+    top: 40px;
+  }
+  .main .wrapper-menu .line-menu {
+    height: 4px;
   }
   .about__me {
     padding: 20px;

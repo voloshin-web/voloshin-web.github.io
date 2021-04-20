@@ -574,6 +574,10 @@ const menu = (hamburgerSelector, menuSelector, hamburgerActive, menuActive) => {
           links = menu.querySelectorAll('.menu__link');
 
     function toggleMenu() {
+        if (window.innerWidth < 900) {
+            document.body.classList.toggle('lock');
+        }
+
         hamburger.classList.toggle(hamburgerActive);
         menu.classList.toggle(menuActive);
 
