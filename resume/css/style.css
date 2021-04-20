@@ -3873,7 +3873,7 @@ body.lock {
 
 .main {
   height: 100vh;
-  background: url("../img/mainBG.jpg") 100%/100% no-repeat;
+  background: url("../img/mainBG.jpg") center no-repeat;
   position: relative;
 }
 
@@ -3999,7 +3999,7 @@ body.lock {
   left: 0;
   transform: translate(100%, -100%);
   width: 100%;
-  height: 100vh;
+  height: 100vh !important;
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 200;
   transition: .3s;
@@ -4012,7 +4012,7 @@ body.lock {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  height: 100vh !important;
 }
 
 .main .menu__item {
@@ -4708,9 +4708,6 @@ body.lock {
 }
 
 @media (max-width: 1200px) {
-  .main {
-    background-size: auto;
-  }
   .main .wrapper-menu {
     right: 25px;
   }
@@ -4843,6 +4840,15 @@ body.lock {
   }
   .contact__wrapper .block:last-child {
     margin-bottom: 0;
+  }
+}
+
+@media screen and (orientation: landscape) and (max-device-width: 900px) {
+  .main .menu__item {
+    margin: 0;
+  }
+  .main .menu__link {
+    font-size: 24px;
   }
 }
 
