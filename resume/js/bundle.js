@@ -551,69 +551,6 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 
 /***/ }),
 
-/***/ "./src/js/modules/contact.js":
-/*!***********************************!*\
-  !*** ./src/js/modules/contact.js ***!
-  \***********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-const contact = () => {
-    const additionalInfo = document.querySelector('.contact__final'),
-          mainInfo = document.querySelector('.contact__overlay'),      
-          btn = document.querySelector('.contact__toggle button');
-
-    btn.addEventListener('click', () => {
-        mainInfo.classList.toggle('contact__overlay_active');
-        additionalInfo.classList.toggle('contact__final_active');
-        animTxt();
-    });
-
-    function animTxt() {
-        let textNode = document.querySelector('.contact p'),
-            text = document.querySelector('.contact p').textContent;
-        let i = 0;
-
-        const id = setInterval(() => {
-            textNode.forEach(i => {
-                i.style.opacity = '1';
-            });
-            
-            i++;
-
-            if (i == text.length) {
-                clearInterval(id);
-            }
-        }, 200);
-
-        
-        // let i = 0;
-    
-        // const id = setInterval(function(){
-        //     document.getElementById('thanks').innerHTML += animation[i];
-        //     i++;
-            
-            
-        //     if (i === animation.length) {
-        //         clearInterval(id);
-        //     }
-        //     // i>=animation.length-1 ? i = -1 : false;
-        //     // i++;
-        // },200);
-
-    }
-
-    
-};  
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (contact);
-
-/***/ }),
-
 /***/ "./src/js/modules/menu.js":
 /*!********************************!*\
   !*** ./src/js/modules/menu.js ***!
@@ -803,9 +740,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var wow_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(wow_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _modules_menu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/menu */ "./src/js/modules/menu.js");
 /* harmony import */ var _modules_tabs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/tabs */ "./src/js/modules/tabs.js");
-/* harmony import */ var _modules_contact__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/contact */ "./src/js/modules/contact.js");
-
-
 
 
 
@@ -815,7 +749,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
     (0,_modules_menu__WEBPACK_IMPORTED_MODULE_1__.default)('.wrapper-menu', '.menu', 'open', 'menu_active');
     (0,_modules_tabs__WEBPACK_IMPORTED_MODULE_2__.default)('.tabs__item', '.tabcontent', '.tabs', 'tabs__item_active');
-    (0,_modules_contact__WEBPACK_IMPORTED_MODULE_3__.default)();
 });
 })();
 
