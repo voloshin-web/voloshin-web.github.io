@@ -4178,6 +4178,12 @@ template {
   line-height: 35px;
 }
 
+.about__me .descr span {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+
 .experience {
   padding: 20px 0 50px 0;
   background-color: #d67456;
@@ -4657,4 +4663,9 @@ template {
   font-size: 12px;
   font-family: 'Merriweather Sans', sans-serif;
   letter-spacing: 2px;
+}
+
+.contact__wrapper .block:hover .block__img img {
+  transition: 0.4s;
+  transform: rotateY(360deg);
 }
