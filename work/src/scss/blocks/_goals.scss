@@ -1,0 +1,36 @@
+.goals {
+    padding-top: 120px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 62px;
+        .goal {
+            display: flex;
+            align-items: center;
+            &:first-child {
+                margin-right: 187px;
+            }
+            &:last-child {
+                width: 100%;
+            }
+            &__count {
+                font-style: normal;
+                font-weight: 900;
+                font-size: 200px;
+                line-height: 239px;
+                display: flex;
+                align-items: center;
+                color: #F2F2F2;
+                margin-right: 30px;
+            }
+            &__descr {
+                margin: 0;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 22px;
+                line-height: 36px;
+                color: #333333;
+            }
+        }
+    }
+}

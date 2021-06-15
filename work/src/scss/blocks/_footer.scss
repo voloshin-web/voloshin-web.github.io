@@ -1,0 +1,94 @@
+.footer {
+    background-color: #2C2C2C;
+    padding: 58px 0 24px 0;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        .block {
+            &__title {
+                font-style: normal;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 20px;
+                color: #FFFFFF;
+                margin: 0;
+            }
+            &__links, &__info {
+                margin-top: 25px;
+                a, .descr {
+                    display: block;
+                    text-decoration: none;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 24px;
+                    letter-spacing: 0.03em;
+                    color: #FFFFFF;
+                    margin-bottom: 16px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+                
+            } 
+            &__info {
+                display: flex;
+                align-items: center;
+                margin-top: 25px;
+                &:nth-child(3) {
+                    margin-top: 63px;
+                }
+                img {
+                    width: 16px;
+                    margin-right: 19px;
+                }
+                &:hover {
+                    img {
+                        transform: rotateY(360deg);
+                        transition: .5s;
+                    }
+                }
+            }
+
+            .socails {
+                display: flex;
+                a {
+                    margin: 23px 41px 0 0;
+                    position: relative;
+                    img {
+                        transition: .5s;
+                        &:hover {
+                            transform: translateY(-5px);
+                        }
+                    }
+                }
+            }
+        }
+
+        a:hover {
+            opacity: .6;
+        }
+    }
+
+    .line {
+        width: 100%;
+        height: 2px;
+        mix-blend-mode: normal;
+        opacity: 0.1;
+        background-color: #ffffff;
+        margin: 60px 0 24px 0;
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: center;
+        span {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 22px;
+            color: rgba(200, 200, 200, 0.5);
+        }
+    }
+}

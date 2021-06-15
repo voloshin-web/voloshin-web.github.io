@@ -1,0 +1,23 @@
+@import 'libs/normalize.scss';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@import 'blocks/animate';
+
+@import 'blocks/title';
+@import 'blocks/button';
+
+@import 'blocks/header';
+@import 'blocks/promo';
+@import 'blocks/about';
+@import 'blocks/goals';
+@import 'blocks/projects';
+@import 'blocks/contact';
+@import 'blocks/footer';
+
+@import 'blocks/media';

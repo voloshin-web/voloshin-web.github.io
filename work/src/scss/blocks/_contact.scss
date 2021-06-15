@@ -1,0 +1,153 @@
+.contact {
+    padding: 120px 0;
+    &__wrapper {
+        margin-top: 22px;
+        display: flex;
+        justify-content: space-between;
+
+        .contact__form {
+            margin-right: 30px;
+            .form {
+                &__group {
+                    margin-bottom: 15px;
+                    position: relative;
+                }
+                    
+                &__label {
+                    position: absolute;
+                    top: 15px;
+                    left: 20px;
+                    z-index: 1;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 17px;
+                    letter-spacing: 0.04em;
+                    color: #8D8D8D;
+                    transition: .3s;
+                    span {
+                        color: red;
+                    }
+                }
+
+                &__input {
+                    z-index: 10;
+                    width: 361px;
+                    padding: 15px 20px;
+                    background: #F3F3F3;
+                    border: none;
+                    outline: none;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 17px;
+                    letter-spacing: 0.04em;
+                    color: #8D8D8D;
+                    &#message {
+                        height: 92px;
+                        resize: none;
+                    }
+                }
+
+                .form__input:focus ~ .form__label, .form__input:not(:placeholder-shown) ~ .form__label {
+                    top: -10px;
+                    font-size: 12px;
+                    color: #939393;
+                    border: 1px solid #939393;
+                    border-radius: 10px;
+                    background: #f1f1f1;
+                    padding: 0px 10px;
+                }
+
+                // .button {
+                //     background: #333333;      
+                //     border: none;
+                //     color: #FFFFFF;
+                //     text-align: center;
+                //     font-size: 12px;
+                //     line-height: 12px;
+                //     padding: 30px 47px;
+                //     font-style: normal;
+                //     font-weight: normal;
+                //     width: 222px;
+                //     transition: all 0.5s;
+                //     cursor: pointer;
+                //     letter-spacing: 0.2em;
+                //     text-transform: uppercase;
+
+                //     span {
+                //         cursor: pointer;
+                //         display: inline-block;
+                //         position: relative;
+                //         transition: 0.5s;
+                //         &::after {
+                //             content: '';
+                //             background: url('../img/arrow.svg') no-repeat;
+                //             width: 17px;
+                //             height: 17px;
+                //             position: absolute;
+                //             opacity: 0;
+                //             top: 50%;
+                //             transform: translateY(-50%);
+                //             right: -30px;
+                //             transition: 0.5s;
+                //         }
+                //     }
+
+                //     &:hover {
+                //         span {
+                //             padding-right: 25px;
+                //             &::after {
+                //                 opacity: 1;
+                //                 right: 0;
+                //             }
+                //         }
+                //     }
+                // }
+
+                .label {
+                    display: flex;
+                    align-items: center;
+                    .checkbox {
+                        display: none;
+                        &:checked + .fake::before {
+                            opacity: 1;
+                        }
+                    }
+                    .fake {
+                        margin-right: 16px;
+                        background: #F3F3F3;
+                        border-radius: 4px;
+                        width: 35px;
+                        height: 24px;
+                        position: relative;
+                        cursor: pointer;
+                        &::before {
+                            content: '';
+                            display: block;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            background: url('../img/mark.svg') center no-repeat;
+                            width: 13px;
+                            height: 12px;
+                            opacity: 0;
+                            transition: .2s;
+                        }
+                    }
+                    .text {
+                        font-style: normal;
+                        cursor: pointer;
+                        font-weight: normal;
+                        font-size: 13px;
+                        line-height: 17px;
+                        letter-spacing: 0.03em;
+                        color: #333333;
+                    }
+                }
+            }
+           
+        }
+    }
+}

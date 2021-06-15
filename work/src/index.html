@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <header class='header'>
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="logo">
+                    <a href="#">
+                        <img src="img/logo.svg" alt="logo">
+                    </a>
+                </div>
+
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">ГЛАВНАЯ</a>
+                        </li>
+
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">ГАЛЕРЕЯ</a>
+                        </li>
+
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">ПРОЕКТЫ</a>
+                        </li>
+
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">СЕРТИФИКАТЫ</a>
+                        </li>
+
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">КОНТАКТЫ</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class='promo' id='promo'>
+        <div class="container">
+            <div class="promo__slider">
+                <div class="wrapper">
+                    <h1 class="promo__slider-title animate__animated animate__bounceInUp wow" data-wow-duration="1s">
+                        PROJECT <span>HOME</span>
+                    </h1>
+
+                    <div class="promo__slider-control">
+                        <div class="prev">
+                            <img src="img/promo/left.svg" alt="prev">
+                        </div>
+
+                        <div class="next">
+                            <img src="img/promo/right.svg" alt="prev">
+                        </div>
+                    </div>
+    
+                    <div class="promo__slider-counter">
+                        <span id="current">01</span>
+                        <span class="line"></span>
+                        <span id="total">02</span>
+                    </div>
+                </div>
+
+                <div class="promo__slider-wrapper">
+                    <div class="promo__slider-inner">
+                        <div class="promo__slide">
+                            <img src="img/promo/promo.jpg" alt="promo">
+
+                            <button href="#" class="button button_white">
+                                <span>ВЗГЛЯНУТЬ</span>
+                            </button>
+                        </div>
+
+                        <div class="promo__slide">
+                            <img src="img/promo/promo.jpg" alt="promo">
+
+                            <button href="#" class="button button_white">
+                                <span>ВЗГЛЯНУТЬ</span>
+                            </button>
+                        </div>
+
+                        <div class="promo__slide">
+                            <img src="img/promo/promo.jpg" alt="promo">
+
+                            <button href="#" class="button button_white">
+                                <span>ВЗГЛЯНУТЬ</span>
+                            </button>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <div class="about__wrapper">
+                <div class="about__img">
+                    <img src="img/about/1.jpg" alt="1">
+                    <img src="img/about/2.jpg" alt="2">
+                    <img src="img/about/3.jpg" alt="3">
+                </div>
+    
+                <div class="about__descr">
+                    <h2 class="title title_h2 animate__animated animate__bounceInUp wow" data-wow-duration="1s" data-wow-offset="100">О компании</h2>
+                    <p class="info">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                    </p>
+    
+                    <button href="#" class="button button_white">
+                        <span>ЧИТАТЬ</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class='goals'>
+        <div class="container">
+            <h2 class="title title_h2">Основные задачи</h2>
+
+            <div class="goals__wrapper">
+                <div class="goal animate__animated animate__fadeInUp wow" data-wow-duration="1s" data-wow-offset='200'>
+                    <span class="goal__count">1</span>
+                    <p class="goal__descr">Создание комфортных условий и повышение качества обслуживания клиентов</p>
+                </div>
+
+                <div class="goal animate__animated animate__fadeInUp wow" data-wow-duration="1s" data-wow-offset='200'>
+                    <span class="goal__count">2</span>
+                    <p class="goal__descr">Постоянно совершенствовать качество предоставляемых услуг путем обучения персонала, закупки нового оборудования и усиленной рекламы на рынке</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects">
+        <div class="container">
+            <h2 class="title title_h2">Наши проекты</h2>
+
+            <div class="projects__wrapper">
+                <div class="project">
+                    <div class="overlay"></div>
+                    <img src="img/projects/project1.jpg" alt="project1">
+
+                    <div class="project__descr">
+                        <h3>ДОСУГОВЫЙ ЦЕНТР</h3>
+                        <a href="#">
+                            ПОДРОБНЕЕ
+                            <img src="img/arrow.svg" alt="arrow">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="overlay"></div>
+                    <img src="img/projects/pr3.jpg" alt="project2">
+
+                    <div class="project__descr">
+                        <h3>ДОСУГОВЫЙ ЦЕНТР</h3>
+                        <a href="#">
+                            ПОДРОБНЕЕ
+                            <img src="img/arrow.svg" alt="arrow">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="overlay"></div>
+                    <img src="img/projects/pr2.jpg" alt="project3">
+
+                    <div class="project__descr">
+                        <h3>ДОСУГОВЫЙ ЦЕНТР</h3>
+                        <a href="#">
+                            ПОДРОБНЕЕ
+                            <img src="img/arrow.svg" alt="arrow">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="overlay"></div>
+                    <img src="img/projects/pr4.jpg" alt="project4">
+
+                    <div class="project__descr">
+                        <h3>ДОСУГОВЫЙ ЦЕНТР</h3>
+                        <a href="#">
+                            ПОДРОБНЕЕ
+                            <img src="img/arrow.svg" alt="arrow">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="overlay"></div>
+                    <img src="img/projects/pr5.jpg" alt="project5">
+
+                    <div class="project__descr">
+                        <h3>ДОСУГОВЫЙ ЦЕНТР</h3>
+                        <a href="#">
+                            ПОДРОБНЕЕ
+                            <img src="img/arrow.svg" alt="arrow">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects__btn">
+                <button class="button button_width animate__animated animate__lightSpeedInLeft wow" data-wow-duration="1s" data-wow-offset="200">
+                    <span>Все проекты</span> 
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class='contact'>
+        <div class="container">
+            <h2 class="title title_h2">Связаться с нами</h2>
+
+            <div class="contact__wrapper">
+                <div class="contact__form">
+                    <form action="#" method='POST' class='form'>
+                        <div class="form__group">
+                            <input type="text" class="form__input" name='name' id='name' placeholder=" ">
+                            <label for="name" class="form__label">Имя</label>
+                        </div>
+
+                        <div class="form__group">
+                            <input type="tel" class="form__input" name='tel' id='tel' placeholder=" ">
+                            <label for="tel" class="form__label">Номер телефона<span>*</span></label>
+                        </div>
+
+                        <div class="form__group">
+                            <input type="email" class="form__input" name='mail' id='mail' placeholder=" ">
+                            <label for="mail" class="form__label">E-mail<span>*</span></label>
+                        </div>
+
+                        <div class="form__group">
+                            <input type="text" class="form__input" name='interest' id='interest' placeholder=" ">
+                            <label for="interest" class="form__label">Интересующий товар/услуга<span>*</span></label>
+                        </div>
+
+                        <div class="form__group">
+                            <textarea name="text" class="form__input" id="message" placeholder=' '></textarea>
+                            <!-- <input type="text" class="form__input" name='message' id='message' placeholder=" "> -->
+                            <label for="message" class="form__label">Сообщение<span>*</span></label>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="checkbox" class="label">
+                                <input id='checkbox' type="checkbox" class="checkbox">
+                                <span class="fake"></span>
+                                <span class="text">Отправляя заявку Вы соглашаетесь с политикой конфиденциальности</span>
+                            </label>
+                        </div>
+
+                        <button class="button">
+                            <span>ОТПРАВИТЬ</span> 
+                        </button>
+                    </form>
+                </div>
+
+                <div class="contact__img">
+                    <img src="img/contact/contact.jpg" alt="contact">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="logo">
+                    <a href="#">
+                        <img src="img/logoft.svg" alt="logo">
+                    </a>
+                </div>
+
+                <div class="block">
+                    <h6 class="block__title">Информация</h6>
+
+                    <div class="block__links">
+                        <a href="#">Главная</a>
+                        <a href="#">Галерея</a>
+                        <a href="#">Проекты</a>
+                        <a href="#">Сертификаты</a>
+                        <a href="#">Контакты</a>
+                    </div>
+                </div>
+
+                <div class="block">
+                    <h6 class="block__title">Контакты</h6>
+
+                    <div class="block__info">
+                        <img src="img/footer/location.svg" alt="location">
+                        <div class="descr">100000, Республика  Казахстан, <br>
+                            г. Караганда, ул. Телевизионная 10</div>
+                    </div>
+
+                    <div class="block__info">
+                        <img src="img/footer/phone.svg" alt="phone">
+                        <a href="tel:+380000000000">+38 (000) 000 00 00</a>
+                    </div>
+
+                    <div class="block__info">
+                        <img src="img/footer/mail.svg" alt="mail">
+                        <a href="mailto:mail@gmail.com">mail@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="block">
+                    <h6 class="block__title">Социальные сети</h6>
+
+                    <div class="socails">
+                        <a href="#">
+                            <img src="img/footer/facebook.svg" alt="facebook">
+                        </a>
+
+                        <a href="#">
+                            <img src="img/footer/tw.svg" alt="tw">
+                        </a>
+
+                        <a href="#">
+                            <img src="img/footer/in.svg" alt="in">
+                        </a>
+
+                        <a href="#">
+                            <img src="img/footer/pin.svg" alt="pin">
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="footer__bottom">
+            <span>© 2019 Digital Project. Все права защищены.</span>
+        </div>
+
+    </footer>
+
+    <script src='js/bundle.js'></script>
+</body>
+</html>
