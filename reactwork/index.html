@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -12,8 +13,8 @@
         <div class="container">
             <div class="header__wrapper">
                 <div class="logo">
-                    <img src="img/Header/Logo_BG_header.png" alt="Logo_BG_header">
-                    <h1 class="title">Sales <span>manager</span></h1>
+                    <img src="img/Header/Logo_BG_header.png" alt="Logo_BG_header" class='animate__animated animate__bounceInDown wow'>
+                    <h1 class="title animate__animated animate__fadeIn wow" data-wow-delay='1s'>Sales <span>manager</span></h1>
                 </div>
             </div>
         </div>
@@ -28,7 +29,7 @@
                 <span class='title_h2_colored'>звёздных амбиций!</span>
             </h2>
 
-            <div class="form-field">
+            <div class="form-field animate__animated animate__rotateInUpLeft wow" data-wow-duration="1s" data-wow-delay='1.5s'>
                 <div class="form-field__header">
                     <h3 class="form-field__title">
                         Записывайся на собеседование
@@ -53,7 +54,6 @@
                         </div>
                     </form>
                 </div>
-                
             </div>
         </div>
     </section>
@@ -65,7 +65,7 @@
             </div>
 
             <div class="offer__wrapper">
-                <div class="block">
+                <div class="block animate__animated animate__fadeIn wow" data-wow-duration="1s" data-wow-offset='300'>
                     <div class="block__img">
                         <img src="img/book.svg" alt="book">
                     </div>
@@ -81,7 +81,7 @@
                     </div>
                 </div>
 
-                <div class="block">
+                <div class="block animate__animated animate__fadeIn wow" data-wow-duration="1s" data-wow-delay='.5s' data-wow-offset='300'>
                     <div class="block__img">
                         <img src="img/support.svg" alt="support">
                     </div>
@@ -97,7 +97,7 @@
                     </div>
                 </div>
 
-                <div class="block">
+                <div class="block animate__animated animate__fadeIn wow" data-wow-duration="1s" data-wow-delay='.9s' data-wow-offset='300'>
                     <div class="block__img">
                         <img src="img/salary.svg" alt="salary">
                     </div>
@@ -113,7 +113,7 @@
                     </div>
                 </div>
 
-                <div class="block">
+                <div class="block animate__animated animate__fadeIn wow" data-wow-duration="1s" data-wow-delay='1.3s' data-wow-offset='300'>
                     <div class="block__img">
                         <img src="img/workspace.svg" alt="workspace">
                     </div>
@@ -137,7 +137,7 @@
             </p>
 
             <div class="info">
-                <div class="info__wrapper">
+                <div class="info__wrapper animate__animated animate__zoomIn wow" data-wow-duration="1.5s" data-wow-delay='1s'>
                     <div class="info__form">
                         <form action="#" class="form">
                             <div class="form__group">
@@ -167,10 +167,22 @@
 
     <footer class="footer">
         <div class="container">
-            <h6 class="title title_h6">Давай <span class='colored'>вместе</span> расширять <span class='colored'>наши</span> горизонты!</h6>
+            <h6 class="title title_h6 wow"></h6>
         </div>
     </footer>
 
-    <script src='js/script.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js'></script>
+    <script>
+        new WOW().init();
+        </script>
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed('.footer h6', {
+            strings: ["Давай <span class='colored'>вместе</span> расширять <span class='colored'>наши</span> горизонты!"],
+            typeSpeed: 100
+        });
+    </script>
 </body>
 </html>
