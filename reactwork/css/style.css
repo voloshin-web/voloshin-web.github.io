@@ -344,11 +344,6 @@ template {
   src: url("../fonts/Cocon-Regular_font.otf");
 }
 
-@font-face {
-  font-family: 'Exo2';
-  src: url("../fonts/Exo_2/Exo2.0-Black.otf");
-}
-
 .container {
   width: 1170px;
   margin: 0 auto;
@@ -364,7 +359,7 @@ body {
 
 .title_h2 {
   color: #241537;
-  font-family: Cocon;
+  font-family: 'Cocon';
   font-size: 36px;
   font-weight: 400;
   font-style: normal;
@@ -401,25 +396,14 @@ body {
 }
 
 .header__wrapper {
+  display: flex;
+  justify-content: space-between;
   position: relative;
-  background: url("../img/Header/cloud_long.png") bottom right no-repeat;
-}
-
-.header__wrapper::before {
-  content: '';
-  background: url("../img/Header/small_green_planet.png") no-repeat;
-  display: block;
-  width: 22px;
-  height: 22px;
-  position: absolute;
-  right: 124px;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 .header .logo {
+  position: relative;
   margin-left: -22%;
-  width: 70%;
 }
 
 .header .logo .title {
@@ -433,8 +417,8 @@ body {
   line-height: 40px;
   position: absolute;
   top: 50%;
-  left: 0;
-  transform: translateY(-50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .header .logo .title span {
@@ -453,6 +437,24 @@ body {
   position: absolute;
   top: 30px;
   right: -145px;
+}
+
+.header .cloud {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transition: 2s;
+}
+
+.header .cloud::before {
+  content: '';
+  background: url("../img/Header/small_green_planet.png") no-repeat;
+  display: block;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  right: 135px;
+  top: -20px;
 }
 
 .opportunities {
@@ -489,9 +491,9 @@ body {
 .opportunities .form-field {
   background: url("../img/Header/bg_form_header.png") no-repeat;
   margin-top: 37px;
-  padding: 86px 0 375px 130px;
+  padding: 86px 0 375px 91px;
   position: relative;
-  width: 62%;
+  width: 66%;
 }
 
 .opportunities .form-field::before, .opportunities .form-field::after {
@@ -508,8 +510,10 @@ body {
 .opportunities .form-field::after {
   background: url("../img/Header/red_planet.png") no-repeat;
   left: auto;
-  right: 30px;
-  top: 7px;
+  right: 70px;
+  top: 5px;
+  width: 36px;
+  height: 36px;
 }
 
 .opportunities .form-field__header {
@@ -553,8 +557,8 @@ body {
 .opportunities .form-field__body::after {
   background: url("../img/Header/green_plant.png") no-repeat;
   left: auto;
-  right: -75px;
-  bottom: -155px;
+  right: -100px;
+  bottom: -130px;
   width: 130px;
   height: 237px;
 }
@@ -583,8 +587,8 @@ body {
   background-color: #ffffff;
   border: none;
   outline: none;
-  width: 96%;
-  padding: 5px;
+  width: 93%;
+  padding: 5px 10px;
   color: #000000;
   font-family: "Exo 2";
   font-size: 16px;
@@ -637,8 +641,8 @@ body {
   content: '';
   background: url("../img/scr2/planet_and_comets.png") left top no-repeat;
   display: block;
-  height: 100%;
-  width: 100%;
+  width: 347px;
+  height: 291px;
   position: absolute;
   top: -140px;
   left: 75px;
@@ -649,8 +653,8 @@ body {
   content: '';
   background: url("../img/scr2/big_planet.png") right top no-repeat;
   display: block;
-  height: 100%;
-  width: 100%;
+  width: 499px;
+  height: 197px;
   position: absolute;
   top: -260px;
   right: 280px;
@@ -661,6 +665,15 @@ body {
   display: flex;
   justify-content: flex-end;
   padding-right: 177px;
+}
+
+.offer .title__wrap .title_h3 {
+  color: #ebdae6;
+  font-family: 'Cocon';
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .offer__wrapper {
@@ -760,22 +773,37 @@ body {
   position: relative;
 }
 
-.offer .info::after {
-  content: '';
+.offer .info .cloud {
+  transition: 2s;
   position: absolute;
-  background: url("../img/scr2/cloud_left.png") no-repeat;
-  bottom: -130px;
-  left: -136px;
-  width: 236px;
-  height: 58px;
+  bottom: -100px;
+  left: -130px;
+  z-index: 2;
+}
+
+.offer .info .cloud_right {
+  top: -50px;
+  right: -55px;
+  left: auto;
+  bottom: auto;
+}
+
+.offer .info .cloud_after::after {
+  content: '';
+  background: url("../img/scr2/2_stars_left.png") no-repeat;
+  width: 84px;
+  height: 45px;
+  position: absolute;
+  bottom: -65px;
+  right: 31px;
 }
 
 .offer .info__wrapper {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 118px;
+  margin-top: 76px;
   position: relative;
+  justify-content: flex-end;
+  padding-right: 68px;
 }
 
 .offer .info__wrapper::before, .offer .info__wrapper::after {
@@ -787,7 +815,7 @@ body {
   background: url("../img/scr2/moon.png") no-repeat;
   width: 85px;
   height: 85px;
-  top: 50px;
+  top: 30px;
   left: -80px;
 }
 
@@ -795,12 +823,24 @@ body {
   background: url("../img/scr2/green_planet_2_display.png") no-repeat;
   width: 120px;
   height: 120px;
-  bottom: -130px;
-  right: 50%;
+  bottom: -85px;
+  right: 45%;
+}
+
+.offer .info__fill {
+  position: absolute;
+  bottom: 5px;
+  left: -160px;
+  border-radius: 50%;
+}
+
+.offer .info__form {
+  position: relative;
+  margin: 42px 16px 0 0;
+  z-index: 1;
 }
 
 .offer .info__form .form {
-  margin-right: 16px;
   border-radius: 10px;
   background-color: rgba(220, 134, 255, 0.1);
   padding: 22px 41px 18px;
@@ -844,8 +884,18 @@ body {
   width: 84px;
   height: 45px;
   position: absolute;
-  top: -70px;
-  left: -51px;
+  top: -50px;
+  left: -50px;
+}
+
+.offer .info__form .form__group::after {
+  content: '';
+  background: url("../img/scr2/small_orange_planet.png") no-repeat;
+  width: 29px;
+  height: 29px;
+  position: absolute;
+  top: -75px;
+  right: -75px;
 }
 
 .offer .info__form .form .btn {
@@ -879,46 +929,18 @@ body {
   background: url("../img/btn/button_hover.png") center 100% no-repeat;
 }
 
-.offer .info__form::after {
-  content: '';
-  background: url("../img/scr2/fill.png") no-repeat;
-  width: 170px;
-  height: 260px;
-  position: absolute;
-  bottom: -14px;
-  left: 25px;
-}
-
 .offer .info__img {
   position: relative;
 }
 
-.offer .info__img::before, .offer .info__img::after {
-  content: '';
-  position: absolute;
-  z-index: 100;
-}
-
 .offer .info__img::before {
-  background: url("../img/scr2/small_orange_planet.png") no-repeat;
-  width: 29px;
-  height: 29px;
-  top: -30px;
-  left: 40px;
-}
-
-.offer .info__img::after {
-  background: url("../img/scr2/cloud_right.png") no-repeat;
-  top: -50px;
-  right: -82px;
-  height: 70px;
-  width: 170px;
-}
-
-.offer .info__img .star {
+  content: '';
+  background: url("../img/scr2/small_star_right_side.png") no-repeat;
   position: absolute;
   top: 79px;
   left: 61px;
+  width: 17px;
+  height: 17px;
 }
 
 .footer {
@@ -951,7 +973,13 @@ body {
   width: 281px;
   height: 285px;
   position: absolute;
-  right: -250px;
-  top: 50%;
+  right: -280px;
+  top: 0;
   transform: translateY(-50%);
+}
+
+.footer .splash {
+  position: absolute;
+  bottom: 0;
+  left: -15%;
 }

@@ -16,6 +16,10 @@
                     <img src="img/Header/Logo_BG_header.png" alt="Logo_BG_header" class='animate__animated animate__bounceInDown wow'>
                     <h1 class="title animate__animated animate__fadeIn wow" data-wow-delay='1s'>Sales <span>manager</span></h1>
                 </div>
+
+                <div class="cloud">
+                    <img src="img/Header/cloud_long.png" alt="cloud_long">
+                </div>
             </div>
         </div>
     </header>
@@ -29,7 +33,7 @@
                 <span class='title_h2_colored'>звёздных амбиций!</span>
             </h2>
 
-            <div class="form-field animate__animated animate__rotateInUpLeft wow" data-wow-duration="1s" data-wow-delay='1.5s'>
+            <div class="form-field">
                 <div class="form-field__header">
                     <h3 class="form-field__title">
                         Записывайся на собеседование
@@ -137,8 +141,16 @@
             </p>
 
             <div class="info">
-                <div class="info__wrapper animate__animated animate__zoomIn wow" data-wow-duration="1.5s" data-wow-delay='1s'>
+                <div class="info__wrapper">
+                    <div class="cloud cloud_right cloud_less">
+                        <img src="img/scr2/cloud_right.png" alt="cloud_right">
+                    </div>
+
                     <div class="info__form">
+                        <div class="info__fill animate__animated animate__jackInTheBox wow" data-wow-duration="2s" data-wow-delay='1s'>
+                            <img src="img/scr2/fill.png" alt="fill">
+                        </div>
+
                         <form action="#" class="form">
                             <div class="form__group">
                                 <label for="tel" class="label">Телефон:</label>
@@ -157,9 +169,14 @@
                     </div>
 
                     <div class="info__img">
-                        <img class='star' src="img/scr2/small_star_right_side.png" alt="small_star_right_side">
                         <img src="img/scr2/man_near_laptop.png" alt="man_near_laptop">
                     </div>
+
+                    <div class="cloud cloud_after">
+                        <img src="img/scr2/cloud_left.png" alt="cloud_left">
+                    </div>
+
+                    
                 </div>
             </div>
         </div>
@@ -169,20 +186,42 @@
         <div class="container">
             <h6 class="title title_h6 wow"></h6>
         </div>
+
+        <div class="splash">
+            <img src="img/scr2/violet_splash_near_form.png" alt="">
+        </div>
     </footer>
 
+    
+
     <script src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js'></script>
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
     <script>
         new WOW().init();
-        </script>
-    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
-
+        var rellax = new Rellax('.rellax');
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
-        var typed = new Typed('.footer h6', {
-            strings: ["Давай <span class='colored'>вместе</span> расширять <span class='colored'>наши</span> горизонты!"],
-            typeSpeed: 100
-        });
+        let elem = document.querySelector('.footer h6');
+
+        window.addEventListener('scroll', animText);
+
+        function animText() {
+            if (elem.getBoundingClientRect().top < 600) {
+                asd();
+            };
+        }
+
+        function asd() {
+            let typed = new Typed('.footer h6', {
+                strings: ["Давай <span class='colored'>вместе</span> расширять <span class='colored'>наши</span> горизонты!"],
+                typeSpeed: 130
+            });
+
+            window.removeEventListener('scroll', animText);
+        }
     </script>
+
+    <script src='js/script.js'></script>
 </body>
 </html>
