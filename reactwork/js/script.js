@@ -1,26 +1,14 @@
-let lastScrollTop = 0;
-const cloud = document.querySelectorAll('.cloud');
+import WOW from 'wowjs';
+import typed from '../js/modules/typedText';
+import animation from '../js/modules/animation';
+import Inputmask from "inputmask";
 
-document.addEventListener('scroll', () => {
-    let st = window.pageYOffset || document.documentElement.scrollTop; 
-
-    if (st > lastScrollTop){
-        cloud.forEach(item => { 
-            if (item.classList.contains('cloud_less')) {
-                item.style.transform = `translateX(30px)`;
-            } else {
-                item.style.transform = `translateX(100px)`;
-            }
-        });
-    } else {
-        cloud.forEach(item => {
-            if (item.classList.contains('cloud_less')) {
-                item.style.transform = `translateX(-30px)`;
-            } else {
-                item.style.transform = `translateX(-100px)`;
-            }
-        });
-    }
-
-    lastScrollTop = st <= 0 ? 0 : st;
+window.addEventListener('DOMContentLoaded', () => {
+    new WOW.WOW().init();
+    typed();
+    animation();
+    
+    const selectors = document.querySelectorAll('input[type="tel"]');
+    let im = new Inputmask("+38 (999) 999 99 99");
+    im.mask(selectors);
 });

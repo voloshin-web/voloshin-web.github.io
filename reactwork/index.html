@@ -34,29 +34,31 @@
             </h2>
 
             <div class="form-field">
-                <div class="form-field__header">
-                    <h3 class="form-field__title">
-                        Записывайся на собеседование
-                        сегодня - <span>завтра ты в команде!</span>
-                    </h3>
-                </div>
-
-                <div class="form-field__body">
-                    <form action="#" class='form'>
-                        <div class="form__group">
-                            <label for="name" class="label">Имя:</label>
-                            <input type="text" id='name' class="input">
-                        </div>
+                <div class="form-field__wrapper">
+                    <div class="form-field__header">
+                        <h3 class="form-field__title">
+                            Записывайся на собеседование
+                            сегодня - <span>завтра ты в команде!</span>
+                        </h3>
+                    </div>
     
-                        <div class="form__group">
-                            <label for="tel" class="label">Телефон:</label>
-                            <input type="tel" id='tel' class="input">
-                        </div>
-    
-                        <div class="btn">
-                            <button>ЗАПИСАТЬСЯ</button>
-                        </div>
-                    </form>
+                    <div class="form-field__body">
+                        <form action="#" class='form' method="POST">
+                            <div class="form__group">
+                                <label for="name" class="label">Имя:</label>
+                                <input type="text" id='name' class="input">
+                            </div>
+        
+                            <div class="form__group">
+                                <label for="tel" class="label">Телефон:</label>
+                                <input type="tel" id='tel' class="input">
+                            </div>
+        
+                            <div class="btn">
+                                <button>ЗАПИСАТЬСЯ</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -153,8 +155,8 @@
 
                         <form action="#" class="form">
                             <div class="form__group">
-                                <label for="tel" class="label">Телефон:</label>
-                                <input type="tel" id='tel' class="input">
+                                <label for="name" class="label">Имя:</label>
+                                <input type="text" id='name' class="input">
                             </div>
 
                             <div class="form__group">
@@ -184,44 +186,13 @@
 
     <footer class="footer">
         <div class="container">
-            <h6 class="title title_h6 wow"></h6>
-        </div>
-
-        <div class="splash">
-            <img src="img/scr2/violet_splash_near_form.png" alt="">
+            <div class="footer__container">
+                <h6 class="title title_h6 wow"></h6>
+                <img src="img/Footer/big_violet_planet_footer.png" alt="big_violet_planet_footer">
+            </div>
         </div>
     </footer>
 
-    
-
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js'></script>
-    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
-    <script>
-        new WOW().init();
-        var rellax = new Rellax('.rellax');
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script>
-        let elem = document.querySelector('.footer h6');
-
-        window.addEventListener('scroll', animText);
-
-        function animText() {
-            if (elem.getBoundingClientRect().top < 600) {
-                asd();
-            };
-        }
-
-        function asd() {
-            let typed = new Typed('.footer h6', {
-                strings: ["Давай <span class='colored'>вместе</span> расширять <span class='colored'>наши</span> горизонты!"],
-                typeSpeed: 130
-            });
-
-            window.removeEventListener('scroll', animText);
-        }
-    </script>
-
-    <script src='js/script.js'></script>
+    <script src='js/bundle.js'></script>
 </body>
 </html>
