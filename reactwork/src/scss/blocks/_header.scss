@@ -1,0 +1,62 @@
+.header {
+    background-color: #ffffff !important;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+    .logo {
+        position: relative;
+        margin-left: -22%;
+        .title {
+            font-family: 'Cocon';
+            text-shadow: -2px 4px 0 rgba(102, 64, 87, 0.31);
+            color: #ffffff;
+            font-size: 50px;
+            font-weight: 400;
+            text-align: left;
+            text-transform: uppercase;
+            line-height: 40px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            span {
+                display: block;
+                line-height: 45px;
+                margin-left: 32px;
+            }
+            &::after {
+                content: '';
+                background-image: url('../img/Header/purple_planet_logo.png');
+                width: 83px;
+                height: 85px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: absolute;
+                top: 30px;
+                right: -145px;
+            }
+        }
+    }
+
+    .cloud {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transition: 2s;
+
+        &::before {
+            content: '';
+            background: url('../img/Header/small_green_planet.png') no-repeat;
+            display: block;
+            width: 22px;
+            height: 22px;
+
+            position: absolute;
+            right: 135px;
+            top: -20px;
+        }
+    }
+    
+}

@@ -1,0 +1,205 @@
+.opportunities {
+    background-color: #ffffff !important;
+    position: relative;
+    background: url('../img/Header/space_big_bg.png') bottom no-repeat;
+    padding-top: 19px;
+
+    height: 1000px;
+
+    .title_h2 {
+        color: red;
+        font-family: 'Cocon';
+        color: #241537;
+        font-size: 36px;
+        font-weight: 400;
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 40px;
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+        &_lh {
+            line-height: 60px;
+        }
+        &_colored {
+            display: block;
+            color: #fdb000;
+        }
+    }
+    
+    .form-field {
+        margin-top: 37px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 855px;
+        height: 604px;
+        background: url('../img/Header/bg_form_header.png') no-repeat;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            background: url('../img/Header/orange_planet_header.png') center / contain no-repeat;
+            top: 0;
+            right: -240px;
+            width: 105px;
+            height: 105px;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            background: url('../img/Header/red_planet.png') no-repeat;
+            left: auto;
+            right: 70px;
+            top: 5px;
+            width: 36px;
+            height: 36px;
+        }
+
+        &__wrapper {
+            height: 100%;
+            width: 58%;
+            padding: 76px 0 0 105px;
+            position: relative;
+            &::before {
+                content: "";
+                background: url('../img/Header/green_planet.png') no-repeat;
+                display: block;
+    
+                position: absolute;
+                top: 36px;
+                left: -35px;
+                width: 75px;
+                height: 75px;
+            }
+        }
+        &__header {
+            .form-field__title {
+                margin: 0;
+                color: #ffffff;
+                font-family: "Exo 2";
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 35px;
+                span {
+                    font-weight: 600;
+                    line-height: 25px;
+                    color: #ffd34e;
+                }
+            }
+        }
+        &__body {
+            margin-top: 19px;
+            position: relative;
+            z-index: 4;
+            &::before, &::after {
+                content: '';
+                background: url('../img/Header/woman_on_the_couch.png') no-repeat;
+                position: absolute;
+                bottom: -190px;
+                left: -90px;
+                display: block;
+                width: 424px;
+                height: 314px;
+                z-index: -1;
+            }
+
+            &::after {
+                background: url('../img/Header/green_plant.png') no-repeat;
+                left: auto;
+                right: -116px;
+                bottom: -160px;
+                width: 130px;
+                height: 237px;
+            }
+            .form {
+                padding: 5px 15px 18px 98px;
+                background-color: rgba(#ffffff, .1);
+                border-radius: 10px;
+                &__group {
+                    margin-bottom: 13px;
+                    width: 100%;
+                    position: relative;
+                    &:last-child {
+                        margin-bottom: 0!important;
+                    }
+                    .label {
+                        color: #ffffff;
+                        font-family: "Exo 2";
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 30px;
+                        display: block;
+                    }
+                    .input {
+                        border-radius: 10px;
+                        background-color: #ffffff;
+                        border: none;
+                        outline: none;
+                        padding: 5px 10px;
+                        color: #000000;
+                        font-family: "Exo 2";
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 30px;
+                        width: 100%;
+                        &.js-validate-error-field {
+                            border: none !important;
+                        }
+                    }
+                    .js-validate-error-label {
+                        position: absolute;
+                        right: 0px;
+                        bottom: -15px;
+                        color: #fff !important;
+                        font-family: "Exo 2";
+                        font-size: 12px;
+                        font-weight: 400;
+                        display: block;
+                        text-align: right;
+                        z-index: 11;
+                    }
+
+                   
+                   
+                }
+
+                .btn {
+                    display: flex;
+                    justify-content: flex-end;
+                    margin-top: 26px;
+                    z-index: 5;
+                    button {
+                        background: url('../img/btn/button.png') center 100% no-repeat;
+                        text-shadow: -1px 2px 0 rgba(147, 68, 18, 0.25);
+                        color: #ffffff;
+                        font-family: "Exo 2";
+                        font-size: 16px;
+                        font-weight: 400;
+                        font-style: normal;
+                        letter-spacing: normal;
+                        line-height: 30px;
+                        border: none;
+                        outline: none;
+                        cursor: pointer;
+
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        width: 195px;
+                        height: 42px;
+                        transition: .5s;
+                        &:hover {
+                            background: url('../img/btn/button_hover.png') center 100% no-repeat;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

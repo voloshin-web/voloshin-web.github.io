@@ -1,0 +1,316 @@
+.offer {
+    padding: 100px 0;
+    position: relative;
+    .container {
+        position: relative;
+        &::before {
+            content: '';
+            background: url('../img/scr2/planet_and_comets.png') left top no-repeat;
+            display: block;
+            width: 347px;
+            height: 291px;
+            position: absolute;
+            top: -140px;
+            left: 75px;
+            z-index: -1;
+        }
+        &::after {
+            content: '';
+            background: url('../img/scr2/big_planet.png') right top no-repeat;
+            display: block;
+            width: 499px;
+            height: 197px;
+            position: absolute;
+            top: -305px;
+            right: 250px;
+            z-index: 3;
+        }
+    }
+    .title__wrap {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 177px;
+        .title_h3 {
+            color: #ebdae6;
+            font-family: 'Cocon';
+            font-size: 30px;
+            font-weight: 400;
+            text-align: center;
+            text-transform: uppercase;
+        }
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 109px;
+        .block {
+            background-color: #401751;
+            border-radius: 100%;
+            width: 266px;
+            height: 265px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            &__img img {
+                width: 67px;
+                display: block;
+                margin: 0 auto;
+            }
+            &__title {
+                padding: 0 70px;
+                margin-top: 31px;
+                color: #ffffff;
+                font-family: "Exo 2";
+                font-size: 20px;
+                font-weight: 400;
+                text-align: center;
+                line-height: 25px;
+                span {
+                    color: #ffd34e;
+                }
+            }
+            &__arrow {
+                position: absolute;
+                top: -55%;
+                left: 50%;
+            }  
+            &:first-child {
+                .block__arrow {
+                    left: 65%;
+                }
+            }
+            &:nth-child(2) {
+                .block__arrow {
+                    left: 85%;
+                    top: -43%;
+                }
+            }  
+
+            &:nth-child(3) {
+                .block__arrow {
+                    top: -38%;
+                    left: 88%;
+                }
+            } 
+
+            &:nth-child(4) {
+                .block__arrow {
+                    top: -52%;
+                    left: 36%;
+                }
+            } 
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            background: url('../img/scr2/small_star_right_side.png') no-repeat;
+            top: 150px;
+            right: 30px;
+            width: 17px;
+            height: 17px;
+        }
+    }
+
+    .subtitle {
+        font-family: "Exo 2";
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 35px;
+        text-align: center;
+        color: #ffffff;
+        width: 70%;
+        margin: 84px auto 0 auto;
+        &_colored {
+            color: #ffd34e;
+        }
+        &_bold {
+            font-weight: 700;
+        }
+    }
+
+    .info {
+        position: relative;
+
+        .cloud {
+            transition: 2s;
+            position: absolute;
+            bottom: -100px;
+            left: -130px;
+            z-index: 2;
+            &_right {
+                top: -50px;
+                right: -55px;
+                left: auto;
+                bottom: auto;
+            }
+            &_after {
+                &::after {
+                    content: '';
+                    background: url('../img/scr2/2_stars_left.png') no-repeat;
+                    width: 84px;
+                    height: 45px;
+                    position: absolute;
+                    bottom: -65px;
+                    right: 31px;
+                }
+            }
+        }
+
+        &__wrapper {
+            display: flex;
+            margin-top: 76px;
+            position: relative;
+            justify-content: flex-end;
+            padding-right: 68px;
+            &::before, &::after {
+                content: '';
+                position: absolute;
+            }
+
+            &::before {
+                background: url('../img/scr2/moon.png') no-repeat;
+                width: 85px;
+                height: 85px;
+                top: 30px;
+                left: -80px;
+            }
+            &::after {
+                background: url('../img/scr2/green_planet_2_display.png') no-repeat;
+                width: 120px;
+                height: 120px;
+                bottom: -85px;
+                right: 45%;
+            }
+        }
+
+        &__fill {
+            position: absolute;
+            bottom: 5px;
+            left: -160px;
+            border-radius: 50%;
+        }
+
+        &__form {
+            position: relative;
+            margin: 42px 16px 0 0;
+            z-index: 1;
+            .form { 
+                border-radius: 10px;
+                background-color: rgba(#dc86ff, .1);
+                padding: 22px 41px 18px;
+                position: relative;
+                &__group {
+                    margin-bottom: 13px;
+                    position: relative;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    .label {
+                        color: #ffffff;
+                        font-family: "Exo 2";
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 30px;
+                        display: block;
+                    }
+
+                    .input {
+                        border-radius: 10px;
+                        background-color: #ffffff;
+                        border: none;
+                        outline: none;
+                        color: #000000;
+                        font-family: "Exo 2";
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 30px;
+                        padding: 5px 10px;
+                        width: 292px;
+                        &.js-validate-error-field {
+                            border: none !important;
+                        }
+                    }
+                    .js-validate-error-label {
+                        position: absolute;
+                        right: 0px;
+                        bottom: -15px;
+                        color: #fff !important;
+                        font-family: "Exo 2";
+                        font-size: 12px;
+                        font-weight: 400;
+                        display: block;
+                        text-align: right;
+                        z-index: 11;
+                    }
+                }
+                &::before {
+                    content: '';
+                    background: url('../img/scr2/stars_left_top_near_form.png') no-repeat;
+                    width: 84px;
+                    height: 45px;
+
+                    position: absolute;
+                    top: -50px;
+                    left: -50px;
+                }
+                &::after {
+                    content: '';
+                    background: url('../img/scr2/small_orange_planet.png') no-repeat;
+                    width: 29px;
+                    height: 29px;
+                    position: absolute;
+                    top: -75px;
+                    right: -75px;
+
+                }
+
+                .btn {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 26px;
+                    button {
+                        background: url('../img/btn/button.png') center 100% no-repeat;
+                        text-shadow: -1px 2px 0 rgba(147, 68, 18, 0.25);
+                        color: #ffffff;
+                        font-family: "Exo 2";
+                        font-size: 16px;
+                        font-weight: 400;
+                        font-style: normal;
+                        letter-spacing: normal;
+                        line-height: 30px;
+                        border: none;
+                        outline: none;
+                        cursor: pointer;
+
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        width: 195px;
+                        height: 42px;
+                        transition: .5s;
+                        &:hover {
+                            background: url('../img/btn/button_hover.png') center 100% no-repeat;
+
+                        }
+                    }
+                }
+            }
+        }
+        &__img {
+            position: relative;
+            &::before {
+                content: '';
+                background: url('../img/scr2/small_star_right_side.png') no-repeat;
+                position: absolute;
+                top: 79px;
+                left: 61px;
+                width: 17px;
+                height: 17px;
+
+            }
+        }
+    }
+}

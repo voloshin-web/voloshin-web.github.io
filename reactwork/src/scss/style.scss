@@ -1,0 +1,24 @@
+@import 'libs/normalize';
+@import 'fonts';
+// @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700;800;900&display=swap');
+
+
+
+.container {
+    width: 1170px; 
+    margin: 0 auto;
+}
+
+body {
+    background-color: #241537;
+}
+
+
+@import 'blocks/title';
+@import 'blocks/header';
+@import 'blocks/opportunities';
+@import 'blocks/offer';
+@import 'blocks/footer';
+@import 'blocks/popup';
+
+@import 'blocks/media';

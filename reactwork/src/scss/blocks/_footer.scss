@@ -1,0 +1,27 @@
+.footer {
+    height: 690px;
+    background: url('../img/Footer/BG_clouds_stars_footer.png') bottom no-repeat,
+                linear-gradient(to top, #510564 0%, #241537 50%, #241537 100%);
+    position: relative;
+    &__container {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        .title_h6 {
+            color: #ffd34e;
+            font-family: "Exo 2";
+            font-size: 30px;
+            font-weight: 400;
+            text-align: center;
+            width: 50%;
+            position: relative;
+            transition: 1s;
+            .colored {
+                font-weight: 700;
+                text-transform: uppercase;
+                line-height: 35px;
+            }
+        }
+    }
+}
