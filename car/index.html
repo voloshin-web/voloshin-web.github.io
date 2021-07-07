@@ -124,11 +124,7 @@
                 <div class="text">читати далі</div>
             </div>
         </div>
-
-        <div class="promo__light">
-            <img src="img/promo/light.png" alt="light" class="light  animate__animated animate__heartBeat wow" data-wow-iteration='10' data-wow-duration="3s">
-        </div>
-    </section> 
+    </section>  
  
     <section class='why'>
         <div class="anchor" id='why'></div>
@@ -405,20 +401,21 @@
             </div>
         </div>
     </section>
-  
-    <section class="stages">
+
+    <!-- <section class="stages">
         <div class="anchor" id='stages'></div>
 
         <div class="container">
             <div class="stages__wrapper">
                 <h2 class="title title_h2 title_h2_white">Этапи покупки автомобіля</h2>
 
-                <ul class='stage__list'>
-                    <div class="line">
-                        <span></span>
-                        <img src="img/car.svg" alt="car">
+                <div class="line">
+                    <div class="car">
+                        <img src="img/car.svg" alt="">
                     </div>
+                </div>
 
+                <ul class='stage__list'>
                     <li class='stage__item'>
                         <div class="item__title">Підбір</div>
                         <div class="item__descr">Підбираємо авто, враховуючи Ваші побажання і бюджет, на підставі нашого значного досвіду. </div>
@@ -450,6 +447,7 @@
                     </li>
                 </ul>
             </div>
+              
 
             <p class="stages__descr">
                 Компанія Ліко забезпечить безтурботну, легку та якісну доставку автомобіля. Багаторічний досвід у сфері міжнародних транспортно-логістичних послуг дозволяє нам вирішувати будь-які проблеми та питання, що можуть виникати в процесі оформлення, купівлі та доставки автомобіля з Америки.
@@ -505,7 +503,7 @@
                 <a href='#form' class='submit'>Залишити заявку</a>
             </div>
         </div>
-    </section>
+    </section> -->
 
 
     <section class='delivery'>
@@ -527,12 +525,6 @@
                         <div class="line"></div>
                         <span>читати далі</span>
                     </div>
-                </div>
-
-                <div class="phones">
-                    <img src="img/delivery/mob1.png" alt="mobile">
-                    <img src="img/delivery/mob2.png" alt="mobile">
-                    <img src="img/delivery/mob3.png" alt="mobile">
                 </div>
             </div>
         </div>
@@ -1331,15 +1323,14 @@
             } 
         };
 
-        new Glide('.glide', config).mount()
-        new Glide('.glide1', config).mount()
-        new Glide('.glide2', config).mount()
-        new Glide('.glide3', config).mount()
-        new Glide('.glide4', config).mount()
-        new Glide('.glide5', config).mount()
-        new Glide('.glide6', config).mount()
-        new Glide('.glide7', config).mount()
-
+        const asd = new Glide('.glide', config).mount();
+        new Glide('.glide1', config).mount();
+        new Glide('.glide2', config).mount();
+        new Glide('.glide3', config).mount();
+        new Glide('.glide4', config).mount();
+        new Glide('.glide5', config).mount();
+        new Glide('.glide6', config).mount();
+        new Glide('.glide7', config).mount();
 
         var scroll = new SmoothScroll('a[href*="#"]');
         // , {

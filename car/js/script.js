@@ -1,9 +1,9 @@
 window.addEventListener('DOMContentLoaded', () => {
     // Car moving
-    const car = document.querySelector('.stages .stage__list .line img'),
-          stages = document.querySelector('.stages__wrapper');
-    let lastScrollTop = 0,
-        offset = -5;
+    // const car = document.querySelector('.stages .stage__list .car'),
+    //       stages = document.querySelector('.stages__wrapper');
+    // let lastScrollTop = 0,
+    //     offset = 0;
 
 
     // window.addEventListener('scroll', () => {
@@ -11,19 +11,13 @@ window.addEventListener('DOMContentLoaded', () => {
     //         let st = window.pageYOffset || document.documentElement.scrollTop; 
 
     //         if (st > lastScrollTop){
-    //             if (offset < 100) {
     //                 offset += 1;
     //                 car.style.top = `${offset}%`;
     //                 car.style.transform = '';
-    //             }
-              
     //         } else {
-    //             if (offset > -5) {
     //                 offset -= 1;
     //                 car.style.transform = 'rotate(180deg)';
     //                 car.style.top = `${offset}%`;
-    //             }
-                
     //         }
     
     //         lastScrollTop = st <= 0 ? 0 : st;
@@ -52,17 +46,48 @@ window.addEventListener('DOMContentLoaded', () => {
 
     // Show all cars.
 
-    const cars = document.querySelectorAll('.glide__track'),
-          showMore = document.querySelectorAll('.show');
+    const cars = document.querySelectorAll('.glide__slides'),
+        carsItem = document.querySelectorAll('.glide__slide'),
+        btns = document.querySelectorAll('.glide__arrows'),
+        showMore = document.querySelectorAll('.show');
 
-    showMore.forEach(link => {
+
+    showMore.forEach((link, i) => {
         link.addEventListener('click', (e) => {
             e.preventDefault();
+
+            cars[i].classList.toggle('show__more');
+            
+            cars[i].querySelectorAll('li').forEach(div => {
+                if (div.classList.contains('glide__slide--clone')) {
+                    div.style.display = 'none';
+                }
+
+                div.classList.toggle('glide__slide_active');
+            }); 
+
+
+            if (link.textContent === "Показати всі") {
+                link.textContent = 'Приховати';
+
+                btns[i].style.display = 'none';
+
+            } else {
+                link.textContent = 'Показати всі';
+
+                
+                cars[i].querySelectorAll('li').forEach(div => {
+                    if (div.classList.contains('glide__slide--clone')) {
+                        div.style.display = '';
+                    }
+                }); 
+
+                btns[i].style.display = '';
+                cars[i].style.transition = '';
+            }
         });
     }); 
 
-
-    
 
     // Только числа для INPUTA
     const form = document.querySelectorAll('form'),
