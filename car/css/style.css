@@ -614,22 +614,27 @@ section .anchor#stages {
 
 .promo {
   background: url("../img/promo/promoBG.jpg") bottom 15% left no-repeat;
-  padding: 157px 0 158px 150px;
+  padding: 157px 0 85px 150px;
   position: relative;
 }
 
 .promo__wrapper {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .promo__wrapper .a {
-  width: 55%;
+  width: 52%;
+}
+
+.promo__wrapper .a .logo {
+  width: 214px;
 }
 
 .promo__wrapper .a .title {
   margin-top: 17px;
+  font-size: 58px;
+  line-height: 78px;
 }
 
 .promo__wrapper .a .subtitle {
@@ -640,11 +645,13 @@ section .anchor#stages {
   line-height: 32px;
   font-feature-settings: 'salt' on, 'liga' off;
   color: #FFFFFF;
+  margin: 12px 0 0 0;
 }
 
 .promo__wrapper .a .audio {
   display: flex;
   align-items: center;
+  margin-top: 24px;
 }
 
 .promo__wrapper .a .audio .line {
@@ -731,7 +738,7 @@ section .anchor#stages {
   border-radius: 10px;
   padding: 24px;
   margin-top: 24px;
-  filter: drop-shadow(0px 10px 20px rgba(41, 41, 42, 0.07));
+  box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
 }
 
 .why__wrapper .block__header {
@@ -868,22 +875,36 @@ section .anchor#stages {
   align-items: flex-end;
 }
 
+.glide .glide__slides .glide__slide-header .after__img, .glide1 .glide__slides .glide__slide-header .after__img, .glide6 .glide__slides .glide__slide-header .after__img, .glide7 .glide__slides .glide__slide-header .after__img {
+  display: flex;
+  justify-content: flex-end;
+  width: 92%;
+  margin-top: -83px;
+}
+
+.glide .glide__slides .glide__slide-header .after__img img, .glide1 .glide__slides .glide__slide-header .after__img img, .glide6 .glide__slides .glide__slide-header .after__img img, .glide7 .glide__slides .glide__slide-header .after__img img {
+  width: 100%;
+  display: block;
+}
+
+.glide .glide__slides .glide__slide-header .before__img, .glide1 .glide__slides .glide__slide-header .before__img, .glide6 .glide__slides .glide__slide-header .before__img, .glide7 .glide__slides .glide__slide-header .before__img {
+  display: flex;
+  align-self: flex-start;
+  width: 166px;
+  height: 167px;
+}
+
+.glide .glide__slides .glide__slide-header .before__img img, .glide1 .glide__slides .glide__slide-header .before__img img, .glide6 .glide__slides .glide__slide-header .before__img img, .glide7 .glide__slides .glide__slide-header .before__img img {
+  width: 100%;
+  display: block;
+}
+
 .glide .glide__slides .glide__slide-header img, .glide1 .glide__slides .glide__slide-header img, .glide6 .glide__slides .glide__slide-header img, .glide7 .glide__slides .glide__slide-header img {
   border-radius: 4px;
 }
 
-.glide .glide__slides .glide__slide-header .before, .glide1 .glide__slides .glide__slide-header .before, .glide6 .glide__slides .glide__slide-header .before, .glide7 .glide__slides .glide__slide-header .before {
-  display: flex;
-  align-self: flex-start;
-  z-index: -1;
-}
-
-.glide .glide__slides .glide__slide-header .after, .glide1 .glide__slides .glide__slide-header .after, .glide6 .glide__slides .glide__slide-header .after, .glide7 .glide__slides .glide__slide-header .after {
-  margin-top: -103px;
-}
-
 .glide .glide__slides .glide__slide-body, .glide1 .glide__slides .glide__slide-body, .glide6 .glide__slides .glide__slide-body, .glide7 .glide__slides .glide__slide-body {
-  padding: 16px 45px 16px 16px;
+  padding: 14px 57px 14px 14px;
   margin-top: 16px;
   background: #D3F7FF;
   box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
@@ -895,7 +916,7 @@ section .anchor#stages {
   border-radius: 4px;
   font-style: normal;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 32px;
   font-feature-settings: 'salt' on, 'liga' off;
   color: #FFFFFF;
@@ -967,7 +988,7 @@ section .anchor#stages {
 }
 
 .show__more {
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
   overflow: visible;
   width: 100% !important;
@@ -975,6 +996,7 @@ section .anchor#stages {
   will-change: auto;
   touch-action: none !important;
   transition: none !important;
+  gap: 0 26px;
 }
 
 .show {
@@ -990,6 +1012,8 @@ section .anchor#stages {
   -webkit-animation: .3s ease-in-out both fade-in;
           animation: .3s ease-in-out both fade-in;
   margin-bottom: 26px;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
 
 .glide__slide:nth-child(1) {
@@ -1235,8 +1259,7 @@ section .anchor#stages {
   border-radius: 10px;
   display: flex;
   margin-bottom: 24px;
-  filter: drop-shadow(0px 10px 20px rgba(41, 41, 42, 0.07));
-  -webkit-filter: drop-shadow(0px 10px 20px rgba(41, 41, 42, 0.07));
+  box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
 }
 
 .complex__wrapper .block__img {
