@@ -435,6 +435,10 @@ section .anchor {
   top: -72px;
 }
 
+section .anchor#form {
+  top: -85px;
+}
+
 .title {
   font-style: normal;
   font-weight: 800;
@@ -606,7 +610,7 @@ section .anchor {
 
 .promo {
   background: url("../img/promo/car.png") center right/55% no-repeat, url("../img/promo/promoBG.jpg") bottom left no-repeat;
-  padding: 237px 0 237px 150px;
+  padding: 222px 0 237px 150px;
   position: relative;
 }
 
@@ -1240,7 +1244,6 @@ section .anchor {
 
 .delivery__wrapper {
   display: flex;
-  position: relative;
 }
 
 .delivery__wrapper .block {
@@ -1287,24 +1290,6 @@ section .anchor {
   text-transform: uppercase;
   font-feature-settings: 'salt' on, 'liga' off;
   color: #FFFFFF;
-}
-
-.delivery__wrapper .phones img:first-child {
-  position: absolute;
-  bottom: -40px;
-  right: 25%;
-}
-
-.delivery__wrapper .phones img:nth-child(2) {
-  position: absolute;
-  top: -40px;
-  right: 7%;
-}
-
-.delivery__wrapper .phones img:last-child {
-  position: absolute;
-  bottom: -40px;
-  right: -10%;
 }
 
 .pickup {
