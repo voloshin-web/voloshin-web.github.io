@@ -609,27 +609,26 @@ section .anchor#form {
 }
 
 .promo {
-  background: url("../img/promo/car.png") center right/55% no-repeat, url("../img/promo/promoBG.jpg") bottom left no-repeat;
+  background: url("../img/promo/promoBG.jpg") bottom left no-repeat;
   padding: 222px 0 237px 150px;
   position: relative;
 }
 
-.promo__light {
-  position: absolute;
-  right: 20%;
-  top: 53%;
-  transform: translateY(-50%);
-}
-
 .promo__wrapper {
-  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.promo__wrapper .title {
+.promo__wrapper .a {
+  width: 55%;
+}
+
+.promo__wrapper .a .title {
   margin-top: 17px;
 }
 
-.promo__wrapper .subtitle {
+.promo__wrapper .a .subtitle {
   margin-top: 16px;
   font-style: normal;
   font-weight: normal;
@@ -639,12 +638,12 @@ section .anchor#form {
   color: #FFFFFF;
 }
 
-.promo__wrapper .audio {
+.promo__wrapper .a .audio {
   display: flex;
   align-items: center;
 }
 
-.promo__wrapper .audio .line {
+.promo__wrapper .a .audio .line {
   display: block;
   width: 80px;
   height: 2px;
@@ -652,7 +651,7 @@ section .anchor#form {
   margin: 0 8px;
 }
 
-.promo__wrapper .audio .text {
+.promo__wrapper .a .audio .text {
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -661,6 +660,53 @@ section .anchor#form {
   text-transform: uppercase;
   font-feature-settings: 'salt' on, 'liga' off;
   color: #01A6CF;
+}
+
+.promo__wrapper .promo__car {
+  position: relative;
+}
+
+.promo__wrapper .promo__car .promo__img {
+  width: 100%;
+}
+
+.promo__wrapper .promo__car .light {
+  width: 30%;
+  position: absolute;
+  top: 41%;
+  right: 37%;
+  -webkit-animation: heart-pulse 2s infinite ease-out;
+          animation: heart-pulse 2s infinite ease-out;
+}
+
+@-webkit-keyframes heart-pulse {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  70% {
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+
+@keyframes heart-pulse {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  70% {
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 0.9;
+  }
 }
 
 .why {
@@ -1186,6 +1232,7 @@ section .anchor#form {
   display: flex;
   margin-bottom: 24px;
   filter: drop-shadow(0px 10px 20px rgba(41, 41, 42, 0.07));
+  -webkit-filter: drop-shadow(0px 10px 20px rgba(41, 41, 42, 0.07));
 }
 
 .complex__wrapper .block__img {
