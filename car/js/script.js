@@ -1,31 +1,5 @@
 window.addEventListener('DOMContentLoaded', () => {
-    // Car moving
-    // const car = document.querySelector('.stages .stage__list .car'),
-    //       stages = document.querySelector('.stages__wrapper');
-    // let lastScrollTop = 0,
-    //     offset = 0;
-
-
-    // window.addEventListener('scroll', () => {
-    //     if (stages.getBoundingClientRect().top > 0) {
-    //         let st = window.pageYOffset || document.documentElement.scrollTop; 
-
-    //         if (st > lastScrollTop){
-    //                 offset += 1;
-    //                 car.style.top = `${offset}%`;
-    //                 car.style.transform = '';
-    //         } else {
-    //                 offset -= 1;
-    //                 car.style.transform = 'rotate(180deg)';
-    //                 car.style.top = `${offset}%`;
-    //         }
-    
-    //         lastScrollTop = st <= 0 ? 0 : st;
-    //     }
-    // });
-
-    // MENU 
-
+    // Меню 
     const hamburger = document.querySelector('.header .hamburger'),
           menu = document.querySelector('.menu'),
           overlay = document.querySelector('.overlay'),
@@ -44,8 +18,7 @@ window.addEventListener('DOMContentLoaded', () => {
     hamburger.addEventListener('click', toggleMenu);
     overlay.addEventListener('click', toggleMenu);
 
-    // Show all cars.
-
+    // Показать все.
     const cars = document.querySelectorAll('.glide__slides'),
         carsItem = document.querySelectorAll('.glide__slide'),
         btns = document.querySelectorAll('.glide__arrows'),
@@ -89,7 +62,7 @@ window.addEventListener('DOMContentLoaded', () => {
     }); 
 
 
-    // Только числа для INPUTA
+    // Только числа для INPUTA. 
     const form = document.querySelectorAll('form'),
           telInput = document.querySelectorAll('#tel');
 
@@ -97,6 +70,31 @@ window.addEventListener('DOMContentLoaded', () => {
         input. addEventListener('input', () => {
             input.value = input.value.replace(/\D/, '');
         });
+    });
+
+    // Скролл эффект
+    let scrollPos = 0;
+
+    const car = document.querySelector('.car'),
+          list = document.querySelector('.stages__list');
+
+    car.classList.remove("car__up");
+    car.classList.remove("car__active");
+    list.classList.remove("stage__list__bottom");
+
+    window.addEventListener('scroll', () => { 
+        let st = window.pageYOffset;
+
+        if (st > scrollPos) {
+            car.classList.remove("car__up");
+            car.classList.add("car__active");
+        } else {
+            car.classList.add("car__up");
+            car.classList.remove("car__active");
+            list.classList.remove("stage__list__bottom");
+        }
+
+        scrollPos = st;
     });
 }); 
 
