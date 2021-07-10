@@ -734,12 +734,11 @@ section .anchor#stages {
   display: flex;
   flex-wrap: wrap;
   margin-top: 28px;
-  margin: 28px -12px 0 -12px;
+  justify-content: space-between;
 }
 
 .why__wrapper .block {
-  margin: 0 12px;
-  flex: 0 1 47%;
+  flex: 0 1 49%;
   background-color: #ffffff;
   border-radius: 10px;
   padding: 24px;
@@ -1017,7 +1016,6 @@ section .anchor#stages {
   width: 100% !important;
   transform: translate3d(0, 0, 0) !important;
   will-change: auto;
-  touch-action: none !important;
   transition: none !important;
   gap: 0 26px;
 }
@@ -1270,12 +1268,11 @@ section .anchor#stages {
 .complex__wrapper {
   display: flex;
   flex-wrap: wrap;
-  margin: 28px -12px 0 -12px;
+  justify-content: space-between;
 }
 
 .complex__wrapper .block {
-  margin: 0 12px;
-  flex: 0 1 47%;
+  flex: 0 1 49%;
   padding: 24px;
   background-color: #ffffff;
   border-radius: 10px;
@@ -1992,10 +1989,10 @@ section .anchor#stages {
     font-size: 42px;
   }
   .complex__wrapper {
-    margin: 28px -8px 0 -8px;
+    margin-top: 28px;
   }
   .complex .block {
-    margin: 0 6px 16px 6px;
+    margin-bottom: 16px;
     height: 100px;
     padding: 18px 0 0 18px;
   }
@@ -2113,12 +2110,6 @@ section .anchor#stages {
   }
   .promo__car {
     margin-right: -125px;
-  }
-  .why__wrapper {
-    margin: 21px -6px 0 -6px !important;
-  }
-  .why__wrapper .block {
-    margin: 0 6px 18px 6px !important;
   }
   .why__info {
     margin-top: 3px;
@@ -2446,9 +2437,6 @@ section .anchor#stages {
   .stages__descr {
     margin-top: 24px;
   }
-  .complex {
-    background: url(../img/info/circle.svg) top left -90% no-repeat;
-  }
   .complex .title_h2 {
     font-size: 36px;
     line-height: 42px;
@@ -2556,6 +2544,10 @@ section .anchor#stages {
 @media (max-width: 576px) {
   .menu {
     width: 268px;
+  }
+  .menu__link {
+    line-height: 28px;
+    font-size: 18px;
   }
   .header .submit {
     display: none;
