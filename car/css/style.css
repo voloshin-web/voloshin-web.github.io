@@ -2585,11 +2585,8 @@ section .anchor#stages {
   .available__wrapper a, .cars__wrapper a {
     margin-top: 16px;
   }
-  .glide__slide {
-    padding: 0 12px;
-  }
   .show__more {
-    gap: 0 0px;
+    gap: 0 11px;
   }
   .glide .glide__slides .glide__slide-body .name, .glide1 .glide__slides .glide__slide-body .name, .glide6 .glide__slides .glide__slide-body .name, .glide7 .glide__slides .glide__slide-body .name {
     width: 100%;
@@ -2643,5 +2640,11 @@ section .anchor#stages {
   }
   .form__wrapper {
     padding: 20px 16px 150px 16px;
+  }
+}
+
+@media (max-width: 390px) {
+  .glide__slide {
+    padding: 0 30px;
   }
 }
