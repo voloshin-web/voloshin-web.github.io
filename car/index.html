@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ua">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -98,7 +98,7 @@
             <h2 class="title title_h2">Чому авто від LIKO?</h2>
             
             <div class="why__wrapper">
-                <div class="block animate__animated animate__bounceInUp wow" data-wow-offset="200">
+                <div class="block animate__animated animate__bounceInUp wow" data-wow-offset="100" data-wow-duration="1.5s">
                     <div class="block__header">
                         <div class='block__num'><span>1</span></div>
                         <div class="block__title">Швидкі сроки</div>
@@ -108,7 +108,7 @@
                     </div>
                 </div>
 
-                <div class="block animate__animated animate__bounceInUp wow" data-wow-offset="200">
+                <div class="block animate__animated animate__bounceInUp wow" data-wow-offset="100" data-wow-duration="1.5s">
                     <div class="block__header">
                         <div class='block__num'><span>2</span></div>
                         <div class="block__title">Прозора історія</div>
@@ -118,7 +118,7 @@
                     </div>
                 </div>
 
-                <div class="block animate__animated animate__bounceInUp wow" data-wow-offset="230">
+                <div class="block animate__animated animate__bounceInUp wow" data-wow-offset="130" data-wow-duration="1.5s">
                     <div class="block__header">
                         <div class='block__num'><span>3</span></div>
                         <div class="block__title">Обслуговування</div>
@@ -128,7 +128,7 @@
                     </div>
                 </div>
 
-                <div class="block animate__animated animate__bounceInUp wow" data-wow-offset="230">
+                <div class="block animate__animated animate__bounceInUp wow" data-wow-offset="130" data-wow-duration="1.5s">
                     <div class="block__header">
                         <div class='block__num'><span>4</span></div>
                         <div class="block__title">Фінансова вигода</div>
@@ -422,28 +422,28 @@
             <h2 class="title title_h2">Повний комплекс логістичних послуг Est. 1998</h2>
 
             <div class="complex__wrapper">
-                <div class="block animate__animated animate__bounceInUp wow" data-wow-offset='200'>
+                <div class="block animate__animated animate__bounceInUp wow" data-wow-offset='100' data-wow-duration="1.5s">
                     <div class="block__img">
                         <img src="img/info/1.svg" alt="1">
                     </div>
                     <div class="block__title">Перевезення вантажів автотранспортом.</div>
                 </div>
 
-                <div class="block animate__animated animate__bounceInUp wow" data-wow-offset='200'>
+                <div class="block animate__animated animate__bounceInUp wow" data-wow-offset='100' data-wow-duration="1.5s">
                     <div class="block__img">
                         <img src="img/info/2.svg" alt="2">
                     </div>
                     <div class="block__title">Перевезення вантажів авіа та морським транспортом.</div>
                 </div>
 
-                <div class="block animate__animated animate__bounceInUp wow" data-wow-offset='230'>
+                <div class="block animate__animated animate__bounceInUp wow" data-wow-offset='130' data-wow-duration="1.5s">
                     <div class="block__img">
                         <img src="img/info/3.svg" alt="3">
                     </div>
                     <div class="block__title">Митне оформлення.</div>
                 </div>
 
-                <div class="block animate__animated animate__bounceInUp wow" data-wow-offset='230'>
+                <div class="block animate__animated animate__bounceInUp wow" data-wow-offset='130' data-wow-duration="1.5s">
                     <div class="block__img">
                         <img src="img/info/4.svg" alt="4">
                     </div>
@@ -467,7 +467,7 @@
 
             <a href='#form' class='submit'>Залишити заявку</a>
         </div>
-    </section>
+    </section> 
 
     <section class='delivery'>
         <div class="anchor" id='stages'></div>
@@ -487,7 +487,6 @@
                             <div class="line"></div>
                             <span>читати далі</span>
                         </a>
-                       
                     </div>
                 </div>
             </div>
@@ -1304,7 +1303,7 @@
                 </div>
             </div>
         </div>
-    </footer>   
+    </footer>  
 
     <div class="overlay"></div>
 
@@ -1371,9 +1370,12 @@
         const config = {
             type: 'carousel',
             perView: 4,
-            gap: 26,
+            gap: 28,
             perTouch: 1,
             breakpoints: {
+                1770: {
+                    gap: 26
+                },
                 1200: {
                     gap: 12,
                     perView: 4

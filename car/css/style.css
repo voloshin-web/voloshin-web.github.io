@@ -873,6 +873,10 @@ section .anchor#stages {
   padding: 28px 0;
 }
 
+.glide .glide__slides .glide__slide, .glide1 .glide__slides .glide__slide, .glide6 .glide__slides .glide__slide, .glide7 .glide__slides .glide__slide {
+  width: 264px !important;
+}
+
 .glide .glide__slides .glide__slide-header, .glide1 .glide__slides .glide__slide-header, .glide6 .glide__slides .glide__slide-header, .glide7 .glide__slides .glide__slide-header {
   display: flex;
   flex-direction: column;
@@ -909,8 +913,8 @@ section .anchor#stages {
 }
 
 .glide .glide__slides .glide__slide-header .one, .glide1 .glide__slides .glide__slide-header .one, .glide6 .glide__slides .glide__slide-header .one, .glide7 .glide__slides .glide__slide-header .one {
-  width: 264px;
-  height: 200px;
+  width: 100%;
+  height: 100%;
 }
 
 .glide .glide__slides .glide__slide-header .one img, .glide1 .glide__slides .glide__slide-header .one img, .glide6 .glide__slides .glide__slide-header .one img, .glide7 .glide__slides .glide__slide-header .one img {
@@ -1017,7 +1021,7 @@ section .anchor#stages {
   transform: translate3d(0, 0, 0) !important;
   will-change: auto;
   transition: none !important;
-  gap: 0 26px;
+  gap: 0 28px;
 }
 
 .show {
@@ -1887,6 +1891,9 @@ section .anchor#stages {
   .title_h3 {
     font-size: 28px;
   }
+  .container {
+    width: 1030px;
+  }
   .promo {
     padding: 157px 0 157px 150px;
     background: url(../img/promo/promoBG.jpg) bottom 25% left 30% no-repeat;
@@ -1960,11 +1967,14 @@ section .anchor#stages {
   .glide .glide__slides .glide__slide-body, .glide1 .glide__slides .glide__slide-body, .glide6 .glide__slides .glide__slide-body, .glide7 .glide__slides .glide__slide-body {
     padding: 14px;
   }
-  .available__wrapper a, .cars__wrapper a {
-    font-size: 12px;
-  }
   .cars {
     padding-top: 32px;
+  }
+  .glide .glide__slides .glide__slide, .glide1 .glide__slides .glide__slide, .glide6 .glide__slides .glide__slide, .glide7 .glide__slides .glide__slide {
+    width: 238px !important;
+  }
+  .show__more {
+    gap: 0 26px;
   }
   .stages .car__up {
     transform: translateY(-45px) rotateX(180deg) !important;
@@ -1979,7 +1989,7 @@ section .anchor#stages {
     padding: 32px;
   }
   .stages .car {
-    margin-left: 147px;
+    margin-left: 120px;
   }
   .complex {
     background: url(../img/info/circle.svg) top 20% right 5%/35% no-repeat;
@@ -2070,6 +2080,9 @@ section .anchor#stages {
   .promo__wrapper .a {
     width: 72%;
   }
+  .delivery .delivery__wrapper .block {
+    width: 45%;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -2077,7 +2090,7 @@ section .anchor#stages {
     gap: 0 12px;
   }
   .container {
-    width: calc(100% - 40px);
+    width: calc(100% - 80px);
   }
   .menu {
     width: 374px;
@@ -2126,6 +2139,9 @@ section .anchor#stages {
     width: 100%;
     height: 200px;
   }
+  .glide .glide__slides .glide__slide, .glide1 .glide__slides .glide__slide, .glide6 .glide__slides .glide__slide, .glide7 .glide__slides .glide__slide {
+    width: 227px !important;
+  }
   .glide .glide__slides .glide__slide-body, .glide1 .glide__slides .glide__slide-body, .glide6 .glide__slides .glide__slide-body, .glide7 .glide__slides .glide__slide-body {
     padding: 14px;
   }
@@ -2136,7 +2152,7 @@ section .anchor#stages {
     width: 55%;
   }
   .stages .car {
-    margin-left: 80px;
+    margin-left: 70px;
   }
   .stages__descr {
     margin-top: 30px;
@@ -2299,7 +2315,7 @@ section .anchor#stages {
     margin-right: 11px;
   }
   .delivery {
-    background: url("../img/delivery/mob1.png") center right no-repeat, #0085B2;
+    background: url(../img/delivery/mob1.svg) center right/contain no-repeat, #0085b2;
   }
   .delivery .delivery__wrapper .block {
     width: 68% !important;
@@ -2449,10 +2465,10 @@ section .anchor#stages {
   }
   .delivery {
     padding-top: 24px;
-    background: url(../img/delivery/mob1.png) bottom -75% center no-repeat, #0085b2;
+    background: url(../img/delivery/mob1.svg) bottom -100% center no-repeat, #0085b2;
   }
   .delivery .delivery__wrapper .block {
-    padding-bottom: 239px;
+    padding-bottom: 260px;
     width: 100% !important;
   }
   .pickup {
@@ -2609,7 +2625,7 @@ section .anchor#stages {
     line-height: 36px;
   }
   .delivery {
-    background: url(../img/delivery/mob1.png) bottom -50% center no-repeat, #0085b2;
+    background: url(../img/delivery/mob1.png) bottom 0% center no-repeat, #0085b2;
   }
   .delivery .delivery__wrapper .block .delivery .delivery__wrapper .block .descr {
     line-height: 25px;
