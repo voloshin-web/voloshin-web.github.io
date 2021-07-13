@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -1275,16 +1274,16 @@
 
                     <div class="wrapper">
                         <div class="block__links">
-                            <a href="#">Головна</a>
-                            <a href="#why">Чому авто з США?</a>
-                            <a href="#stages">Етапи покупки</a>
-                            <a href="#cars">Доставлені авто</a>
+                            <a href="#why">Чому авто від LIKO?</a>
+                            <a href="#cars">Доставлені автомобілі</a>
+                            <a href="#cars1">Автомобілі з Китаю</a>
+                            <a href="#stages">Етапи покупки автомобіля</a>
                             <a href="#pickup">Підібрати авто</a>
                         </div>
     
                         <div class="block__links">
+                            <a href="#available">Авто у наявності</a>
                             <a href="#way">Авто у шляху</a>
-                            <a href="#delivery">Швидкий продаж</a>
                             <a href="#form">Залишити заявку</a>
                             <a href="#contact">Контакти</a>
                         </div>
@@ -1348,68 +1347,6 @@
 
     </nav>
 
-    <script src='js/rellax.min.js'></script>
-    <script> 
-        var rellax = new Rellax('.rellax');
-    </script>
-
-    <script src='js/wow.min.js'></script>
-
-    <script>
-        new WOW().init();
-    </script>
-
-    <script src='https://cdn.jsdelivr.net/npm/@glidejs/glide'></script>
-
-    <script src='js/script.js'></script>
-    
-
-    <script src='js/smooth-scroll.min.js'></script>
-
-    <script>
-        const config = {
-            type: 'carousel',
-            perView: 4,
-            gap: 28,
-            perTouch: 1,
-            breakpoints: {
-                1770: {
-                    gap: 26
-                },
-                1200: {
-                    gap: 12,
-                    perView: 4
-                },
-                991: {
-                    perView: 3,
-                    gap: 12
-                },
-                600: {
-                    perView: 2,
-                    gap: 12
-                },
-                400: {
-                    perView: 1,
-                    gap: 0
-                }
-            } 
-        };
-
-        const asd = new Glide('.glide', config).mount();
-        new Glide('.glide1', config).mount();
-        new Glide('.glide2', config).mount();
-        new Glide('.glide3', config).mount();
-        new Glide('.glide4', config).mount();
-        new Glide('.glide5', config).mount();
-        new Glide('.glide6', config).mount();
-        new Glide('.glide7', config).mount();
-
-        var scroll = new SmoothScroll('a[href*="#"]');
-        // , {
-	        // speed: 500
-        // });
-    </script>
-
-    </script>
+    <script src='js/bundle.js'></script>
 </body>
 </html>
