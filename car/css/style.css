@@ -489,6 +489,8 @@ section .anchor#stages {
   z-index: 200;
   position: fixed;
   width: 100%;
+  top: 0;
+  left: 0;
 }
 
 .header__wrapper {
@@ -871,12 +873,10 @@ section .anchor#stages {
 
 .glide .glide__slides, .glide1 .glide__slides, .glide6 .glide__slides, .glide7 .glide__slides {
   padding: 28px 0;
-  margin: 0 auto;
 }
 
 .glide .glide__slides .glide__slide, .glide1 .glide__slides .glide__slide, .glide6 .glide__slides .glide__slide, .glide7 .glide__slides .glide__slide {
   padding: 0 14px;
-  flex: 1 1 auto;
 }
 
 .glide .glide__slides .glide__slide-header, .glide1 .glide__slides .glide__slide-header, .glide6 .glide__slides .glide__slide-header, .glide7 .glide__slides .glide__slide-header {
@@ -1038,9 +1038,7 @@ section .anchor#stages {
 .glide__slide_active {
   -webkit-animation: .3s ease-in-out both fade-in;
           animation: .3s ease-in-out both fade-in;
-  margin-bottom: 26px;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
+  margin: 0 0 26px 0 !important;
 }
 
 .glide__slide:nth-child(1) {
@@ -1972,8 +1970,8 @@ section .anchor#stages {
   .cars {
     padding-top: 32px;
   }
-  .show__more {
-    gap: 0 26px;
+  .glide .glide__slides .glide__slide, .glide1 .glide__slides .glide__slide, .glide6 .glide__slides .glide__slide, .glide7 .glide__slides .glide__slide {
+    padding: 0 13px;
   }
   .stages .car__up {
     transform: translateY(-45px) rotateX(180deg) !important;
@@ -2089,9 +2087,6 @@ section .anchor#stages {
 }
 
 @media (max-width: 1200px) {
-  .show__more {
-    gap: 0 12px;
-  }
   .container {
     width: calc(100% - 80px);
   }
@@ -2136,6 +2131,9 @@ section .anchor#stages {
   }
   .glide .glide__slides .glide__slide-body, .glide1 .glide__slides .glide__slide-body, .glide6 .glide__slides .glide__slide-body, .glide7 .glide__slides .glide__slide-body {
     padding: 14px;
+  }
+  .glide .glide__slides .glide__slide, .glide1 .glide__slides .glide__slide, .glide6 .glide__slides .glide__slide, .glide7 .glide__slides .glide__slide {
+    padding: 0 6px;
   }
   .cars .title_h2 {
     width: 70%;
@@ -2597,12 +2595,9 @@ section .anchor#stages {
   .available__wrapper a, .cars__wrapper a {
     margin-top: 16px;
   }
-  .show__more {
-    gap: 0 11px;
-  }
   .glide .glide__slides .glide__slide-body .name, .glide1 .glide__slides .glide__slide-body .name, .glide6 .glide__slides .glide__slide-body .name, .glide7 .glide__slides .glide__slide-body .name {
     width: 100%;
-    font-size: 15px;
+    font-size: 14px;
   }
   .glide .glide__slides .glide__slide-header .after__img, .glide1 .glide__slides .glide__slide-header .after__img, .glide6 .glide__slides .glide__slide-header .after__img, .glide7 .glide__slides .glide__slide-header .after__img {
     margin-top: -55px;
@@ -2617,6 +2612,9 @@ section .anchor#stages {
   }
   .glide .glide__slides, .glide1 .glide__slides, .glide6 .glide__slides, .glide7 .glide__slides {
     padding-top: 0;
+  }
+  .show__more li {
+    flex: 0 1 50%;
   }
   .stages .stages__list .stage__item .item__descr {
     font-size: 14px;
@@ -2656,8 +2654,14 @@ section .anchor#stages {
 }
 
 @media (max-width: 390px) {
+  .show__more li {
+    flex: none;
+  }
   .glide__slide {
     padding: 0 30px;
+  }
+  .glide .glide__slides .glide__slide, .glide1 .glide__slides .glide__slide, .glide6 .glide__slides .glide__slide, .glide7 .glide__slides .glide__slide {
+    padding: 0 28px;
   }
   .delivery {
     background: url("../img/delivery/mobile.png") bottom -20% center/40% no-repeat, #0085b2;

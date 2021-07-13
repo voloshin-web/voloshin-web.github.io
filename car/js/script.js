@@ -19,27 +19,27 @@ window.addEventListener('DOMContentLoaded', () => {
         perView: 4,
         gap: 0,
         perTouch: 1,
-        // breakpoints: {
-        //     1770: {
-        //         gap: 26
-        //     },
-        //     1200: {
-        //         gap: 12,
-        //         perView: 4
-        //     },
-        //     991: {
-        //         perView: 3,
-        //         gap: 12
-        //     },
-        //     600: {
-        //         perView: 2,
-        //         gap: 12
-        //     },
-        //     400: {
-        //         perView: 1,
-        //         gap: 0
-        //     }
-        // } 
+        breakpoints: {
+            1770: {
+                gap: 0
+            },
+            1200: {
+                gap: 0,
+                perView: 4
+            },
+            991: {
+                perView: 3,
+                gap: 0
+            },
+            600: {
+                perView: 2,
+                gap: 0
+            },
+            400: {
+                perView: 1,
+                gap: 0
+            }
+        } 
     };
 
     new Glide('.glide', config).mount();
