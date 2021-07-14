@@ -886,28 +886,39 @@ section .anchor#stages {
 }
 
 .glide .glide__slides .glide__slide-header .after__img, .glide1 .glide__slides .glide__slide-header .after__img, .glide6 .glide__slides .glide__slide-header .after__img, .glide7 .glide__slides .glide__slide-header .after__img {
-  display: flex;
-  justify-content: flex-end;
+  margin-top: -55%;
   width: 90%;
-  height: auto;
-  margin-top: -83px;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 85%;
 }
 
 .glide .glide__slides .glide__slide-header .after__img img, .glide1 .glide__slides .glide__slide-header .after__img img, .glide6 .glide__slides .glide__slide-header .after__img img, .glide7 .glide__slides .glide__slide-header .after__img img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  -o-object-fit: contain;
+     object-fit: contain;
   width: 100%;
-  display: block;
+  height: 100%;
 }
 
 .glide .glide__slides .glide__slide-header .before__img, .glide1 .glide__slides .glide__slide-header .before__img, .glide6 .glide__slides .glide__slide-header .before__img, .glide7 .glide__slides .glide__slide-header .before__img {
-  display: flex;
   align-self: flex-start;
   width: 60%;
-  height: auto;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 85%;
 }
 
 .glide .glide__slides .glide__slide-header .before__img img, .glide1 .glide__slides .glide__slide-header .before__img img, .glide6 .glide__slides .glide__slide-header .before__img img, .glide7 .glide__slides .glide__slide-header .before__img img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  -o-object-fit: contain;
+     object-fit: contain;
   width: 100%;
-  display: block;
+  height: 100%;
 }
 
 .glide .glide__slides .glide__slide-header img, .glide1 .glide__slides .glide__slide-header img, .glide6 .glide__slides .glide__slide-header img, .glide7 .glide__slides .glide__slide-header img {
@@ -915,20 +926,30 @@ section .anchor#stages {
 }
 
 .glide .glide__slides .glide__slide-header .one, .glide1 .glide__slides .glide__slide-header .one, .glide6 .glide__slides .glide__slide-header .one, .glide7 .glide__slides .glide__slide-header .one {
+  margin-bottom: 4px !important;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 85%;
 }
 
 .glide .glide__slides .glide__slide-header .one img, .glide1 .glide__slides .glide__slide-header .one img, .glide6 .glide__slides .glide__slide-header .one img, .glide7 .glide__slides .glide__slide-header .one img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.glide .glide__slides .glide__slide-header_mb6, .glide1 .glide__slides .glide__slide-header_mb6, .glide6 .glide__slides .glide__slide-header_mb6, .glide7 .glide__slides .glide__slide-header_mb6 {
+  margin-bottom: -6px !important;
 }
 
 .glide .glide__slides .glide__slide-body, .glide1 .glide__slides .glide__slide-body, .glide6 .glide__slides .glide__slide-body, .glide7 .glide__slides .glide__slide-body {
   padding: 16px;
-  margin-top: 16px;
+  margin-top: 0px;
   background: #D3F7FF;
   box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
   border-radius: 7px;
@@ -1005,15 +1026,6 @@ section .anchor#stages {
 
 .glide__arrows .glide__arrow:last-child, .glide1__arrows .glide__arrow:last-child, .glide6__arrows .glide__arrow:last-child, .glide7__arrows .glide__arrow:last-child {
   margin-right: 0;
-}
-
-.glide1 .glide__slides .glide__slide-header, .glide2 .glide__slides .glide__slide-header, .glide3 .glide__slides .glide__slide-header, .glide4 .glide__slides .glide__slide-header, .glide5 .glide__slides .glide__slide-header, .glide6 .glide__slides .glide__slide-header {
-  justify-content: center;
-}
-
-.glide1 .glide__slides .glide__slide-header .after, .glide2 .glide__slides .glide__slide-header .after, .glide3 .glide__slides .glide__slide-header .after, .glide4 .glide__slides .glide__slide-header .after, .glide5 .glide__slides .glide__slide-header .after, .glide6 .glide__slides .glide__slide-header .after {
-  width: 100%;
-  margin: 0;
 }
 
 .show__more {
@@ -2598,17 +2610,6 @@ section .anchor#stages {
   .glide .glide__slides .glide__slide-body .name, .glide1 .glide__slides .glide__slide-body .name, .glide6 .glide__slides .glide__slide-body .name, .glide7 .glide__slides .glide__slide-body .name {
     width: 100%;
     font-size: 14px;
-  }
-  .glide .glide__slides .glide__slide-header .after__img, .glide1 .glide__slides .glide__slide-header .after__img, .glide6 .glide__slides .glide__slide-header .after__img, .glide7 .glide__slides .glide__slide-header .after__img {
-    margin-top: -55px;
-  }
-  .glide .glide__slides .glide__slide-header .after__img, .glide1 .glide__slides .glide__slide-header .after__img, .glide6 .glide__slides .glide__slide-header .after__img, .glide7 .glide__slides .glide__slide-header .after__img {
-    width: 90%;
-    height: auto;
-  }
-  .glide .glide__slides .glide__slide-header .before__img, .glide1 .glide__slides .glide__slide-header .before__img, .glide6 .glide__slides .glide__slide-header .before__img, .glide7 .glide__slides .glide__slide-header .before__img {
-    width: 60% !important;
-    height: auto !important;
   }
   .glide .glide__slides, .glide1 .glide__slides, .glide6 .glide__slides, .glide7 .glide__slides {
     padding-top: 0;
