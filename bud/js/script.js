@@ -1,6 +1,8 @@
 import Rellax from 'rellax';
 import SmoothScroll from 'smooth-scroll';
 import WOW from 'wow.js';
+
+import menu from './modules/menu';
 import tabs from './modules/tabs';
 
 
@@ -23,5 +25,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
     new WOW().init();
 
+    menu();
     tabs();
 });

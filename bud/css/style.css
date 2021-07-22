@@ -3734,6 +3734,12 @@ template {
 
 .header {
   background: rgba(4, 8, 72, 0.9);
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  transition: top .8s;
 }
 
 .header .menu__list {
@@ -3793,7 +3799,7 @@ template {
 }
 
 .promo {
-  padding: 155px 0 240px 0;
+  padding: 263px 0 240px 0;
   background: rgba(4, 8, 72, 0.9);
   position: relative;
   background: url("../img/bg.png") bottom -100% center/contain no-repeat, rgba(4, 8, 72, 0.9);
@@ -3830,7 +3836,11 @@ template {
 
 .object {
   background-color: #fff;
-  padding: 108px 0 80px 0;
+  padding: 0px 0 80px 0;
+}
+
+.object .anchor {
+  padding-top: 108px;
 }
 
 .object__title {
@@ -3917,6 +3927,10 @@ template {
   width: 100%;
 }
 
+.object .tabs__body {
+  overflow: hidden;
+}
+
 .object .tabs__body .block {
   display: flex;
   justify-content: space-between;
@@ -3947,6 +3961,7 @@ template {
 
 .object .tabs__body .content__block-title.w50 {
   width: 80%;
+  margin-left: -265px;
 }
 
 .object .tabs__body .content {
@@ -3955,6 +3970,10 @@ template {
   border: 2px solid #040848;
   box-sizing: border-box;
   transition: .3s;
+}
+
+.object .tabs__body .content_1 {
+  border-left: none;
 }
 
 .object .tabs__body .content_1 .content__img {
@@ -4006,7 +4025,7 @@ template {
 }
 
 .object .tabs__body .content_4 .content__img {
-  margin-left: -89px;
+  margin-left: -354px;
 }
 
 .object .tabs__body .content__img img {
@@ -4036,7 +4055,7 @@ template {
   background: #040848;
   flex: 1 1 auto;
   height: 2px;
-  margin: -15px 0 0 0;
+  margin: -15px 0 0 5px;
 }
 
 .object .tabs__body .content__info .img {
@@ -4086,9 +4105,13 @@ template {
 }
 
 .about {
-  padding: 144px 0 0 0;
+  padding: 0 0 0 0;
   box-shadow: 0px 4px 38px rgba(0, 0, 0, 0.18);
   background: url("../img/bg.png") bottom -20% center/contain no-repeat, #040848;
+}
+
+.about .anchor {
+  padding-top: 110px;
 }
 
 .about__wrapper {
@@ -4109,7 +4132,7 @@ template {
   margin: 0;
   position: relative;
   display: block;
-  width: 38%;
+  width: 40%;
   margin: 0 auto;
   transform: translateY(var(--translateY));
   will-change: transform;
@@ -4128,7 +4151,7 @@ template {
 }
 
 .about .subtitle {
-  width: 80%;
+  width: 85%;
   text-align: center;
   margin: 125px auto 0 auto;
   margin-top: 125px;
@@ -4178,6 +4201,9 @@ template {
     margin: 20px -68px 0 0;
   }
   .object .tabs__body .content_3 .content__img img {
-    margin-left: -78px;
+    margin-left: 0;
+  }
+  .object .tabs__body .content_4 .content__img {
+    margin-left: -275px;
   }
 }

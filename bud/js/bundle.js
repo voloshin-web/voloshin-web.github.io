@@ -1053,6 +1053,36 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 
 /***/ }),
 
+/***/ "./src/js/modules/menu.js":
+/*!********************************!*\
+  !*** ./src/js/modules/menu.js ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+const menu = () => {
+    
+    let prevScrollpos = window.pageYOffset;
+
+    window.onscroll = function() {
+      let currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.querySelector(".header").style.top = "0";
+      } else {
+        document.querySelector(".header").style.top = "-100%";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (menu);
+
+/***/ }),
+
 /***/ "./src/js/modules/tabs.js":
 /*!********************************!*\
   !*** ./src/js/modules/tabs.js ***!
@@ -1180,7 +1210,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var smooth_scroll__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(smooth_scroll__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var wow_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! wow.js */ "./node_modules/wow.js/dist/wow.js");
 /* harmony import */ var wow_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(wow_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _modules_tabs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/tabs */ "./src/js/modules/tabs.js");
+/* harmony import */ var _modules_menu__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/menu */ "./src/js/modules/menu.js");
+/* harmony import */ var _modules_tabs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/tabs */ "./src/js/modules/tabs.js");
+
+
 
 
 
@@ -1206,7 +1239,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
     new (wow_js__WEBPACK_IMPORTED_MODULE_2___default())().init();
 
-    (0,_modules_tabs__WEBPACK_IMPORTED_MODULE_3__.default)();
+    (0,_modules_menu__WEBPACK_IMPORTED_MODULE_3__.default)();
+    (0,_modules_tabs__WEBPACK_IMPORTED_MODULE_4__.default)();
 });
 })();
 
