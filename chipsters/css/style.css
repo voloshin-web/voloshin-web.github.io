@@ -3891,6 +3891,12 @@ template {
   animation: rotate 70s normal linear infinite;
 }
 
+.sign-up__wrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
 .new-chipsters {
   min-height: 100vh;
   overflow: hidden;
@@ -4158,9 +4164,9 @@ template {
 
 @media (max-width: 1200px) {
   .video-main .video {
-    left: 25px;
-    right: 25px;
-    bottom: 114px;
+    left: 20px;
+    right: 20px;
+    bottom: 105px;
   }
   .video-main .video iframe {
     border-radius: 10px;
@@ -4172,9 +4178,9 @@ template {
     width: 250px;
   }
   .video-main .socials {
-    left: 25px;
-    right: 25px;
-    bottom: 39px;
+    left: 20px;
+    right: 20px;
+    bottom: 35px;
   }
   .video-main .socials__text {
     font-size: 24px;
@@ -4207,10 +4213,15 @@ template {
 
 @media (max-width: 395px) {
   .video-main .socials {
-    justify-content: space-between;
+    bottom: 38px;
   }
   .video-main .socials__text {
-    font-size: 16px;
+    font-size: 20px;
+  }
+  .video-main .socials .social__link {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
   }
   .video-main .socials .social__link:first-child {
     margin-left: 15px;
