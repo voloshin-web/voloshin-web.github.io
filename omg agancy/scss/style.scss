@@ -31,9 +31,16 @@
 
 .about {
   margin-top: 62px;
+  &__link-block {
+    display: inline-block;
+    position: relative;
+    &_mobile {
+      display: none;
+    }
+  }
   &__link {
     position: relative;
-    display: inline-block;
+    display: block;
     max-height: 410px;
     max-width: 730px;
     height: 100%;
@@ -436,15 +443,28 @@
 
 .hero-content{
   display: flex;
-  align-items: center;
   background-color: #fff;
-  padding-right: 18px;
+  &__img-block {
+    flex: 0 0 50%;
+    position: relative;
+    min-height: 100%;
+  }
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
   &__info{
-    margin-left: 45px;
+    flex: 1 1 auto;
+    padding: 70px 40px 70px;
   }
   &__subscribes{
     display: flex;
-    margin: 50px 0 60px;
+    margin: 45px 0;
   }
   &__subscribe-text{
     padding-right: 30px;
@@ -455,8 +475,6 @@
   &__title{
     display: inline-block;
     position: relative;
-    margin-bottom: 12px;
-    padding-right: 20px;
   }
   &__descr{
     margin-top: 35px;
@@ -464,6 +482,7 @@
   &__descr-title{
     font-size: 30px;
     margin-bottom: 12px;
+    margin-top: 42px;
   }
   &__descr-text{
     font-family: 'HelveticaNeueCyr-Roman';
@@ -480,19 +499,102 @@
 
 .others-bloggers{
   padding: 100px 0 130px;
-  &__cards{
+
+  // test
+  .read-more-state {
+    display: none;
+  }
+  
+  .others-bloggers__cards .card_hidden {
+    opacity: 0;
+    visibility: hidden;
+    min-height: 0;
+    max-height: 0;
+    font-size: 0;
+    transition: opacity .5s ease;
+    margin: 0;
+  }
+
+  .read-more-state:checked ~ .others-bloggers__cards .card_hidden {
+    opacity: 1;
+    font-size: inherit;
+    max-height: 999em;
+    visibility: visible;
+  }
+  
+  .read-more-state ~ .read-more-trigger {
+    span::before {
+      content: 'Показать еще';
+    }
+  } 
+  
+  .read-more-state:checked ~ .read-more-trigger {
+    display: none; /* Если не нужна кнопка скрыть. */
+    span::before {
+      content: 'Скрыть';
+    }
+  } 
+
+  .read-more-trigger {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    max-height: 460px;
-    overflow-y: hidden;
+    justify-content: center;
+    align-items: center;
+    width: 218px;
+    height: 55px;
+    border: 2px solid #000000;
+    margin: 0px auto 0 auto;
+
+    font-family: 'HelveticaNeueCyr-Roman';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 130%;
+    text-transform: uppercase;
+    color: #000000;
+    transition: all 0.3s;
+    &:hover {
+      background-color: #000;
+      color: #fff;
+    }
+  }
+
+  // 
+
+  &__cards{
     margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 55px 25px;
+    .card {
+      max-width: inherit !important;
+      height: auto !important;
+      width: auto !important;
+      margin: 0;
+      max-height: none;
+      &__img-block {
+        padding: 0 0 274px / 300px * 100% 0px;
+        position: relative;
+      }
+      &__img {
+        position: absolute;
+        top: 0;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+
   }
-  &__cards--active{
-    overflow-y: visible;
-    max-height: 100%;
-    justify-content: flex-start;
-  }
+  // &__cards--active{
+  //   overflow-y: visible;
+  //   max-height: 100%;
+  //   justify-content: flex-start;
+  // }
   &__card{
     background-color: #fff;
   }

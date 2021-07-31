@@ -9,3 +9,13 @@ if (cardButton != null || cardButton != undefined) {
   });
 }
 
+function ibg(){
+  let ibg=document.querySelectorAll(".hero-content__img-block");
+  for (var i = 0; i < ibg.length; i++) {
+    if(ibg[i].querySelector('img')){
+      ibg[i].style.backgroundImage = 'url('+ibg[i].querySelector('img').getAttribute('src')+')';
+    }
+  }
+}
+  
+ibg();
