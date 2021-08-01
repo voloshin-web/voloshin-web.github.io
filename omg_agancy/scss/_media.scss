@@ -91,7 +91,12 @@
         .subscribe__text-inner {
             font-size: 16px;
         }
-      
+    }
+
+    .main .others-bloggers {
+        &__cards {
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
 }
 
@@ -190,11 +195,7 @@
         &__img {
             object-position: top;
         }
-        
-
-    }
-
-    
+    }    
 }
 
 @media (max-width: 768px) {
@@ -225,6 +226,12 @@
             .breadcrumbs__list .breadcrumbs__item {
                 font-size: 18px;
             } 
+        }
+        .others-bloggers {
+            &__cards {
+                grid-template-columns: repeat(2, 1fr) !important;
+                gap: 15px;
+            }
         }
     }
 }
@@ -687,9 +694,6 @@
                 }
             }
         }
-
-        
-
         .tags-hero {
             display: flex;
             flex-direction: column;
@@ -708,6 +712,66 @@
                 justify-content: center;
                 font-size: 12px;
             }
+        }
+
+
+
+        .others-bloggers {
+            padding: 45px 15px !important;
+
+            .title {
+                font-size: 20px;
+            }
+
+            .read-more-trigger {
+                font-size: 10px;
+                width: 120px;
+                height: 25px;
+                margin-top: 7px;
+            }
+
+            &__cards {
+                gap: 10px;
+                grid-template-columns: repeat(2, 1fr);
+                margin-top: 19px;
+                
+                .card {
+                    &__content {
+                        padding: 10px 5px 0 5px !important;
+                    }
+                    &__name {
+                        font-size: 12px;
+                        padding: 0;
+                        .name-tag {
+                            top: 8px;
+                            right: -32px;
+                            padding: 3px 12px;
+                            font-size: 5px;
+                        }
+                    }
+                    &__subscribes {
+                        .subscribe {
+                            &__text {
+                                margin-left: 5px;
+                                &-count {
+                                    font-size: 12px;
+                                }
+                            }
+                            &__img {
+                                height: 20px;
+                                width: 20px;
+                            }
+                        }
+                    }
+                }
+                
+            }
+
+        }
+
+        .partners {
+            padding-left: 15px;
+            padding-right: 15px;
         }
     }
 
