@@ -359,6 +359,9 @@
   }
   &__img-block {
     flex: 1 0 544px;
+    .subscribe--clearfix_mobile {
+      display: none;
+    }
   }
   &__img{
     display: block;
