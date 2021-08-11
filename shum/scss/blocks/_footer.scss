@@ -1,0 +1,105 @@
+.footer {
+    padding: 60px;
+    &__wrapper {
+        display: flex;
+    }
+    &__info {
+        flex-basis: 590px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &-block {
+            margin-bottom: 50px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            font-family: 'Gilroy';
+            font-weight: 400;
+            line-height: 13px;
+            color: rgba(0, 0, 0, 0.5);
+            &-title {
+                font-size: 14px;
+                margin: 0;
+                font-weight: 700;
+            }
+            &-descr, &-tel {
+                font-size: 16px;
+                line-height: 17px;
+                margin-top: 15px;
+                display: block;
+                text-decoration: none;
+                color: rgba(0, 0, 0, 0.5);
+            }
+            &-tel {
+                margin-top: 5px;
+            }
+        }
+        &-descr {
+            margin-top: 28px;
+            font-family: 'Gilroy';
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 139.6%;
+            color: #000000;
+            max-width: 420px;
+        }
+    }
+
+    &__menu {
+        position: relative;
+        flex-basis: 260px;
+        padding: 0 25px;
+        .menu__list {
+            padding: 0;
+            margin: 21px 0 0 0;
+            list-style-type: none;
+            .menu__item {
+                margin-bottom: 14px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+            .menu__link {
+                font-family: 'Gilroy';
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 139.6%;
+                color: #000000;
+                text-decoration: none;
+            }
+        }
+        &::before, &::after {
+            content: '';
+            width: 2px;
+            height: 178px;
+            background: rgba(0, 0, 0, 0.1);
+            position: absolute;
+            left: 0px;
+            top: 0;
+        }
+        &::after {
+            left: auto;
+            right: 0px;
+        }
+    }
+    
+    &__block {
+        margin-top: 21px;
+        .footer__link {
+            font-family: 'Gilroy';
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 139.6%;
+            color: #000000;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 14px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    &__suggestion {
+        padding: 0 144px 0 25px;
+    }
+}

@@ -1,0 +1,95 @@
+.blogger {
+    background-color: #E5E5E5;
+    padding: 40px 132px;
+    &__title {
+        font-family: 'Gilroy';
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 37px;
+        color: #000000;
+        margin: 0;
+    }
+
+
+
+    &-advertising {
+        margin-bottom: 19px;
+        background-color: #ffffff;
+        border-radius: 18px;
+        padding: 50px 45px;
+        &__wrapper {
+            display: flex;
+            margin-top: 55px;
+
+            .swiper-slide {
+                background: #C4C4C4;
+                width: 303px !important;
+                height: 508px !important;
+            }
+        }
+    }
+
+
+
+
+    &-price {
+        background-color: #ffffff;
+        border-radius: 18px;
+        padding: 50px 45px;
+        &__wrapper {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+        &__block {
+            margin-bottom: 18px;
+            flex: 0 1 32.5%;
+            padding: 19px;
+            background: #F2F2F2;
+            border-radius: 33px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        &__info {
+            display: flex;
+            justify-content: space-between;
+            .name {
+                font-family: 'Gilroy';
+                font-weight: 500;
+                font-size: 22px;
+                line-height: 27px;
+                color: #000000;
+            }
+            .price {
+                font-family: 'Gilroy';
+                font-weight: 500;
+                font-size: 40px;
+                line-height: 49px;
+                color: #000000;
+            }
+        }
+
+        .add {
+            max-width: 155px;
+            background: #000000;
+            border-radius: 24px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            font-family: 'Gilroy';
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 18px;
+            color: #FFFFFF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 35px 10px 16px;
+            img {
+                margin-right: 15px;
+            }
+        }
+    }
+}

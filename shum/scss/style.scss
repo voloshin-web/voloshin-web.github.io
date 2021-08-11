@@ -1,0 +1,19 @@
+@import 'libs/normalize';
+@import 'libs/swiper-bundle.min';
+@import 'fonts';
+@import 'blocks/global';
+
+.container {
+    width: 1275px;
+    margin: 0 auto;
+}
+
+@import 'blocks/header';
+@import 'blocks/footer';
+
+// main
+@import 'blocks/mainPage';
+
+// others
+@import 'blocks/catalog';
+@import 'blocks/blogger';

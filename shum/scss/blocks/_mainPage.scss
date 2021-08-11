@@ -1,0 +1,54 @@
+.main {
+    background-color: #E5E5E5;
+    padding: 60px 0 110px 0;
+    &__wrapper {
+        display: flex;
+        align-items: center;
+    }
+    &__content {
+        &-subtitle {
+            font-family: 'Gilroy';
+            font-weight: 600;
+            font-size: 50px;
+            line-height: 116.1%;
+            color: #000000;
+        }
+        &-descr {
+            margin-top: 25px;
+            font-family: 'Gilroy';
+            font-weight: 400;
+            font-size: 26px;
+            line-height: 139.6%;
+            color: #000000;
+        }
+    }
+}
+
+.promo {
+    padding: 75px 0 125px 0;
+    background: #000000;
+    &__subtitle {
+        font-family: 'Gilroy';
+        font-weight: normal;
+        font-size: 26px;
+        line-height: 113.1%;
+        color: #FFFFFF;
+        margin: 13px 0;
+    }
+
+    .promo-slider__wrapper {
+        margin-top: 13px;
+        .promo-slider__image {
+            transition: transform .5s;
+            padding: 55px 0;
+            img {
+                width: 100%;
+            }
+            &.swiper-slide.swiper-slide-next {
+                transform: scale(1.4);
+                z-index: 4;
+            }
+        }
+        
+    }
+}
