@@ -1,7 +1,8 @@
 .footer {
-    padding: 60px;
+    padding: 60px 0;
     &__wrapper {
         display: flex;
+        justify-content: space-between;
     }
     &__info {
         flex-basis: 590px;
@@ -31,7 +32,18 @@
                 color: rgba(0, 0, 0, 0.5);
             }
             &-tel {
-                margin-top: 5px;
+                margin: 10px 0 0 0;
+                padding-bottom: 2px;
+                display: inline-block;
+                text-decoration: none;
+                background-image: linear-gradient(currentColor, currentColor);
+                background-position: 0% 100%;
+                background-repeat: no-repeat;
+                background-size: 0% 2px;
+                transition: background-size .5s;
+                &:hover {
+                    background-size: 100% 2px;
+                }
             }
         }
         &-descr {
@@ -45,10 +57,16 @@
         }
     }
 
+    &__links-block {
+        display: flex;
+        flex: 1 1 auto;
+        justify-content: space-between;
+    }
+
     &__menu {
         position: relative;
-        flex-basis: 260px;
         padding: 0 25px;
+        flex: 0 1 252px;
         .menu__list {
             padding: 0;
             margin: 21px 0 0 0;
@@ -66,6 +84,16 @@
                 line-height: 139.6%;
                 color: #000000;
                 text-decoration: none;
+                padding-bottom: 2px;
+                display: inline-block;
+                background-image: linear-gradient(currentColor, currentColor);
+                background-position: 0% 100%;
+                background-repeat: no-repeat;
+                background-size: 0% 2px;
+                transition: background-size .5s;
+                &:hover {
+                    background-size: 100% 2px;
+                }
             }
         }
         &::before, &::after {
@@ -85,6 +113,13 @@
     
     &__block {
         margin-top: 21px;
+        &-link {
+            display: block;
+            margin-bottom: 14px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
         .footer__link {
             font-family: 'Gilroy';
             font-weight: 400;
@@ -92,14 +127,32 @@
             line-height: 139.6%;
             color: #000000;
             text-decoration: none;
-            display: block;
-            margin-bottom: 14px;
-            &:last-child {
-                margin-bottom: 0;
+            display: inline-block;
+            text-decoration: none;
+            background-image: linear-gradient(currentColor, currentColor);
+            background-position: 0% 100%;
+            background-repeat: no-repeat;
+            background-size: 0% 2px;
+            transition: background-size .5s;
+            padding-bottom: 2px;
+            &:hover {
+                background-size: 100% 2px;
             }
+           
         }
     }
     &__suggestion {
-        padding: 0 144px 0 25px;
+        flex: 0 1 290px;
+    }
+    &__account {
+        .telegram-link {
+            img {
+                transition: transform .2s ease-in;
+            }
+
+            &:hover img {
+                transform: scale(1.1);
+            }
+        }
     }
 }

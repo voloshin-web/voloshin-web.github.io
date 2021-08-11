@@ -78,7 +78,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
     // TABS
-
     let tabHeader = document.querySelectorAll('.cases-tab__header')[0],
         tabBody = document.querySelectorAll('.cases-tab__body')[0],
         tabsPane = tabHeader.querySelectorAll('.cases-tab__item');
@@ -95,6 +94,15 @@ window.addEventListener('DOMContentLoaded', () => {
             tabBody.querySelectorAll('.cases-tab__content')[i].classList.add('cases-tab__content_active');
         });
     }
+
+    // FORM 
+    const forms = document.querySelectorAll('form');
+
+    forms.forEach(form => {
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+        })
+    });
 
     //  Modal 
     const bindModal = (triggerSelector, overlaySelector, modalSelector, closeSelector) => {
@@ -135,12 +143,6 @@ window.addEventListener('DOMContentLoaded', () => {
         });
     };
 
-    
-
-    bindModal('#login', '.overlay', '.modal__log', '.modal__close');
-    bindModal('#connect', '.overlay', '.modal__connect', '.modal__close');
-    bindModal('#test', '.overlay', '.modal__thanks', '.modal__close');
-
     function calcScroll() {
         let div = document.createElement('div');
 
@@ -156,19 +158,7 @@ window.addEventListener('DOMContentLoaded', () => {
         return scrollWidth;
     }
 
-    
-    // const login = document.querySelector('#login');
-    // const connect = document.querySelector('#connect');
-
-
-
-    // login.addEventListener('click', () => {
-    //     modal('.overlay', '.modal__log', '.modal__close');
-    // });
-
-    
-    // connect.addEventListener('click', () => {
-    //     modal('.overlay', '.modal__connect', '.modal__close');
-    // });
-
+    bindModal('#login', '.overlay', '.modal__log', '.modal__close');
+    bindModal('#connect', '.overlay', '.modal__connect', '.modal__close');
+    bindModal('#test', '.overlay', '.modal__thanks', '.modal__close');
 });

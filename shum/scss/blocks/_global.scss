@@ -189,6 +189,9 @@
             img {
                 transition: transform .3s ease-in;
                 filter: grayscale(100%);
+                width: 200px;
+                object-fit: contain;
+                height: 100px;
             }
             &:hover img {
                 filter: none;
@@ -243,6 +246,9 @@
                 &::after {
                     background-color: #ffffff;
                 }   
+            }
+            &:hover span {
+                color: #ffffff;
             }
         }
         &__body {
@@ -337,8 +343,9 @@
                 }
 
                 .swiper-button-disabled {
-                    opacity: 0;
-                    visibility: hidden;
+                    opacity: 1;
+                    visibility: visible;
+                    pointer-events: visible;
                 }
 
                 // 1
