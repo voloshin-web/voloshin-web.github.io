@@ -22,15 +22,15 @@
                         </li>
 
                         <li class="header__menu-item">
-                            <a href="#" class="header__menu-link header__menu-link_active">О проекте</a>
+                            <a href="about.html" class="header__menu-link header__menu-link_active">О проекте</a>
                         </li>
 
                         <li class="header__menu-item">
-                            <a href="#" class="header__menu-link">Наши клиенты</a>
+                            <a href="#clients" class="header__menu-link">Наши клиенты</a>
                         </li>
 
                         <li class="header__menu-item header__menu-item_offsetL">
-                            <button class='button button_white'>Войти</button>
+                            <button class='button button_white' id='login'>Войти</button>
                         </li>
                     </ul>
                 </nav>
@@ -45,7 +45,7 @@
                     <h1 class="title">SHUM</h1>
                     <div class="main__content-subtitle">уникальная платформа для эффективной работы брендов с инфлюенсерами</div>
                     <div class="main__content-descr">C открытой комиссией и ключевыми метриками, по которым осуществляется отбор инфленсеров и показатели эффективности РК</div>
-                    <button class='button button_black button_black_m'>Связаться с менеджером</button>
+                    <button class='button button_black button_black_m' id='connect'>Связаться с менеджером</button>
                 </div>
                 <div class="main__img">
                     <img src="img/shum-logo.png" alt="shum-logo">
@@ -284,7 +284,7 @@
 		</div>
 	</section> 
 
-    <section class="clients">
+    <section class="clients" id='clients'>
         <div class="container">
             <h2 class="title title_h2 title_h2_black">Наши клиенты</h2>
 
@@ -433,13 +433,12 @@
                                     <img src="img/cases/insta-7.png" alt="insta">
                                 </div>
                             </div>
-
-                            <div class="swiper-button-prev">
-                                <img src="img/arrow-slider.svg" alt="arrow">
-                            </div>
-                            <div class="swiper-button-next">
-                                <img src="img/arrow-slider.svg" alt="arrow">
-                            </div>
+                        </div>
+                        <div class="swiper-button-prev">
+                            <img src="img/arrow-slider.svg" alt="arrow">
+                        </div>
+                        <div class="swiper-button-next">
+                            <img src="img/arrow-slider.svg" alt="arrow">
                         </div>
                     </div>
 
@@ -626,13 +625,13 @@
                                     <img src="img/cases/stories-5.png" alt="stories">
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="swiper-button-prev">
-                                <img src="img/arrow-slider.svg" alt="arrow">
-                            </div>
-                            <div class="swiper-button-next">
-                                <img src="img/arrow-slider.svg" alt="arrow">
-                            </div>
+                        <div class="swiper-button-prev">
+                            <img src="img/arrow-slider.svg" alt="arrow">
+                        </div>
+                        <div class="swiper-button-next">
+                            <img src="img/arrow-slider.svg" alt="arrow">
                         </div>
                     </div>
 
@@ -667,13 +666,13 @@
                                     <img src="img/cases/mobile-4.png" alt="mobile">
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="swiper-button-prev">
-                                <img src="img/arrow-slider.svg" alt="arrow">
-                            </div>
-                            <div class="swiper-button-next">
-                                <img src="img/arrow-slider.svg" alt="arrow">
-                            </div>
+                        <div class="swiper-button-prev">
+                            <img src="img/arrow-slider.svg" alt="arrow">
+                        </div>
+                        <div class="swiper-button-next">
+                            <img src="img/arrow-slider.svg" alt="arrow">
                         </div>
                     </div>
                 </div>
@@ -751,7 +750,64 @@
     </footer>
 
     <!-- MODAL -->
+    <div class="overlay"></div>
 
+    <div class="modal modal__log">
+        <div class="modal__wrapper">
+            <div class="modal__close">&#10006;</div>
+
+            <div class="modal__title">Войдите</div>
+    
+            <div class="modal__functions">
+                <button class="modal__btn modal__btn-google">
+                    <img src="img/socials/google.png" alt="google">
+                    Continue with Google
+                </button>
+                <button class="modal__btn modal__btn-facebook">
+                    <img src="img/socials/facebook.svg" alt="facebook">
+                    Continue with Facebook
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modal__connect">
+        <div class="modal__wrapper">
+            <div class="modal__close">&#10006;</div>
+
+            <div class="modal__title">Заказать звонок</div>
+    
+            <div class="form">
+                <form action="#" id='form' class="form__body">
+                    <div class="form__item">
+                        <input class="form__input" id='formName' name='name' placeholder=' '>
+                        <label for='formName' class="form__label">Ваше имя</label>
+                    </div>
+
+                    <div class="form__item">
+                        <input class="form__input" id='formPhone' name='phone' placeholder=' '>
+                        <label for='formPhone' class="form__label">+380 (__) __ __ __</label>
+                    </div>
+
+                    <div class="form__btn">
+                        <button type="submit" class='form__button' id='test'>Отправить менеджеру</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modal__thanks">
+        <div class="modal__wrapper">
+            <div class="modal__close">&#10006;</div>
+
+            <div class="modal__title">Спасибо!</div>
+            <div class="modal__subtitle">Наш менеджер свяжется с вами в ближайшее время</div>
+            
+        </div>
+    </div>
+
+    <script src='js/smooth-scroll.polyfills.min.js'></script>
     <script src='js/swiper-bundle.min.js'></script>
     <script src='js/script.js'></script>
 </body>

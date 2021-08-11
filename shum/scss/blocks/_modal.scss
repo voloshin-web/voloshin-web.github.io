@@ -1,0 +1,198 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s;
+    &.active {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+
+.modal {
+    background: #FFFFFF;
+    box-shadow: 6px 5px 19px rgba(0, 0, 0, 0.07);
+    border-radius: 22px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 150;
+    opacity: 0;
+    visibility: hidden;
+    &__log {
+        width: 741px;
+    }
+    &__connect {
+        width: 823px;
+
+        .form {
+            margin-top: 45px;
+            &__item {
+                position: relative;
+                margin-bottom: 19px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+            &__label {
+                font-family: 'Gilroy';
+                font-weight: 400;
+                font-size: 26px;
+                line-height: 30px;
+                color: rgba(0, 0, 0, 0.45);
+                position: absolute;
+                top: 50%;
+                left: 35px;
+                transform: translateY(-50%);
+                transition: all .2s ease-in;
+            }
+            &__input {
+                background: #FFFFFF;
+                border: 1px solid rgba(0, 0, 0, 0.2);
+                border-radius: 22px;
+                display: flex;
+                align-items: center;
+                width: 100%;
+                height: 73px;
+                padding: 0px 35px;
+                font-family: 'Gilroy';
+                font-weight: 400;
+                font-size: 26px;
+                line-height: 30px;
+                color: rgba(0, 0, 0, 0.45);
+                &:focus + label, &:not(:placeholder-shown) + label {
+                    visibility: hidden;
+                    opacity: 0;
+                }
+            }
+            &__btn {
+                display: flex;
+                justify-content: flex-end;
+                .form__button {
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 45px;
+                    background: #000000;
+                    border-radius: 33px;
+                    font-family: 'Gilroy';
+                    font-weight: 600;
+                    font-size: 22px;
+                    line-height: 27px;
+                    color: #FFFFFF;
+                    border: none;
+                    outline: none;
+                    padding: 18px 68px;
+                }
+            }
+           
+        }
+    }
+    &__thanks {
+        width: 823px;
+        height: 500px;
+        opacity: 1;
+        .modal__wrapper {
+            height: 100%;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .modal__title {
+            text-align: center;
+        }
+        .modal__subtitle {
+            font-family: 'Gilroy';
+            font-weight: 400;
+            font-size: 26px;
+            line-height: 139.6%;
+            text-align: center;
+            color: #000000;
+            max-width: 400px;
+            margin: 25px auto 0 auto;
+        }
+    }
+
+
+    &__wrapper {
+        transform: translateY(-10%);
+        opacity: 0;
+        transition: opacity .3s;
+        padding: 60px 40px;
+    }
+    &__close {
+        cursor: pointer;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        opacity: 0;
+    }
+    &__title {
+        font-family: 'Gilroy';
+        font-weight: 600;
+        font-size: 50px;
+        line-height: 60px;
+        color: #000000;
+    }
+    &__functions {
+        margin-top: 45px;
+    }
+    &__btn {
+        width: 100%;
+        box-shadow: 6px 5px 19px rgba(0, 0, 0, 0.07);
+        border-radius: 52px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 14px;
+        border: none;
+        outline: none;
+        font-family: 'Gilroy';
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 22px;
+        height: 72px;
+        cursor: pointer;
+        img {
+            margin-right: 15px;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &-google {
+            background: #FFFFFF;
+            color: rgba(0, 0, 0, 0.46);
+        }
+        &-facebook {
+            background: #4967AD;
+            color: #FFFFFF;
+        }
+    }
+
+    &.active {
+        opacity: 1;
+        visibility: visible;
+        .modal__wrapper {
+            transform: translateY(0);
+            opacity: 1;
+            transition: all .7s .2s;
+        }
+        .modal__close {
+            opacity: 1;
+            transition: opacity 1s 1s;
+        }
+    }
+}
