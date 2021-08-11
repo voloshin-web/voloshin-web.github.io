@@ -12,7 +12,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     const swiperInsta = new Swiper('.content-slider', {
         slidesPerView: 3,
-        loop: true,
+        loop: false,
         spaceBetween: 32,
         grabCursor: true,
         speed: 450,
