@@ -4,9 +4,15 @@ window.addEventListener('DOMContentLoaded', () => {
     const swiper = new Swiper('.promo-slider', {
         slidesPerView: 3,
         loop: true,
-        grabCursor: true,
+        centeredSlides: true,
+        slideToClickedSlide: true,
+        effect: 'coverflow',
+        coverflowEffect: {
+            rotate: 50,
+            slideShadows: false,
+        },
         autoplay: {
-            delay: 5000,
+            delay: 3000,
         },
     });
 
@@ -21,8 +27,8 @@ window.addEventListener('DOMContentLoaded', () => {
         observeSlideChildren: true,
         slidesPerGroup: 1,
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev'
+            nextEl: '.cases-tab__inst .swiper-button-next',
+            prevEl: '.cases-tab__inst .swiper-button-prev'
         },
     });
 
@@ -36,8 +42,8 @@ window.addEventListener('DOMContentLoaded', () => {
         observeSlideChildren: true,
         slidesPerGroup: 1,
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev'
+            nextEl: '.cases-tab__piblication .swiper-button-next',
+            prevEl: '.cases-tab__piblication .swiper-button-prev'
         },
     });
 
@@ -52,8 +58,8 @@ window.addEventListener('DOMContentLoaded', () => {
         speed: 450,
         slidesPerGroup: 1,
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev'
+            nextEl: '.cases-tab__stories .swiper-button-next',
+            prevEl: '.cases-tab__stories .swiper-button-prev'
         },
     });
 
@@ -68,8 +74,8 @@ window.addEventListener('DOMContentLoaded', () => {
         speed: 450,
         slidesPerGroup: 1,
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev'
+            nextEl: '.cases-tab__companies .swiper-button-next',
+            prevEl: '.cases-tab__companies .swiper-button-prev'
         },
     });
 
@@ -95,7 +101,7 @@ window.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // FORM 
+    // FORM Submit
     const forms = document.querySelectorAll('form');
 
     forms.forEach(form => {
@@ -110,7 +116,8 @@ window.addEventListener('DOMContentLoaded', () => {
               modal = document.querySelector(modalSelector),
               close = document.querySelectorAll(closeSelector),
               overlay = document.querySelector(overlaySelector),
-              scroll = calcScroll();
+              scroll = calcScroll(),
+              header = document.querySelector('header');
 
         callModalBtn.forEach(trigger => {
             trigger.addEventListener('click', (e) => {
@@ -122,6 +129,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 modal.classList.add('active');
                 document.body.style.overflow = 'hidden';
                 document.body.style.marginRight = `${scroll}px`;
+                header.style.paddingRight = `${scroll}.5px`;
             })
         })
 
@@ -131,8 +139,8 @@ window.addEventListener('DOMContentLoaded', () => {
                 modal.classList.remove('active');
                 document.body.style.overflow = '';
                 document.body.style.marginRight = `0px`;
-
-            })
+                header.style.paddingRight = `0px`;
+            });
         });
 
         overlay.addEventListener('click', () => {
@@ -140,6 +148,7 @@ window.addEventListener('DOMContentLoaded', () => {
             modal.classList.remove('active');
             document.body.style.overflow = '';
             document.body.style.marginRight = `0px`;
+            header.style.paddingRight = `0px`;
         });
     };
 
@@ -158,7 +167,8 @@ window.addEventListener('DOMContentLoaded', () => {
         return scrollWidth;
     }
 
-    bindModal('#login', '.overlay', '.modal__log', '.modal__close');
-    bindModal('#connect', '.overlay', '.modal__connect', '.modal__close');
-    bindModal('#test', '.overlay', '.modal__thanks', '.modal__close');
+    bindModal('[data-login]', '.overlay', '.modal__log', '.modal__close');
+    bindModal('[data-connect]', '.overlay', '.modal__connect', '.modal__close');
+    bindModal('[data-registration]', '.overlay', '.modal__registration', '.modal__close');
+    bindModal('[data-submit]', '.overlay', '.modal__thanks', '.modal__close');
 });

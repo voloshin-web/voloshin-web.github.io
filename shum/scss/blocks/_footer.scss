@@ -18,6 +18,10 @@
             font-weight: 400;
             line-height: 13px;
             color: rgba(0, 0, 0, 0.5);
+
+            .logo {
+                display: inline-block;
+            }
             &-title {
                 font-size: 14px;
                 margin: 0;
@@ -121,6 +125,7 @@
             }
         }
         .footer__link {
+            cursor: pointer;
             font-family: 'Gilroy';
             font-weight: 400;
             font-size: 16px;
@@ -135,6 +140,10 @@
             background-size: 0% 2px;
             transition: background-size .5s;
             padding-bottom: 2px;
+            border: none;
+            outline: none;
+            background-color: #ffffff;
+            padding: 0 0 2px 0;
             &:hover {
                 background-size: 100% 2px;
             }
@@ -155,4 +164,38 @@
             }
         }
     }
+}
+
+
+.footer_black {
+    background-color: #000000;
+
+
+    .footer__info-descr {
+        color: #FFFFFF;
+    }
+
+    .footer__info-block {
+        &-title, &-descr, &-tel {
+            color: rgba(255, 255, 255, 0.5);
+        }
+    }
+
+    .footer__menu {
+        &::before, &::after {
+            background: rgba(255, 255, 255, 0.1);
+        }
+        .menu__list .menu__link {
+            color: #ffffff;
+        }
+    } 
+
+    .footer__links-block * {
+        color: #ffffff;
+    }
+
+    .footer__block .footer__link {
+        background-color: #000000;
+    }
+
 }

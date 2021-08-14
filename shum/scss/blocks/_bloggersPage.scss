@@ -1,0 +1,232 @@
+.forBlogger {
+    .btns {
+        margin-top: 35px;
+        display: flex;
+
+        .button_black {
+            padding: 15px 0;
+            width: 350px;
+            margin-right: 15px;
+        }
+        .button_white {
+            padding: 15px 0;
+            width: 405px;
+        }
+    }
+
+    .promo {
+        background: #E5E5E5;
+        padding: 143px 0 125px 0;
+        &__wrapper {
+            max-width: 840px;
+        }
+        &__subtitle {
+            margin: 20px 0 0 0;
+            font-family: 'Gilroy';
+            font-weight: 600;
+            font-size: 50px;
+            line-height: 139.6%;
+            color: #000000;
+        }
+        .title {
+            max-width: 770px;
+        }
+    }
+    
+    .get {
+        padding: 95px 0 150px 0;
+        background-color: #000000;
+        &__wrapper {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin: 72px -40px 0 -40px;
+            .block {
+                padding: 0px 40px;
+                height: 160px;
+                display: flex;
+                flex: 0 1 33.3%;
+                align-items: center;
+                border-right: 1px solid #C4C4C4;
+                &__num {
+                    margin-right: 20px;
+                    font-family: 'Gilroy';
+                    font-weight: 600;
+                    font-size: 50px;
+                    color: #FFFFFF;
+                    align-items: flex-start;
+                }
+                &__title {
+                    font-family: 'Gilroy';
+                    font-weight: 400;
+                    font-size: 26px;
+                    line-height: 129.6%;
+                    color: #FFFFFF;
+                }
+                &:nth-child(3), &:nth-child(6) {
+                    border-right: none;
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+    
+    .calculate {
+        padding: 95px 0;
+        background-color: #E5E5E5;
+        &__subtitle {
+            font-family: 'Gilroy';
+            font-weight: 400;
+            font-size: 26px;
+            line-height: 124.1%;
+            color: #000000;
+            max-width: 490px;
+            margin-top: 10px;
+        }
+        &-content {
+            margin: 75px auto 0 auto;
+            text-align: center;
+            &__title {
+                font-family: 'Gilroy';
+                font-weight: 600;
+                font-size: 40px;
+                line-height: 48px;
+                color: #000000;
+            }
+            &__wrapper {
+                max-width: 760px;
+                margin: 48px auto 0 auto;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+            &__button {
+                border: none;
+                outline: none;
+                background: #000000;
+                border-radius: 33px;
+                font-family: 'Gilroy';
+                font-weight: 600;
+                font-size: 22px;
+                line-height: 27px;
+                color: #F2F2F2;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 15px 100px;
+                margin: 0 auto;
+                cursor: pointer;
+            }
+        }
+        &-content__block {
+            max-width: 340px;
+            margin-bottom: 52px;
+           
+            &-title {
+                font-family: 'Gilroy';
+                font-weight: 700;
+                font-size: 26px;
+                line-height: 31px;
+                color: #000000;
+                text-align: left;
+            }
+
+            .calculate-content__slider {
+                margin-top: 30px !important;
+            }
+
+            .noUi-handle {
+                border: none;
+                border-radius: 50%;
+                width: 18px;
+                height: 18px;
+                cursor: pointer;
+                box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+                top: -8px;
+                &::before, &::after {
+                    display: none;
+                }
+            }
+
+            .noUi-target {
+                background-color: #b6b6b6 ;
+                height: 4px;
+                box-shadow: none;
+                border: none;
+                border-radius: initial;
+                width: calc(100% - 17px);
+            }
+            .noUi-connect {
+                background-color: #000000;
+            }
+
+
+            .calculate-content__inputs {
+                display: flex;
+                justify-content: center;
+                margin-top: 15px;
+                .calculate-content__label {
+                    min-width: 170px;
+                    background: #FFFFFF;
+                    border-radius: 47px;
+                    padding: 16px 22px;
+                    display: flex;
+                    align-items: center;
+
+                    font-family: 'Gilroy';
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 21px;
+                    color: #000000;
+                    &:first-child {
+                        margin-right: 10px;
+                    }
+                }
+                .calculate-content__input {
+                    border: none;
+                    outline: none;
+                    width: 100%;
+                    padding: 0;
+
+                    font-family: 'Gilroy';
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 21px;
+                    color: #000000;
+                    
+                }
+
+                .calculate-content__text {
+                    color: #000000;
+                    margin-right: 10px;
+                }
+
+
+                .calculate-content__input::-webkit-outer-spin-button,
+                .calculate-content__input::-webkit-inner-spin-button {
+                    -webkit-appearance: none;
+                    margin: 0;
+                }
+
+                .calculate-content__input[type=number] {
+                    -moz-appearance: textfield;
+                }
+            
+            }
+
+            &.calculate-content__block-themes {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+        }
+        
+    }
+
+    .bloggers {
+        .btns {
+            justify-content: center;
+            margin-top: 45px;
+        }
+    }
+}

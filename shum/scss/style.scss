@@ -1,5 +1,6 @@
 @import 'libs/normalize';
 @import 'libs/swiper-bundle.min';
+@import 'libs/nouislider.min';
 @import 'fonts';
 @import 'blocks/global';
 
@@ -12,9 +13,6 @@
 @import 'blocks/footer';
 @import 'blocks/modal';
 
-// main
-@import 'blocks/mainPage';
-
-// others
-@import 'blocks/catalog';
-@import 'blocks/blogger';
+@import 'blocks/advertiserPage';
+@import 'blocks/bloggersPage';
+@import 'blocks/aboutPage';
