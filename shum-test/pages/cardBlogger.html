@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <a href="../index.html" class="header__logo">
+                    <img src="../img/logo.png" alt="logo">
+                </a>
+
+                <nav class="header__menu">
+                    <ul class="header__menu-list">
+                        <li class="header__menu-item">
+                            <a href="../index.html" class="header__menu-link">Главная</a>
+                            
+                        </li>
+
+                        <li class="header__menu-item">
+                            <a href="about.html" class="header__menu-link">О проекте</a>
+                        </li>
+
+                        <li class="header__menu-item">
+                            <a href="catalog.html" class="header__menu-link">Каталог блогеров</a>
+                        </li>
+
+                        <li class="header__menu-item header__menu-item_account">
+                            <span class='header__menu-link'>Привет, <span class='header__menu-link_active header__menu-link_active_ml'>Катя</span></span>
+                        </li>
+
+                        <li class="header__menu-item header__menu-item_offsetL">
+                            <a href='package.html' class='button button_black'>Мой пакет</a>
+                            <span class="count">2</span>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header> 
+
+    <main class="cardBlogger">
+        <div class="container">
+            <section class="blogger">
+                <div class="container">
+                    <div class="blogger-card__item">
+                        <div class="blogger-card__img">
+                            <img src="../img/bloggers/card-1.jpg" alt="card-1">
+                        </div>
+
+                        <div class="blogger-card__info">
+                            <div class="blogger-card__main">
+                                <div class="blogger-card__title">Имя блогера</div>
+                                <div class="blogger-card__country">Украина <span>Херсон</span> <span class='gender'>М</span></div>
+                            </div>
+
+                            <div class="blogger-card__descr">
+                                <div class='block'>133 тыс. <span>подписчиков</span></div>
+
+                                <div class="line"></div>
+
+                                <div class="blogger-card__descr-wrapper">
+                                    <div class='block block-statistics'>72% <span>CPM поста</span></div>
+                                    <div class='block block-statistics'>88% <span>CPM сториз</span></div>
+                                    <div class='block block-statistics'>23% <span>Охват поста</span></div>
+                                    <div class='block block-statistics'>14% <span>Охват сториз</span></div>
+                                </div>
+
+                          
+                            </div>
+
+                            <div class="blogger-card__themes">
+                                <div class="blogger-card__themes-title">Тематики:</div>
+
+
+                                <div class="blogger-card__themes-wrapper">
+                                    <div class="themes-block">
+                                        <span>Тема</span>
+                                    </div>
+
+                                    <div class="themes-block">
+                                        <span>Тема</span>
+                                    </div>
+
+                                    <div class="themes-block">
+                                        <span>Тема</span>
+                                    </div>
+
+                                    <div class="themes-block">
+                                        <span>Тема</span>
+                                    </div>
+
+                                    <div class="themes-block">
+                                        <span>Тема</span>
+                                    </div>
+
+                                    <div class="themes-block">
+                                        <span>Тема</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="blogger-card__btns">
+                                <button class='button button_black button_add' data-login>
+                                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.17801 16.4617C9.17801 17.3331 8.47156 18.0396 7.6001 18.0396C6.72864 18.0396 6.02221 17.3331 6.02221 16.4617C6.02221 15.5902 6.72865 14.8838 7.60011 14.8838C8.47157 14.8838 9.17801 15.5902 9.17801 16.4617ZM13.9891 14.8838C13.1177 14.8838 12.4112 15.5902 12.4112 16.4617C12.4112 17.3331 13.1177 18.0396 13.9891 18.0396C14.8606 18.0396 15.567 17.3331 15.567 16.4617C15.567 15.5902 14.8606 14.8838 13.9891 14.8838ZM18.8871 7.47644L16.9455 13.2472C16.9455 13.2472 16.7848 14.1036 15.9659 14.1036C15.147 14.1036 7.13905 14.1036 6.16181 14.1036C5.18457 14.1036 5.1435 13.0302 5.1435 13.0302C5.1435 13.0302 4.10174 5.30141 4.05012 4.83449C3.99849 4.36757 3.40136 4.02149 3.40136 4.02149L0.832134 2.82135C-0.574486 2.08577 0.0648844 0.68619 0.832134 1.00764C4.09 2.54448 5.60338 3.30117 5.70076 3.90652C5.79931 4.51304 5.97058 5.97363 5.97058 5.97363V5.98301C5.99053 5.97715 6.0046 5.97363 6.0046 5.97363C6.0046 5.97363 15.9952 5.97363 18.0131 5.97363C19.4631 5.97363 18.8871 7.4788 18.8871 7.47644ZM16.0785 10.6897L16.0586 10.6909H6.55365L6.74956 12.2442H15.6163L16.0785 10.6897ZM17.0042 7.5574H6.16063L6.36946 9.21742C8.44947 9.21742 14.5405 9.21742 16.5138 9.21742L17.0042 7.5574Z" fill="white"/>
+                                    </svg>
+                                        
+                                    Добавить в промо-пакет
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class='analytics'> 
+                <h2 class="title title_block">Аналитика аккаунта:</h2>
+
+                <div class="analytics__wrapper">
+                    <div class="analytics__block">
+                        <div class="analytics__block-title">
+                            Страна/Город
+                        </div>
+
+                        <div class="analytics-location"></div>
+                        <!-- <canvas id='analytics-location'></canvas> -->
+
+                        <div class="analytics__info-wrapper">
+                            <div class="analytics__info">
+                                <div class="block">
+                                    <div class="block__title">Украина</div>
+                                    <div class="block__percent">50%</div>
+                                </div>
+
+                            
+                                <div class="block">
+                                    <div class="block__title">Англия</div>
+                                    <div class="block__percent">25%</div>
+                                </div>
+
+                                <div class="block">
+                                    <div class="block__title">США</div>
+                                    <div class="block__percent">25%</div>
+                                </div>
+                            </div>
+
+                            <div class="analytics__info analytics__info_colored">
+                                <div class="block">
+                                    <div class="block__title">Киев</div>
+                                    <div class="block__percent">50%</div>
+                                </div>
+
+                                <div class="block">
+                                    <div class="block__title">Москва</div>
+                                    <div class="block__percent">25%</div>
+                                </div>
+
+                                <div class="block">
+                                    <div class="block__title">Бровары</div>
+                                    <div class="block__percent">25%</div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="analytics__block">
+                        <div class="analytics__block-title">
+                            Пол/Возраст
+                        </div>
+
+                        <div class="analytics-person"></div>
+                        <!-- <canvas id='analytics-person'></canvas> -->
+                        <div class="analytics__info-wrapper">
+                            <div class="analytics__info">
+                                <div class="block">
+                                    <div class="block__title">Мужчини</div>
+                                    <div class="block__percent">16%</div>
+                                </div>
+                            
+                                <div class="block">
+                                    <div class="block__title">Женщины</div>
+                                    <div class="block__percent">84%</div>
+                                </div>
+                            </div>
+
+                            <div class="analytics__info analytics__info_colored">
+                                <div class="block">
+                                    <div class="block__title">13-17</div>
+                                    <div class="block__percent">7.7%</div>
+                                </div>
+
+                                <div class="block">
+                                    <div class="block__title">18-24</div>
+                                    <div class="block__percent">37%</div>
+                                </div>
+
+                                <div class="block">
+                                    <div class="block__title">25-34</div>
+                                    <div class="block__percent">43%</div>
+                                </div>
+
+                                <div class="block">
+                                    <div class="block__title">35-44</div>
+                                    <div class="block__percent">9.4%</div>
+                                </div>
+
+                                <div class="block">
+                                    <div class="block__title">45-54</div>
+                                    <div class="block__percent">1.9%</div>
+                                </div>
+
+                                <div class="block">
+                                    <div class="block__title">55-64</div>
+                                    <div class="block__percent">0.4%</div>
+                                </div>
+
+                                <div class="block">
+                                    <div class="block__title">65+</div>
+                                    <div class="block__percent">0.6%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="analytics__block">
+                        <div class="analytics__block-title">
+                            Возраст мужчины/Возраст женщины
+                        </div>
+
+                        <div class="analytics-age"></div>
+                        <!-- <canvas id='analytics-age'></canvas> -->
+                        
+                        <div class="analytics__info-wrapper">
+                            <div class="analytics__info">
+                                <div class="block">
+                                    <div class="block__title">Украина</div>
+                                    <div class="block__percent">50%</div>
+                                </div>
+
+                            
+                                <div class="block">
+                                    <div class="block__title">Англия</div>
+                                    <div class="block__percent">25%</div>
+                                </div>
+
+                                <div class="block">
+                                    <div class="block__title">США</div>
+                                    <div class="block__percent">25%</div>
+                                </div>
+                            </div>
+
+                            <div class="analytics__info analytics__info_colored">
+                                <div class="block">
+                                    <div class="block__title">Киев</div>
+                                    <div class="block__percent">50%</div>
+                                </div>
+
+                                <div class="block">
+                                    <div class="block__title">Москва</div>
+                                    <div class="block__percent">25%</div>
+                                </div>
+
+                                <div class="block">
+                                    <div class="block__title">Бровары</div>
+                                    <div class="block__percent">25%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section class='advertising-publications'>
+                <h2 class="title title_block">Примеры рекламных публикаций:</h2>
+
+                <div class="advertising-publications__wrapper">
+                    <div class="posts">
+                        <div class="posts__title">Рекламные посты</div>
+                        <div class="post__example-slider swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="../img/cases/insta-1.png" alt="insta">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="../img/cases/insta-2.png" alt="insta">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="../img/cases/insta-3.png" alt="insta">
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="swiper-button-prev">
+                            <img src="../img/arrow-slider.svg" alt="arrow">
+                        </div>
+                        <div class="swiper-button-next">
+                            <img src="../img/arrow-slider.svg" alt="arrow">
+                        </div>
+                    </div>
+
+                    <div class="stories">
+                        <div class="stories__title">Рекламные stories</div>
+
+                        <div class="stories__example-slider swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="../img/cases/insta-1.png" alt="insta">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="../img/cases/insta-2.png" alt="insta">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="../img/cases/insta-3.png" alt="insta">
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="swiper-button-prev">
+                            <img src="../img/arrow-slider.svg" alt="arrow">
+                        </div>
+                        <div class="swiper-button-next">
+                            <img src="../img/arrow-slider.svg" alt="arrow">
+                        </div>
+                    </div> 
+                 
+                </div>
+            </section>
+
+            <section class="price">
+                <h2 class="title title_block">Стоимость услуг:</h2>
+
+                <div class="price__wrapper">
+                    <div class="price__block">
+                        <div class="price__block-info">
+                            <div class="price__block-title">1 stories</div>
+                            <div class="price__block-price">
+                                <span>100$</span>
+                                -
+                                <span>300$</span>
+                            </div>
+                        </div>
+
+                        <div class="price__block-btn">
+                            <button>
+                                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.17801 16.4617C9.17801 17.3331 8.47156 18.0396 7.6001 18.0396C6.72864 18.0396 6.02221 17.3331 6.02221 16.4617C6.02221 15.5902 6.72865 14.8838 7.60011 14.8838C8.47157 14.8838 9.17801 15.5902 9.17801 16.4617ZM13.9891 14.8838C13.1177 14.8838 12.4112 15.5902 12.4112 16.4617C12.4112 17.3331 13.1177 18.0396 13.9891 18.0396C14.8606 18.0396 15.567 17.3331 15.567 16.4617C15.567 15.5902 14.8606 14.8838 13.9891 14.8838ZM18.8871 7.47644L16.9455 13.2472C16.9455 13.2472 16.7848 14.1036 15.9659 14.1036C15.147 14.1036 7.13905 14.1036 6.16181 14.1036C5.18457 14.1036 5.1435 13.0302 5.1435 13.0302C5.1435 13.0302 4.10174 5.30141 4.05012 4.83449C3.99849 4.36757 3.40136 4.02149 3.40136 4.02149L0.832134 2.82135C-0.574486 2.08577 0.0648844 0.68619 0.832134 1.00764C4.09 2.54448 5.60338 3.30117 5.70076 3.90652C5.79931 4.51304 5.97058 5.97363 5.97058 5.97363V5.98301C5.99053 5.97715 6.0046 5.97363 6.0046 5.97363C6.0046 5.97363 15.9952 5.97363 18.0131 5.97363C19.4631 5.97363 18.8871 7.4788 18.8871 7.47644ZM16.0785 10.6897L16.0586 10.6909H6.55365L6.74956 12.2442H15.6163L16.0785 10.6897ZM17.0042 7.5574H6.16063L6.36946 9.21742C8.44947 9.21742 14.5405 9.21742 16.5138 9.21742L17.0042 7.5574Z" fill="white"/>
+                                </svg>
+                                Добавить 
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="price__block">
+                        <div class="price__block-info">
+                            <div class="price__block-title">Фото-пост</div>
+                            <div class="price__block-price">300$</div>
+                        </div>
+
+                        <div class="price__block-btn">
+                            <button>
+                                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.17801 16.4617C9.17801 17.3331 8.47156 18.0396 7.6001 18.0396C6.72864 18.0396 6.02221 17.3331 6.02221 16.4617C6.02221 15.5902 6.72865 14.8838 7.60011 14.8838C8.47157 14.8838 9.17801 15.5902 9.17801 16.4617ZM13.9891 14.8838C13.1177 14.8838 12.4112 15.5902 12.4112 16.4617C12.4112 17.3331 13.1177 18.0396 13.9891 18.0396C14.8606 18.0396 15.567 17.3331 15.567 16.4617C15.567 15.5902 14.8606 14.8838 13.9891 14.8838ZM18.8871 7.47644L16.9455 13.2472C16.9455 13.2472 16.7848 14.1036 15.9659 14.1036C15.147 14.1036 7.13905 14.1036 6.16181 14.1036C5.18457 14.1036 5.1435 13.0302 5.1435 13.0302C5.1435 13.0302 4.10174 5.30141 4.05012 4.83449C3.99849 4.36757 3.40136 4.02149 3.40136 4.02149L0.832134 2.82135C-0.574486 2.08577 0.0648844 0.68619 0.832134 1.00764C4.09 2.54448 5.60338 3.30117 5.70076 3.90652C5.79931 4.51304 5.97058 5.97363 5.97058 5.97363V5.98301C5.99053 5.97715 6.0046 5.97363 6.0046 5.97363C6.0046 5.97363 15.9952 5.97363 18.0131 5.97363C19.4631 5.97363 18.8871 7.4788 18.8871 7.47644ZM16.0785 10.6897L16.0586 10.6909H6.55365L6.74956 12.2442H15.6163L16.0785 10.6897ZM17.0042 7.5574H6.16063L6.36946 9.21742C8.44947 9.21742 14.5405 9.21742 16.5138 9.21742L17.0042 7.5574Z" fill="white"/>
+                                </svg>
+                                Добавить 
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="price__block">
+                        <div class="price__block-info">
+                            <div class="price__block-title">Пост + stories</div>
+                            <div class="price__block-price">350$</div>
+                        </div>
+
+                        <div class="price__block-btn">
+                            <button>
+                                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.17801 16.4617C9.17801 17.3331 8.47156 18.0396 7.6001 18.0396C6.72864 18.0396 6.02221 17.3331 6.02221 16.4617C6.02221 15.5902 6.72865 14.8838 7.60011 14.8838C8.47157 14.8838 9.17801 15.5902 9.17801 16.4617ZM13.9891 14.8838C13.1177 14.8838 12.4112 15.5902 12.4112 16.4617C12.4112 17.3331 13.1177 18.0396 13.9891 18.0396C14.8606 18.0396 15.567 17.3331 15.567 16.4617C15.567 15.5902 14.8606 14.8838 13.9891 14.8838ZM18.8871 7.47644L16.9455 13.2472C16.9455 13.2472 16.7848 14.1036 15.9659 14.1036C15.147 14.1036 7.13905 14.1036 6.16181 14.1036C5.18457 14.1036 5.1435 13.0302 5.1435 13.0302C5.1435 13.0302 4.10174 5.30141 4.05012 4.83449C3.99849 4.36757 3.40136 4.02149 3.40136 4.02149L0.832134 2.82135C-0.574486 2.08577 0.0648844 0.68619 0.832134 1.00764C4.09 2.54448 5.60338 3.30117 5.70076 3.90652C5.79931 4.51304 5.97058 5.97363 5.97058 5.97363V5.98301C5.99053 5.97715 6.0046 5.97363 6.0046 5.97363C6.0046 5.97363 15.9952 5.97363 18.0131 5.97363C19.4631 5.97363 18.8871 7.4788 18.8871 7.47644ZM16.0785 10.6897L16.0586 10.6909H6.55365L6.74956 12.2442H15.6163L16.0785 10.6897ZM17.0042 7.5574H6.16063L6.36946 9.21742C8.44947 9.21742 14.5405 9.21742 16.5138 9.21742L17.0042 7.5574Z" fill="white"/>
+                                </svg>
+                                Добавить 
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="price__block">
+                        <div class="price__block-info">
+                            <div class="price__block-title">3 stories</div>
+                            <div class="price__block-price">250$</div>
+                        </div>
+
+                        <div class="price__block-btn">
+                            <button>
+                                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.17801 16.4617C9.17801 17.3331 8.47156 18.0396 7.6001 18.0396C6.72864 18.0396 6.02221 17.3331 6.02221 16.4617C6.02221 15.5902 6.72865 14.8838 7.60011 14.8838C8.47157 14.8838 9.17801 15.5902 9.17801 16.4617ZM13.9891 14.8838C13.1177 14.8838 12.4112 15.5902 12.4112 16.4617C12.4112 17.3331 13.1177 18.0396 13.9891 18.0396C14.8606 18.0396 15.567 17.3331 15.567 16.4617C15.567 15.5902 14.8606 14.8838 13.9891 14.8838ZM18.8871 7.47644L16.9455 13.2472C16.9455 13.2472 16.7848 14.1036 15.9659 14.1036C15.147 14.1036 7.13905 14.1036 6.16181 14.1036C5.18457 14.1036 5.1435 13.0302 5.1435 13.0302C5.1435 13.0302 4.10174 5.30141 4.05012 4.83449C3.99849 4.36757 3.40136 4.02149 3.40136 4.02149L0.832134 2.82135C-0.574486 2.08577 0.0648844 0.68619 0.832134 1.00764C4.09 2.54448 5.60338 3.30117 5.70076 3.90652C5.79931 4.51304 5.97058 5.97363 5.97058 5.97363V5.98301C5.99053 5.97715 6.0046 5.97363 6.0046 5.97363C6.0046 5.97363 15.9952 5.97363 18.0131 5.97363C19.4631 5.97363 18.8871 7.4788 18.8871 7.47644ZM16.0785 10.6897L16.0586 10.6909H6.55365L6.74956 12.2442H15.6163L16.0785 10.6897ZM17.0042 7.5574H6.16063L6.36946 9.21742C8.44947 9.21742 14.5405 9.21742 16.5138 9.21742L17.0042 7.5574Z" fill="white"/>
+                                </svg>
+                                Добавить 
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="price__block">
+                        <div class="price__block-info">
+                            <div class="price__block-title">
+                                Обзор продукции 
+                                в сториз
+                            </div>
+                            <div class="price__block-price">250$</div>
+                        </div>
+
+                        <div class="price__block-btn">
+                            <button>
+                                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.17801 16.4617C9.17801 17.3331 8.47156 18.0396 7.6001 18.0396C6.72864 18.0396 6.02221 17.3331 6.02221 16.4617C6.02221 15.5902 6.72865 14.8838 7.60011 14.8838C8.47157 14.8838 9.17801 15.5902 9.17801 16.4617ZM13.9891 14.8838C13.1177 14.8838 12.4112 15.5902 12.4112 16.4617C12.4112 17.3331 13.1177 18.0396 13.9891 18.0396C14.8606 18.0396 15.567 17.3331 15.567 16.4617C15.567 15.5902 14.8606 14.8838 13.9891 14.8838ZM18.8871 7.47644L16.9455 13.2472C16.9455 13.2472 16.7848 14.1036 15.9659 14.1036C15.147 14.1036 7.13905 14.1036 6.16181 14.1036C5.18457 14.1036 5.1435 13.0302 5.1435 13.0302C5.1435 13.0302 4.10174 5.30141 4.05012 4.83449C3.99849 4.36757 3.40136 4.02149 3.40136 4.02149L0.832134 2.82135C-0.574486 2.08577 0.0648844 0.68619 0.832134 1.00764C4.09 2.54448 5.60338 3.30117 5.70076 3.90652C5.79931 4.51304 5.97058 5.97363 5.97058 5.97363V5.98301C5.99053 5.97715 6.0046 5.97363 6.0046 5.97363C6.0046 5.97363 15.9952 5.97363 18.0131 5.97363C19.4631 5.97363 18.8871 7.4788 18.8871 7.47644ZM16.0785 10.6897L16.0586 10.6909H6.55365L6.74956 12.2442H15.6163L16.0785 10.6897ZM17.0042 7.5574H6.16063L6.36946 9.21742C8.44947 9.21742 14.5405 9.21742 16.5138 9.21742L17.0042 7.5574Z" fill="white"/>
+                                </svg>
+                                Добавить 
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="price__block">
+                        <div class="price__block-info">
+                            <div class="price__block-title">Видео-пост</div>
+                            <div class="price__block-price">700$</div>
+                        </div>
+
+                        <div class="price__block-btn">
+                            <button>
+                                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.17801 16.4617C9.17801 17.3331 8.47156 18.0396 7.6001 18.0396C6.72864 18.0396 6.02221 17.3331 6.02221 16.4617C6.02221 15.5902 6.72865 14.8838 7.60011 14.8838C8.47157 14.8838 9.17801 15.5902 9.17801 16.4617ZM13.9891 14.8838C13.1177 14.8838 12.4112 15.5902 12.4112 16.4617C12.4112 17.3331 13.1177 18.0396 13.9891 18.0396C14.8606 18.0396 15.567 17.3331 15.567 16.4617C15.567 15.5902 14.8606 14.8838 13.9891 14.8838ZM18.8871 7.47644L16.9455 13.2472C16.9455 13.2472 16.7848 14.1036 15.9659 14.1036C15.147 14.1036 7.13905 14.1036 6.16181 14.1036C5.18457 14.1036 5.1435 13.0302 5.1435 13.0302C5.1435 13.0302 4.10174 5.30141 4.05012 4.83449C3.99849 4.36757 3.40136 4.02149 3.40136 4.02149L0.832134 2.82135C-0.574486 2.08577 0.0648844 0.68619 0.832134 1.00764C4.09 2.54448 5.60338 3.30117 5.70076 3.90652C5.79931 4.51304 5.97058 5.97363 5.97058 5.97363V5.98301C5.99053 5.97715 6.0046 5.97363 6.0046 5.97363C6.0046 5.97363 15.9952 5.97363 18.0131 5.97363C19.4631 5.97363 18.8871 7.4788 18.8871 7.47644ZM16.0785 10.6897L16.0586 10.6909H6.55365L6.74956 12.2442H15.6163L16.0785 10.6897ZM17.0042 7.5574H6.16063L6.36946 9.21742C8.44947 9.21742 14.5405 9.21742 16.5138 9.21742L17.0042 7.5574Z" fill="white"/>
+                                </svg>
+                                Добавить 
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="price__block">
+                        <div class="price__block-info">
+                            <div class="price__block-title">Пост распаковка</div>
+                            <div class="price__block-price">1200$</div>
+                        </div>
+
+                        <div class="price__block-btn">
+                            <button>
+                                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.17801 16.4617C9.17801 17.3331 8.47156 18.0396 7.6001 18.0396C6.72864 18.0396 6.02221 17.3331 6.02221 16.4617C6.02221 15.5902 6.72865 14.8838 7.60011 14.8838C8.47157 14.8838 9.17801 15.5902 9.17801 16.4617ZM13.9891 14.8838C13.1177 14.8838 12.4112 15.5902 12.4112 16.4617C12.4112 17.3331 13.1177 18.0396 13.9891 18.0396C14.8606 18.0396 15.567 17.3331 15.567 16.4617C15.567 15.5902 14.8606 14.8838 13.9891 14.8838ZM18.8871 7.47644L16.9455 13.2472C16.9455 13.2472 16.7848 14.1036 15.9659 14.1036C15.147 14.1036 7.13905 14.1036 6.16181 14.1036C5.18457 14.1036 5.1435 13.0302 5.1435 13.0302C5.1435 13.0302 4.10174 5.30141 4.05012 4.83449C3.99849 4.36757 3.40136 4.02149 3.40136 4.02149L0.832134 2.82135C-0.574486 2.08577 0.0648844 0.68619 0.832134 1.00764C4.09 2.54448 5.60338 3.30117 5.70076 3.90652C5.79931 4.51304 5.97058 5.97363 5.97058 5.97363V5.98301C5.99053 5.97715 6.0046 5.97363 6.0046 5.97363C6.0046 5.97363 15.9952 5.97363 18.0131 5.97363C19.4631 5.97363 18.8871 7.4788 18.8871 7.47644ZM16.0785 10.6897L16.0586 10.6909H6.55365L6.74956 12.2442H15.6163L16.0785 10.6897ZM17.0042 7.5574H6.16063L6.36946 9.21742C8.44947 9.21742 14.5405 9.21742 16.5138 9.21742L17.0042 7.5574Z" fill="white"/>
+                                </svg>
+                                    
+                                Добавить 
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="price__block">
+                        <div class="price__block-info">
+                            <div class="price__block-title">Пост-конкурс</div>
+                            <div class="price__block-price">900$</div>
+                        </div>
+
+                        <div class="price__block-btn">
+                            <button>
+                                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.17801 16.4617C9.17801 17.3331 8.47156 18.0396 7.6001 18.0396C6.72864 18.0396 6.02221 17.3331 6.02221 16.4617C6.02221 15.5902 6.72865 14.8838 7.60011 14.8838C8.47157 14.8838 9.17801 15.5902 9.17801 16.4617ZM13.9891 14.8838C13.1177 14.8838 12.4112 15.5902 12.4112 16.4617C12.4112 17.3331 13.1177 18.0396 13.9891 18.0396C14.8606 18.0396 15.567 17.3331 15.567 16.4617C15.567 15.5902 14.8606 14.8838 13.9891 14.8838ZM18.8871 7.47644L16.9455 13.2472C16.9455 13.2472 16.7848 14.1036 15.9659 14.1036C15.147 14.1036 7.13905 14.1036 6.16181 14.1036C5.18457 14.1036 5.1435 13.0302 5.1435 13.0302C5.1435 13.0302 4.10174 5.30141 4.05012 4.83449C3.99849 4.36757 3.40136 4.02149 3.40136 4.02149L0.832134 2.82135C-0.574486 2.08577 0.0648844 0.68619 0.832134 1.00764C4.09 2.54448 5.60338 3.30117 5.70076 3.90652C5.79931 4.51304 5.97058 5.97363 5.97058 5.97363V5.98301C5.99053 5.97715 6.0046 5.97363 6.0046 5.97363C6.0046 5.97363 15.9952 5.97363 18.0131 5.97363C19.4631 5.97363 18.8871 7.4788 18.8871 7.47644ZM16.0785 10.6897L16.0586 10.6909H6.55365L6.74956 12.2442H15.6163L16.0785 10.6897ZM17.0042 7.5574H6.16063L6.36946 9.21742C8.44947 9.21742 14.5405 9.21742 16.5138 9.21742L17.0042 7.5574Z" fill="white"/>
+                                </svg>
+                                    
+                                Добавить 
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="price__block">
+                        <div class="price__block-info">
+                            <div class="price__block-title">Реклама личного аккаунта</div>
+                            <div class="price__block-price">1700$</div>
+                        </div>
+
+                        <div class="price__block-btn">
+                            <button>
+                                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.17801 16.4617C9.17801 17.3331 8.47156 18.0396 7.6001 18.0396C6.72864 18.0396 6.02221 17.3331 6.02221 16.4617C6.02221 15.5902 6.72865 14.8838 7.60011 14.8838C8.47157 14.8838 9.17801 15.5902 9.17801 16.4617ZM13.9891 14.8838C13.1177 14.8838 12.4112 15.5902 12.4112 16.4617C12.4112 17.3331 13.1177 18.0396 13.9891 18.0396C14.8606 18.0396 15.567 17.3331 15.567 16.4617C15.567 15.5902 14.8606 14.8838 13.9891 14.8838ZM18.8871 7.47644L16.9455 13.2472C16.9455 13.2472 16.7848 14.1036 15.9659 14.1036C15.147 14.1036 7.13905 14.1036 6.16181 14.1036C5.18457 14.1036 5.1435 13.0302 5.1435 13.0302C5.1435 13.0302 4.10174 5.30141 4.05012 4.83449C3.99849 4.36757 3.40136 4.02149 3.40136 4.02149L0.832134 2.82135C-0.574486 2.08577 0.0648844 0.68619 0.832134 1.00764C4.09 2.54448 5.60338 3.30117 5.70076 3.90652C5.79931 4.51304 5.97058 5.97363 5.97058 5.97363V5.98301C5.99053 5.97715 6.0046 5.97363 6.0046 5.97363C6.0046 5.97363 15.9952 5.97363 18.0131 5.97363C19.4631 5.97363 18.8871 7.4788 18.8871 7.47644ZM16.0785 10.6897L16.0586 10.6909H6.55365L6.74956 12.2442H15.6163L16.0785 10.6897ZM17.0042 7.5574H6.16063L6.36946 9.21742C8.44947 9.21742 14.5405 9.21742 16.5138 9.21742L17.0042 7.5574Z" fill="white"/>
+                                </svg>
+                                Добавить 
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer footer_black">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__info">
+                    <div class="footer__info-block">
+                        <a href='../index.html' class="logo"> 
+                            <img src="../img/footer-logo-black.png" alt="logo">
+                        </a>
+    
+                        <div class="footer__info-descr">SHUM — платформа для эффективной работы брендов с инфлюенсерами</div>
+                    </div>
+
+                    <div class="footer__info-block">
+                        <h6 class="footer__info-block-title">SHUM AGENCY</h6>
+                        <span class="footer__info-block-descr">Киев ул. Сікорского 1. офис 163</span>
+                        <a class="footer__info-block-tel" href="tel:380975923542">+380 97 592 35 42 </a>
+                    </div>
+                </div>
+
+                <div class="footer__links-block">
+                    <nav class="footer__menu">
+                        <h6 class="title title_footer">Навигация</h6>
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="../index.html" class="menu__link">Главная</a>
+                            </li>
+    
+                            <li class="menu__item">
+                                <a href="about.html" class="menu__link">О проекте</a>
+                            </li>
+    
+                            <li class="menu__item">
+                                <a href="catalog.html" class="menu__link">Каталог блогеров</a>
+                            </li>
+    
+                            <li class="menu__item">
+                                <a href="basket.html" class="menu__link">Корзина</a>
+                            </li>
+                        </ul>
+                    </nav>
+    
+                    <div class="footer__suggestion">
+                        <h6 class="title title_footer">Предложения</h6>
+    
+                        <div class="footer__block">
+                            <div class="footer__block-link">
+                                <a href="../index.html" class='footer__link'>Для рекламодателей</a>
+                            </div>
+                            <div class="footer__block-link">
+                                <a href="bloggers.html" class='footer__link'>Для блогеров</a>
+                            </div>
+                        </div>
+                      
+                    </div>
+    
+                    <div class="footer__account">
+                        <h6 class="title title_footer">Аккаунт</h6>
+    
+                        <div class="footer__block">
+                            <div class="footer__block-link">
+                                <button class='footer__link' data-login>Вход</button>
+                            </div>
+                            <div class="footer__block-link">
+                                <button class='footer__link' data-registration>Регистрация</button>
+                            </div>
+
+                            <a href="https://t.me/ira_pr" class='telegram-link'>
+                                <img src="../img/socials/telegram-white.svg" alt="telegram">
+                            </a>
+                        </div>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="overlay"></div>
+
+    <div class="modal modal__log">
+        <div class="modal__wrapper">
+            <div class="modal__close">
+                <img src="../img/close.svg" alt="close">
+            </div>
+
+            <div class="modal__title">Войдите</div>
+    
+            <div class="modal__functions">
+                <button class="modal__btn modal__btn-google">
+                    <img src="../img/socials/google.png" alt="google">
+                    Continue with Google
+                </button>
+                <button class="modal__btn modal__btn-facebook">
+                    <img src="../img/socials/facebook.svg" alt="facebook">
+                    Continue with Facebook
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modal__connect">
+        <div class="modal__wrapper">
+            <div class="modal__close">
+                <img src="../img/close.svg" alt="close">
+            </div>
+
+            <div class="modal__title">Заказать звонок</div>
+    
+            <div class="form">
+                <form action="#" id='form' class="form__body">
+                    <div class="form__item">
+                        <input class="form__input" id='formName' name='name' placeholder=' '>
+                        <label for='formName' class="form__label">Ваше имя</label>
+                    </div>
+
+                    <div class="form__item">
+                        <input class="form__input" id='formPhone' name='phone' placeholder=' '>
+                        <label for='formPhone' class="form__label">+380 (__) __ __ __</label>
+                    </div>
+
+                    <div class="form__btn">
+                        <button type="submit" class='form__button' data-submit>Отправить менеджеру</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modal__registration">
+        <div class="modal__wrapper">
+            <div class="modal__close">
+                <img src="../img/close.svg" alt="close">
+            </div>
+
+            <div class="modal__title">Регистрация блогера</div>
+    
+            <div class="form">
+                <form action="#" class="form__body">
+                    <div class="form__item">
+                        <input class="form__input" id='formNameReg' name='nameReg' placeholder=' '>
+                        <label for='formNameReg' class="form__label">Имя</label>
+                    </div>
+
+                    <div class="form__item">
+                        <input class="form__input" id='socialReg' name='social' placeholder=' '>
+                        <label for='socialReg' class="form__label">Instagram / You Tube</label>
+                    </div>
+
+                    <div class="form__item">
+                        <input class="form__input" id='formPhoneReg' name='phone' placeholder=' '>
+                        <label for='formPhoneReg' class="form__label">Номер телефона</label>
+                    </div>
+
+                    <div class="form__btn">
+                        <button type="submit" class='form__button' data-submit>Отправить менеджеру</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modal__thanks">
+        <div class="modal__wrapper">
+            <div class="modal__close">
+                <img src="../img/close.svg" alt="close">
+            </div>
+
+            <div class="modal__title">Спасибо!</div>
+            <div class="modal__subtitle">Наш менеджер свяжется с вами в ближайшее время</div>
+            
+        </div>
+    </div>
+
+    <script src='../js/libs/chart.min.js'></script>
+    <script src='../js/libs/chart.min.js'></script>
+    <script src='../js/libs/swiper-bundle.min.js'></script>
+
+    <script src='../js/statistics-card.js'></script>
+    <script src='../js/swiper.js'></script>
+    <script src='../js/modal.js'></script>
+</body>
+</html>

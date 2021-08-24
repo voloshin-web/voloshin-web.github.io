@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <a href="../index.html" class="header__logo">
+                    <img src="../img/logo.png" alt="logo">
+                </a>
+
+                <nav class="header__menu">
+                    <ul class="header__menu-list">
+                        <li class="header__menu-item">
+                            <a href="../index.html" class="header__menu-link">Главная</a>
+                        </li>
+
+                        <li class="header__menu-item">
+                            <a href="about.html" class="header__menu-link">О проекте</a>
+                        </li>
+
+                        <li class="header__menu-item">
+                            <a href="catalog.html" class="header__menu-link header__menu-link_disable header__menu-link_active">Каталог блогеров</a>
+                        </li>
+
+                        <li class="header__menu-item header__menu-item_account">
+                            <span class='header__menu-link'>Привет, <span class='header__menu-link_active header__menu-link_active_ml'>Катя</span></span>
+                        </li>
+
+                        <li class="header__menu-item header__menu-item_offsetL">
+                            <a href='package.html' class='button button_black'>
+                                Мой пакет
+                            </a>
+                            <span class='count'>2</span>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class='catalog'>
+        <div class="container">
+            <h2 class="title title_h2 title_h2_black">Каталог блогеров</h2>
+
+            <div class="catalog__wrapper">
+                <ul class="catalog__list">
+                    <li class="catalog__item">
+                        <button data-spoiler>
+                            Тематика
+                            <img src="../img/arrow.svg" alt="arrow">
+                        </button>
+
+                        <div class="spoilers">
+                            <form action="#" class="form">
+                                <div class="form__item">
+                                    <label for="children" class='form__label'>
+                                        <input type="checkbox" class='form__input' name='children' id='children'>
+                                        <div class="form__input-fake"></div>
+                                        Дети
+                                    </label>
+                                </div>
+
+                                <div class="form__item">
+                                    <label for="design" class='form__label'>
+                                        <input type="checkbox" class='form__input' name='design' id='design'>
+                                        <div class="form__input-fake"></div>
+                                        Дизайн
+                                    </label>
+                                </div>
+
+                                <div class="form__item">
+                                    <label for="business" class='form__label'>
+                                        <input type="checkbox" class='form__input' name='business' id='business'>
+                                        <div class="form__input-fake"></div>
+                                        Бизнес
+                                    </label>
+                                </div>
+
+                                <div class="form__item">
+                                    <label for="architecture" class='form__label'>
+                                        <input type="checkbox" class='form__input' name='architecture' id='architecture'>
+                                        <div class="form__input-fake"></div>
+                                        Архитектура
+                                    </label>
+                                </div>
+                            </form>
+
+                            <div class="spoilers__divider">
+                                <div class="divider"></div>
+                                <div class="divider"></div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="catalog__item">
+                        <button data-spoiler>
+                            Количество подписчиков
+                            <img src="../img/arrow.svg" alt="arrow">
+                        </button>
+
+                        <div class="spoilers">
+                            <form action="#" class="form">
+                                <div class="form__item">
+                                    <label for="up-5" class='form__label'>
+                                        <input type="radio" class='form__input' name='subscribe' id='up-5'>
+                                        <div class="form__input-fake"></div>
+                                        До 5 тыс.
+                                    </label>
+                                </div>
+
+                                <div class="form__item">
+                                    <label for="up-5-to-20" class='form__label'>
+                                        <input type="radio" class='form__input' name='subscribe' id='up-5-to-20'>
+                                        <div class="form__input-fake"></div>
+                                        5 тыс. - 20 тыс
+                                    </label>
+                                </div>
+
+                                <div class="form__item">
+                                    <label for="up-20-to-100" class='form__label'>
+                                        <input type="radio" class='form__input' name='subscribe' id='up-20-to-100'>
+                                        <div class="form__input-fake"></div>
+                                        20 тыс. - 100 тыс
+                                    </label>
+                                </div>
+
+                                <div class="form__item">
+                                    <label for="up-100-to-500" class='form__label'>
+                                        <input type="radio" class='form__input' name='subscribe' id='up-100-to-500'>
+                                        <div class="form__input-fake"></div>
+                                        100 тыс - 500 тыс
+                                    </label>
+                                </div>
+
+                                <div class="form__item">
+                                    <label for="up-500-to-1000" class='form__label'>
+                                        <input type="radio" class='form__input' name='subscribe' id='up-500-to-1000'>
+                                        <div class="form__input-fake"></div>
+                                        500 тыс - 1 млн
+                                    </label>
+                                </div>
+
+                                <div class="form__item">
+                                    <label for="more-1000" class='form__label'>
+                                        <input type="radio" class='form__input' name='subscribe' id='more-1000'>
+                                        <div class="form__input-fake"></div>
+                                        Более 1 млн
+                                    </label>
+                                </div>
+                            </form>
+
+                            <div class="spoilers__divider">
+                                <div class="divider"></div>
+                                <div class="divider"></div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="catalog__item">
+                        <button data-spoiler>
+                            Формат публикации и стоимость
+                            <img src="../img/arrow.svg" alt="arrow">
+                        </button>
+                        
+                        <div class="spoilers">
+                            <form action="#" class="form">
+                                <div class="form__item">
+                                    <label for="story" class='form__label'>
+                                        <input type="checkbox" class='form__input' name='format-publication' id='story'>
+                                        <div class="form__input-fake"></div>
+                                        1 Story
+                                    </label>
+                                </div>
+
+                                <div class="form__item">
+                                    <label for="post" class='form__label'>
+                                        <input type="checkbox" class='form__input' name='format-publication' id='post'>
+                                        <div class="form__input-fake"></div>
+                                        Пост (фото)
+                                    </label>
+                                </div>
+
+                                <div class="form__item">
+                                    <label for="post-story" class='form__label'>
+                                        <input type="checkbox" class='form__input' name='format-publication' id='post-story'>
+                                        <div class="form__input-fake"></div>
+                                        Пост + Story
+                                    </label>
+                                </div>
+
+                                <div class="form__item">
+                                    <label for="video-publication" class='form__label'>
+                                        <input type="checkbox" class='form__input' name='format-publication' id='video-publication'>
+                                        <div class="form__input-fake"></div>
+                                        Видеопубликация
+                                    </label>
+                                </div>
+
+                                <div class="form__item">
+                                    <label for="Giveaway" class='form__label'>
+                                        <input type="checkbox" class='form__input' name='format-publication' id='Giveaway'>
+                                        <div class="form__input-fake"></div>
+                                        Giveaway
+                                    </label>
+                                </div>
+
+                                <div class="form__item">
+                                    <label for="advertising" class='form__label'>
+                                        <input type="checkbox" class='form__input' name='format-publication' id='advertising'>
+                                        <div class="form__input-fake"></div>
+                                        Реклама личного аккаунта
+                                    </label>
+                                </div>
+
+                                <div class="form__item">
+                                    <label for="screen" class='form__label'>
+                                        <input type="checkbox" class='form__input' name='format-publication' id='screen'>
+                                        <div class="form__input-fake"></div>
+                                        Screen профиля
+                                    </label>
+                                </div>
+
+                                <div class="form__item">
+                                    <label for="unpacking" class='form__label'>
+                                        <input type="checkbox" class='form__input' name='format-publication' id='unpacking'>
+                                        <div class="form__input-fake"></div>
+                                        Распаковка
+                                    </label>
+                                </div>
+
+                                <div class="form__item">
+                                    <label for="3-stories" class='form__label'>
+                                        <input type="checkbox" class='form__input' name='format-publication' id='3-stories'>
+                                        <div class="form__input-fake"></div>
+                                        3 Stories
+                                    </label>
+                                </div>
+
+                                <div class="calculate-content__slider" id='range-slider__price'></div>
+
+                                <div class="calculate-content__inputs">
+                                    <label for="input-0" class='calculate-content__label'>
+                                        <span class="calculate-content__text">от</span>
+                                        <input type="number" class='calculate-content__input' id='input-0'>
+                                    </label>
+        
+                                    <label for="input-1" class='calculate-content__label'>
+                                        <span class="calculate-content__text">до</span>
+                                        <input type="number" class='calculate-content__input' id='input-1'>
+                                    </label>
+                                </div>
+                            </form>
+
+                            <div class="spoilers__divider">
+                                <div class="divider"></div>
+                                <div class="divider"></div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="catalog__item">
+                        <button data-spoiler>
+                            CPM
+                            <img src="../img/arrow.svg" alt="arrow">
+                        </button>
+
+                        <div class="spoilers">
+                            <form action="#" class="form">
+                                <div class="calculate-content__slider" id='range-slider__cpm'></div>
+
+                                <div class="calculate-content__inputs">
+                                    <label for="input-2" class='calculate-content__label'>
+                                        <span class="calculate-content__text">от</span>
+                                        <input type="number" class='calculate-content__input' id='input-2'>
+                                    </label>
+        
+                                    <label for="input-3" class='calculate-content__label'>
+                                        <span class="calculate-content__text">до</span>
+                                        <input type="number" class='calculate-content__input' id='input-3'>
+                                    </label>
+                                </div>
+                            </form>
+
+                            <div class="spoilers__divider">
+                                <div class="divider"></div>
+                                <div class="divider"></div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="catalog__item">
+                        <button data-spoiler>
+                            Cтрана 
+                            <img src="../img/arrow.svg" alt="arrow">
+                        </button>
+
+                        <div class="spoilers">
+                            <form action="#" class="form">
+                                <div class="form__item">
+                                    <input class="form__input" id="country" name="country" placeholder=" ">
+                                    <label for="country" class="form__label">Введите название</label>
+                                </div>
+                            </form>
+
+                            <div class="spoilers__divider">
+                                <div class="divider"></div>
+                                <div class="divider"></div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="catalog__item">
+                        <button data-spoiler>
+                            Пол блогера
+                            <img src="../img/arrow.svg" alt="arrow">
+                        </button>
+
+                        <div class="spoilers">
+                            <form action="#" class="form">
+                                <div class="form__item">
+                                    <label for="male" class='form__label'>
+                                        <input type="radio" class='form__input' name='sex' id='male'>
+                                        <div class="form__input-fake"></div>
+                                        Мужской
+                                    </label>
+                                </div>
+
+                                <div class="form__item">
+                                    <label for="female" class='form__label'>
+                                        <input type="radio" class='form__input' name='sex' id='female'>
+                                        <div class="form__input-fake"></div>
+                                        Женский
+                                    </label>
+                                </div>
+                            </form>
+
+                            <div class="spoilers__divider">
+                                <div class="divider"></div>
+                                <div class="divider"></div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="catalog__item">
+                        <button data-spoiler>
+                            Охват профиля
+                            <img src="../img/arrow.svg" alt="arrow">
+                        </button>
+
+                        <div class="spoilers">
+                            <form action="#" class="form">
+                                <div class="calculate-content__slider" id='range-slider__reach'></div>
+
+                                <div class="calculate-content__inputs">
+                                    <label for="input-4" class='calculate-content__label'>
+                                        <span class="calculate-content__text">от</span>
+                                        <input type="number" class='calculate-content__input' id='input-4'>
+                                    </label>
+        
+                                    <label for="input-5" class='calculate-content__label'>
+                                        <span class="calculate-content__text">до</span>
+                                        <input type="number" class='calculate-content__input' id='input-5'>
+                                    </label>
+                                </div>
+                            </form>
+
+                            <div class="spoilers__divider">
+                                <div class="divider"></div>
+                                <div class="divider"></div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="catalog__item">
+                        <button data-spoiler>
+                            Средний охват поста
+                            <img src="../img/arrow.svg" alt="arrow">
+                        </button>
+
+                        <div class="spoilers">
+                            <form action="#" class="form">
+                                <div class="calculate-content__slider" id='range-slider__average'></div>
+
+                                <div class="calculate-content__inputs">
+                                    <label for="input-6" class='calculate-content__label'>
+                                        <span class="calculate-content__text">от</span>
+                                        <input type="number" class='calculate-content__input' id='input-6'>
+                                    </label>
+        
+                                    <label for="input-7" class='calculate-content__label'>
+                                        <span class="calculate-content__text">до</span>
+                                        <input type="number" class='calculate-content__input' id='input-7'>
+                                    </label>
+                                </div>
+                            </form>
+
+                            <div class="spoilers__divider">
+                                <div class="divider"></div>
+                                <div class="divider"></div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="catalog__item">
+                        <button data-spoiler>
+                            Средний охват сторис
+                            <img src="../img/arrow.svg" alt="arrow">
+                        </button>
+
+                        <div class="spoilers">
+                            <form action="#" class="form">
+                                <div class="calculate-content__slider" id='range-slider__average-stories'></div>
+
+                                <div class="calculate-content__inputs">
+                                    <label for="input-6" class='calculate-content__label'>
+                                        <span class="calculate-content__text">от</span>
+                                        <input type="number" class='calculate-content__input' id='input-8'>
+                                    </label>
+        
+                                    <label for="input-7" class='calculate-content__label'>
+                                        <span class="calculate-content__text">до</span>
+                                        <input type="number" class='calculate-content__input' id='input-9'>
+                                    </label>
+                                </div>
+                            </form>
+
+                            <div class="spoilers__divider">
+                                <div class="divider"></div>
+                                <div class="divider"></div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="catalog__item">
+                        <button data-spoiler>
+                            Город блогера 
+                            <img src="../img/arrow.svg" alt="arrow">
+                        </button>
+
+                        <div class="spoilers">
+                            <form action="#" class="form">
+                                <div class="form__item">
+                                    <input class="form__input" id="blogg-city" name="blogg-city" placeholder=" ">
+                                    <label for="blogg-city" class="form__label">Введите название</label>
+                                </div>
+                            </form>
+                          
+
+                            <div class="spoilers__divider">
+                                <div class="divider"></div>
+                                <div class="divider"></div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="catalog__item">
+                        <button data-spoiler>
+                            Города аудитории 
+                            <img src="../img/arrow.svg" alt="arrow">
+                        </button>
+
+                        <div class="spoilers">
+                            <form action="#" class="form">
+                                <div class="form__item">
+                                    <input class="form__input" id="audience-city" name="audience-city" placeholder=" ">
+                                    <label for="audience-city" class="form__label">Введите название</label>
+                                </div>
+                            </form>
+
+                            <div class="spoilers__divider">
+                                <div class="divider"></div>
+                                <div class="divider"></div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="catalog__item">
+                        <button data-spoiler>
+                            Пол аудитории
+                            <img src="../img/arrow.svg" alt="arrow">
+                        </button>
+
+                        <div class="spoilers">
+                            <form action="#" class="form">
+                                <div class="form__item">
+                                    <label for="audience-male" class='form__label'>
+                                        <input type="radio" class='form__input' name='sex-audience' id='audience-male'>
+                                        <div class="form__input-fake"></div>
+                                        Мужской
+                                    </label>
+                                </div>
+
+                                <div class="form__item">
+                                    <label for="audience-female" class='form__label'>
+                                        <input type="radio" class='form__input' name='sex-audience' id='audience-female'>
+                                        <div class="form__input-fake"></div>
+                                        Женский
+                                    </label>
+                                </div>
+                            </form>
+
+                            <div class="spoilers__divider">
+                                <div class="divider"></div>
+                                <div class="divider"></div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="catalog__item">
+                        <button data-spoiler>
+                            Возраст аудитории
+                            <img src="../img/arrow.svg" alt="arrow">
+                        </button>
+
+                        <div class="spoilers">
+                            <form action="#" class="form">
+                                <div class="form__item">
+                                    <label for="13-17" class='form__label'>
+                                        <input type="checkbox" class='form__input' name='13-17' id='13-17'>
+                                        <div class="form__input-fake"></div>
+                                        13-17
+                                    </label>
+                                </div>
+
+                                <div class="form__item">
+                                    <label for="18-24" class='form__label'>
+                                        <input type="checkbox" class='form__input' name='18-24' id='18-24'>
+                                        <div class="form__input-fake"></div>
+                                        18-24
+                                    </label>
+                                </div>
+
+                                <div class="form__item">
+                                    <label for="25-34" class='form__label'>
+                                        <input type="checkbox" class='form__input' name='25-34' id='25-34'>
+                                        <div class="form__input-fake"></div>
+                                        25-34
+                                    </label>
+                                </div>
+
+                                <div class="form__item">
+                                    <label for="35-44" class='form__label'>
+                                        <input type="checkbox" class='form__input' name='35-44' id='35-44'>
+                                        <div class="form__input-fake"></div>
+                                        35-44
+                                    </label>
+                                </div>
+
+                                <div class="form__item">
+                                    <label for="45-54" class='form__label'>
+                                        <input type="checkbox" class='form__input' name='45-54' id='45-54'>
+                                        <div class="form__input-fake"></div>
+                                        45-54
+                                    </label>
+                                </div>
+
+                                <div class="form__item">
+                                    <label for="55-64" class='form__label'>
+                                        <input type="checkbox" class='form__input' name='55-64' id='55-64'>
+                                        <div class="form__input-fake"></div>
+                                        55-64
+                                    </label>
+                                </div>
+
+                                <div class="form__item">
+                                    <label for="65+" class='form__label'>
+                                        <input type="checkbox" class='form__input' name='65+' id='65+'>
+                                        <div class="form__input-fake"></div>
+                                        65+
+                                    </label>
+                                </div>
+                            </form>
+
+                            <div class="spoilers__divider">
+                                <div class="divider"></div>
+                                <div class="divider"></div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <div class="catalog__list_btns">
+                        <button class='button button_filters'>Применить фильтры</button>
+                        <button class='button button_reset'>Очистить фильтры</button>
+                    </div>
+
+                    
+                </ul>
+
+                <div class="catalog-content">
+                    <div class="catalog-content__header">
+                        <button class="filters-block">
+                            Подписчики⇅
+                        </button>
+
+                        <button class="filters-block">
+                            CPM поста⇅
+                        </button>
+
+                        <button class="filters-block">
+                            CPM сториз ⇅
+                        </button>
+
+                        <button class="filters-block">
+                            Охват поста⇅
+                        </button>
+
+                        <button class="filters-block">
+                            Охват сториз ⇅
+                        </button>
+
+                        <button class="filters-block">
+                            % Украины ⇅
+                        </button>
+                    </div>
+                    <div class="catalog-content__body">
+                        <div class="blogger-card__item">
+                            <div class="blogger-card__img">
+                                <img src="../img/bloggers/card-1.jpg" alt="card-1">
+                            </div>
+
+                            <div class="blogger-card__info">
+                                <div class="blogger-card__main">
+                                    <div class="blogger-card__title">Имя блогера</div>
+                                    <div class="blogger-card__country">Страна</div>
+                                </div>
+
+                                <div class="blogger-card__descr">
+                                    <div class='block'>133 тыс. <span>подписчиков</span></div>
+
+                                    <div class="line"></div>
+
+                                    <div class="blogger-card__descr-wrapper">
+                                        <div class='block block-statistics'>72% <span>CPM поста</span></div>
+                                        <div class='block block-statistics'>88% <span>CPM сториз</span></div>
+                                        <div class='block block-statistics'>23% <span>Охват поста</span></div>
+                                        <div class='block block-statistics'>14% <span>Охват сториз</span></div>
+                                    </div>
+
+                              
+                                </div>
+
+                                <div class="blogger-card__themes">
+                                    <div class="blogger-card__themes-title">Тематики:</div>
+
+
+                                    <div class="blogger-card__themes-wrapper">
+                                        <div class="themes-block">
+                                            <span>Тема</span>
+                                        </div>
+
+                                        <div class="themes-block">
+                                            <span>Тема</span>
+                                        </div>
+
+                                        <div class="themes-block">
+                                            <span>Тема</span>
+                                        </div>
+
+                                        <div class="themes-block">
+                                            <span>Тема</span>
+                                        </div>
+
+                                        <div class="themes-block">
+                                            <span>Тема</span>
+                                        </div>
+
+                                        <div class="themes-block">
+                                            <span>Тема</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="blogger-card__btns">
+                                    <button class='button button_black button_add'>
+                                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.17801 16.4617C9.17801 17.3331 8.47156 18.0396 7.6001 18.0396C6.72864 18.0396 6.02221 17.3331 6.02221 16.4617C6.02221 15.5902 6.72865 14.8838 7.60011 14.8838C8.47157 14.8838 9.17801 15.5902 9.17801 16.4617ZM13.9891 14.8838C13.1177 14.8838 12.4112 15.5902 12.4112 16.4617C12.4112 17.3331 13.1177 18.0396 13.9891 18.0396C14.8606 18.0396 15.567 17.3331 15.567 16.4617C15.567 15.5902 14.8606 14.8838 13.9891 14.8838ZM18.8871 7.47644L16.9455 13.2472C16.9455 13.2472 16.7848 14.1036 15.9659 14.1036C15.147 14.1036 7.13905 14.1036 6.16181 14.1036C5.18457 14.1036 5.1435 13.0302 5.1435 13.0302C5.1435 13.0302 4.10174 5.30141 4.05012 4.83449C3.99849 4.36757 3.40136 4.02149 3.40136 4.02149L0.832134 2.82135C-0.574486 2.08577 0.0648844 0.68619 0.832134 1.00764C4.09 2.54448 5.60338 3.30117 5.70076 3.90652C5.79931 4.51304 5.97058 5.97363 5.97058 5.97363V5.98301C5.99053 5.97715 6.0046 5.97363 6.0046 5.97363C6.0046 5.97363 15.9952 5.97363 18.0131 5.97363C19.4631 5.97363 18.8871 7.4788 18.8871 7.47644ZM16.0785 10.6897L16.0586 10.6909H6.55365L6.74956 12.2442H15.6163L16.0785 10.6897ZM17.0042 7.5574H6.16063L6.36946 9.21742C8.44947 9.21742 14.5405 9.21742 16.5138 9.21742L17.0042 7.5574Z" fill="white"/>
+                                        </svg>
+                                            
+                                        Добавить в промо-пакет
+                                    </button>
+
+                                    <a href='cardBlogger.html' class='button button_more'>Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="blogger-card__item">
+                            <div class="blogger-card__img">
+                                <img src="../img/bloggers/card-1.jpg" alt="card-1">
+                            </div>
+
+                            <div class="blogger-card__info">
+                                <div class="blogger-card__main">
+                                    <div class="blogger-card__title">Имя блогера</div>
+                                    <div class="blogger-card__country">Страна</div>
+                                </div>
+
+                                <div class="blogger-card__descr">
+                                    <div class='block'>133 тыс. <span>подписчиков</span></div>
+
+                                    <div class="line"></div>
+
+                                    <div class="blogger-card__descr-wrapper">
+                                        <div class='block block-statistics'>72% <span>CPM поста</span></div>
+                                        <div class='block block-statistics'>88% <span>CPM сториз</span></div>
+                                        <div class='block block-statistics'>23% <span>Охват поста</span></div>
+                                        <div class='block block-statistics'>14% <span>Охват сториз</span></div>
+                                    </div>
+
+                              
+                                </div>
+
+                                <div class="blogger-card__themes">
+                                    <div class="blogger-card__themes-title">Тематики:</div>
+
+
+                                    <div class="blogger-card__themes-wrapper">
+                                        <div class="themes-block">
+                                            <span>Тема</span>
+                                        </div>
+
+                                        <div class="themes-block">
+                                            <span>Тема</span>
+                                        </div>
+
+                                        <div class="themes-block">
+                                            <span>Тема</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="blogger-card__btns">
+                                    <button class='button button_black button_add'>
+                                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.17801 16.4617C9.17801 17.3331 8.47156 18.0396 7.6001 18.0396C6.72864 18.0396 6.02221 17.3331 6.02221 16.4617C6.02221 15.5902 6.72865 14.8838 7.60011 14.8838C8.47157 14.8838 9.17801 15.5902 9.17801 16.4617ZM13.9891 14.8838C13.1177 14.8838 12.4112 15.5902 12.4112 16.4617C12.4112 17.3331 13.1177 18.0396 13.9891 18.0396C14.8606 18.0396 15.567 17.3331 15.567 16.4617C15.567 15.5902 14.8606 14.8838 13.9891 14.8838ZM18.8871 7.47644L16.9455 13.2472C16.9455 13.2472 16.7848 14.1036 15.9659 14.1036C15.147 14.1036 7.13905 14.1036 6.16181 14.1036C5.18457 14.1036 5.1435 13.0302 5.1435 13.0302C5.1435 13.0302 4.10174 5.30141 4.05012 4.83449C3.99849 4.36757 3.40136 4.02149 3.40136 4.02149L0.832134 2.82135C-0.574486 2.08577 0.0648844 0.68619 0.832134 1.00764C4.09 2.54448 5.60338 3.30117 5.70076 3.90652C5.79931 4.51304 5.97058 5.97363 5.97058 5.97363V5.98301C5.99053 5.97715 6.0046 5.97363 6.0046 5.97363C6.0046 5.97363 15.9952 5.97363 18.0131 5.97363C19.4631 5.97363 18.8871 7.4788 18.8871 7.47644ZM16.0785 10.6897L16.0586 10.6909H6.55365L6.74956 12.2442H15.6163L16.0785 10.6897ZM17.0042 7.5574H6.16063L6.36946 9.21742C8.44947 9.21742 14.5405 9.21742 16.5138 9.21742L17.0042 7.5574Z" fill="white"/>
+                                        </svg>
+                                            
+                                        Добавить в промо-пакет
+                                    </button>
+
+                                    <a href='cardBlogger.html' class='button button_more'>Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="blogger-card__item">
+                            <div class="blogger-card__img">
+                                <img src="../img/bloggers/card-1.jpg" alt="card-1">
+                            </div>
+
+                            <div class="blogger-card__info">
+                                <div class="blogger-card__main">
+                                    <div class="blogger-card__title">Имя блогера</div>
+                                    <div class="blogger-card__country">Страна</div>
+                                </div>
+
+                                <div class="blogger-card__descr">
+                                    <div class='block'>133 тыс. <span>подписчиков</span></div>
+
+                                    <div class="line"></div>
+
+                                    <div class="blogger-card__descr-wrapper">
+                                        <div class='block block-statistics'>72% <span>CPM поста</span></div>
+                                        <div class='block block-statistics'>88% <span>CPM сториз</span></div>
+                                        <div class='block block-statistics'>23% <span>Охват поста</span></div>
+                                        <div class='block block-statistics'>14% <span>Охват сториз</span></div>
+                                    </div>
+
+                              
+                                </div>
+
+                                <div class="blogger-card__themes">
+                                    <div class="blogger-card__themes-title">Тематики:</div>
+
+
+                                    <div class="blogger-card__themes-wrapper">
+                                        <div class="themes-block">
+                                            <span>Тема</span>
+                                        </div>
+
+                                        <div class="themes-block">
+                                            <span>Тема</span>
+                                        </div>
+
+                                        <div class="themes-block">
+                                            <span>Тема</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="blogger-card__btns">
+                                    <button class='button button_black button_add'>
+                                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.17801 16.4617C9.17801 17.3331 8.47156 18.0396 7.6001 18.0396C6.72864 18.0396 6.02221 17.3331 6.02221 16.4617C6.02221 15.5902 6.72865 14.8838 7.60011 14.8838C8.47157 14.8838 9.17801 15.5902 9.17801 16.4617ZM13.9891 14.8838C13.1177 14.8838 12.4112 15.5902 12.4112 16.4617C12.4112 17.3331 13.1177 18.0396 13.9891 18.0396C14.8606 18.0396 15.567 17.3331 15.567 16.4617C15.567 15.5902 14.8606 14.8838 13.9891 14.8838ZM18.8871 7.47644L16.9455 13.2472C16.9455 13.2472 16.7848 14.1036 15.9659 14.1036C15.147 14.1036 7.13905 14.1036 6.16181 14.1036C5.18457 14.1036 5.1435 13.0302 5.1435 13.0302C5.1435 13.0302 4.10174 5.30141 4.05012 4.83449C3.99849 4.36757 3.40136 4.02149 3.40136 4.02149L0.832134 2.82135C-0.574486 2.08577 0.0648844 0.68619 0.832134 1.00764C4.09 2.54448 5.60338 3.30117 5.70076 3.90652C5.79931 4.51304 5.97058 5.97363 5.97058 5.97363V5.98301C5.99053 5.97715 6.0046 5.97363 6.0046 5.97363C6.0046 5.97363 15.9952 5.97363 18.0131 5.97363C19.4631 5.97363 18.8871 7.4788 18.8871 7.47644ZM16.0785 10.6897L16.0586 10.6909H6.55365L6.74956 12.2442H15.6163L16.0785 10.6897ZM17.0042 7.5574H6.16063L6.36946 9.21742C8.44947 9.21742 14.5405 9.21742 16.5138 9.21742L17.0042 7.5574Z" fill="white"/>
+                                        </svg>
+                                            
+                                        Добавить в промо-пакет
+                                    </button>
+
+                                    <a href='cardBlogger.html' class='button button_more'>Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="blogger-card__item">
+                            <div class="blogger-card__img">
+                                <img src="../img/bloggers/card-1.jpg" alt="card-1">
+                            </div>
+
+                            <div class="blogger-card__info">
+                                <div class="blogger-card__main">
+                                    <div class="blogger-card__title">Имя блогера</div>
+                                    <div class="blogger-card__country">Страна</div>
+                                </div>
+
+                                <div class="blogger-card__descr">
+                                    <div class='block'>133 тыс. <span>подписчиков</span></div>
+
+                                    <div class="line"></div>
+
+                                    <div class="blogger-card__descr-wrapper">
+                                        <div class='block block-statistics'>72% <span>CPM поста</span></div>
+                                        <div class='block block-statistics'>88% <span>CPM сториз</span></div>
+                                        <div class='block block-statistics'>23% <span>Охват поста</span></div>
+                                        <div class='block block-statistics'>14% <span>Охват сториз</span></div>
+                                    </div>
+
+                              
+                                </div>
+
+                                <div class="blogger-card__themes">
+                                    <div class="blogger-card__themes-title">Тематики:</div>
+
+
+                                    <div class="blogger-card__themes-wrapper">
+                                        <div class="themes-block">
+                                            <span>Тема</span>
+                                        </div>
+
+                                        <div class="themes-block">
+                                            <span>Тема</span>
+                                        </div>
+
+                                        <div class="themes-block">
+                                            <span>Тема</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="blogger-card__btns">
+                                    <button class='button button_black button_add'>
+                                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.17801 16.4617C9.17801 17.3331 8.47156 18.0396 7.6001 18.0396C6.72864 18.0396 6.02221 17.3331 6.02221 16.4617C6.02221 15.5902 6.72865 14.8838 7.60011 14.8838C8.47157 14.8838 9.17801 15.5902 9.17801 16.4617ZM13.9891 14.8838C13.1177 14.8838 12.4112 15.5902 12.4112 16.4617C12.4112 17.3331 13.1177 18.0396 13.9891 18.0396C14.8606 18.0396 15.567 17.3331 15.567 16.4617C15.567 15.5902 14.8606 14.8838 13.9891 14.8838ZM18.8871 7.47644L16.9455 13.2472C16.9455 13.2472 16.7848 14.1036 15.9659 14.1036C15.147 14.1036 7.13905 14.1036 6.16181 14.1036C5.18457 14.1036 5.1435 13.0302 5.1435 13.0302C5.1435 13.0302 4.10174 5.30141 4.05012 4.83449C3.99849 4.36757 3.40136 4.02149 3.40136 4.02149L0.832134 2.82135C-0.574486 2.08577 0.0648844 0.68619 0.832134 1.00764C4.09 2.54448 5.60338 3.30117 5.70076 3.90652C5.79931 4.51304 5.97058 5.97363 5.97058 5.97363V5.98301C5.99053 5.97715 6.0046 5.97363 6.0046 5.97363C6.0046 5.97363 15.9952 5.97363 18.0131 5.97363C19.4631 5.97363 18.8871 7.4788 18.8871 7.47644ZM16.0785 10.6897L16.0586 10.6909H6.55365L6.74956 12.2442H15.6163L16.0785 10.6897ZM17.0042 7.5574H6.16063L6.36946 9.21742C8.44947 9.21742 14.5405 9.21742 16.5138 9.21742L17.0042 7.5574Z" fill="white"/>
+                                        </svg>
+                                            
+                                        Добавить в промо-пакет
+                                    </button>
+
+                                    <a href='cardBlogger.html' class='button button_more'>Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="blogger-card__item">
+                            <div class="blogger-card__img">
+                                <img src="../img/bloggers/card-1.jpg" alt="card-1">
+                            </div>
+
+                            <div class="blogger-card__info">
+                                <div class="blogger-card__main">
+                                    <div class="blogger-card__title">Имя блогера</div>
+                                    <div class="blogger-card__country">Страна</div>
+                                </div>
+
+                                <div class="blogger-card__descr">
+                                    <div class='block'>133 тыс. <span>подписчиков</span></div>
+
+                                    <div class="line"></div>
+
+                                    <div class="blogger-card__descr-wrapper">
+                                        <div class='block block-statistics'>72% <span>CPM поста</span></div>
+                                        <div class='block block-statistics'>88% <span>CPM сториз</span></div>
+                                        <div class='block block-statistics'>23% <span>Охват поста</span></div>
+                                        <div class='block block-statistics'>14% <span>Охват сториз</span></div>
+                                    </div>         
+                                </div>
+
+                                <div class="blogger-card__themes">
+                                    <div class="blogger-card__themes-title">Тематики:</div>
+
+
+                                    <div class="blogger-card__themes-wrapper">
+                                        <div class="themes-block">
+                                            <span>Тема</span>
+                                        </div>
+
+                                       
+                                        <div class="themes-block">
+                                            <span>Тема</span>
+                                        </div>
+
+                                        <div class="themes-block">
+                                            <span>Тема</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="blogger-card__btns">
+                                    <button class='button button_black button_add'>
+                                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.17801 16.4617C9.17801 17.3331 8.47156 18.0396 7.6001 18.0396C6.72864 18.0396 6.02221 17.3331 6.02221 16.4617C6.02221 15.5902 6.72865 14.8838 7.60011 14.8838C8.47157 14.8838 9.17801 15.5902 9.17801 16.4617ZM13.9891 14.8838C13.1177 14.8838 12.4112 15.5902 12.4112 16.4617C12.4112 17.3331 13.1177 18.0396 13.9891 18.0396C14.8606 18.0396 15.567 17.3331 15.567 16.4617C15.567 15.5902 14.8606 14.8838 13.9891 14.8838ZM18.8871 7.47644L16.9455 13.2472C16.9455 13.2472 16.7848 14.1036 15.9659 14.1036C15.147 14.1036 7.13905 14.1036 6.16181 14.1036C5.18457 14.1036 5.1435 13.0302 5.1435 13.0302C5.1435 13.0302 4.10174 5.30141 4.05012 4.83449C3.99849 4.36757 3.40136 4.02149 3.40136 4.02149L0.832134 2.82135C-0.574486 2.08577 0.0648844 0.68619 0.832134 1.00764C4.09 2.54448 5.60338 3.30117 5.70076 3.90652C5.79931 4.51304 5.97058 5.97363 5.97058 5.97363V5.98301C5.99053 5.97715 6.0046 5.97363 6.0046 5.97363C6.0046 5.97363 15.9952 5.97363 18.0131 5.97363C19.4631 5.97363 18.8871 7.4788 18.8871 7.47644ZM16.0785 10.6897L16.0586 10.6909H6.55365L6.74956 12.2442H15.6163L16.0785 10.6897ZM17.0042 7.5574H6.16063L6.36946 9.21742C8.44947 9.21742 14.5405 9.21742 16.5138 9.21742L17.0042 7.5574Z" fill="white"/>
+                                        </svg>
+                                            
+                                        Добавить в промо-пакет
+                                    </button>
+
+                                    <a href='cardBlogger.html' class='button button_more'>Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="numbers">
+                            <a href='catalog.html' class="num num_active num_disabled">1</a>
+                            <a href='catalog.html' class="num">2</a>
+                            <a href='catalog.html' class="num">3</a>
+                            <a href='catalog.html' class="num">4</a>
+                            <a href='catalog.html' class="num">5</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer footer_black">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__info">
+                    <div class="footer__info-block">
+                        <a href='../index.html' class="logo"> 
+                            <img src="../img/footer-logo-black.png" alt="logo">
+                        </a>
+    
+                        <div class="footer__info-descr">SHUM — платформа для эффективной работы брендов с инфлюенсерами</div>
+                    </div>
+
+                    <div class="footer__info-block">
+                        <h6 class="footer__info-block-title">SHUM AGENCY</h6>
+                        <span class="footer__info-block-descr">Киев ул. Сікорского 1. офис 163</span>
+                        <a class="footer__info-block-tel" href="tel:380975923542">+380 97 592 35 42 </a>
+                    </div>
+                </div>
+
+                <div class="footer__links-block">
+                    <nav class="footer__menu">
+                        <h6 class="title title_footer">Навигация</h6>
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="../index.html" class="menu__link">Главная</a>
+                            </li>
+    
+                            <li class="menu__item">
+                                <a href="about.html" class="menu__link">О проекте</a>
+                            </li>
+    
+                            <li class="menu__item">
+                                <a href="catalog.html" class="menu__link">Каталог блогеров</a>
+                            </li>
+    
+                            <li class="menu__item">
+                                <a href="basket.html" class="menu__link">Корзина</a>
+                            </li>
+                        </ul>
+                    </nav>
+    
+                    <div class="footer__suggestion">
+                        <h6 class="title title_footer">Предложения</h6>
+    
+                        <div class="footer__block">
+                            <div class="footer__block-link">
+                                <a href="../index.html" class='footer__link'>Для рекламодателей</a>
+                            </div>
+                            <div class="footer__block-link">
+                                <a href="bloggers.html" class='footer__link'>Для блогеров</a>
+                            </div>
+                        </div>
+                      
+                    </div>
+    
+                    <div class="footer__account">
+                        <h6 class="title title_footer">Аккаунт</h6>
+    
+                        <div class="footer__block">
+                            <div class="footer__block-link">
+                                <button class='footer__link' data-login>Вход</button>
+                            </div>
+                            <div class="footer__block-link">
+                                <button class='footer__link' data-registration>Регистрация</button>
+                            </div>
+
+                            <a href="https://t.me/ira_pr" class='telegram-link'>
+                                <img src="../img/socials/telegram-white.svg" alt="telegram">
+                            </a>
+                        </div>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="overlay"></div>
+
+    <div class="modal modal__log">
+        <div class="modal__wrapper">
+            <div class="modal__close">
+                <img src="img/close.svg" alt="close">
+            </div>
+
+            <div class="modal__title">Войдите</div>
+    
+            <div class="modal__functions">
+                <button class="modal__btn modal__btn-google">
+                    <img src="../img/socials/google.png" alt="google">
+                    Continue with Google
+                </button>
+                <button class="modal__btn modal__btn-facebook">
+                    <img src="../img/socials/facebook.svg" alt="facebook">
+                    Continue with Facebook
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modal__connect">
+        <div class="modal__wrapper">
+            <div class="modal__close">
+                <img src="img/close.svg" alt="close">
+            </div>
+
+            <div class="modal__title">Заказать звонок</div>
+    
+            <div class="form">
+                <form action="#" id='form' class="form__body">
+                    <div class="form__item">
+                        <input class="form__input" id='formName' name='name' placeholder=' '>
+                        <label for='formName' class="form__label">Ваше имя</label>
+                    </div>
+
+                    <div class="form__item">
+                        <input class="form__input" id='formPhone' name='phone' placeholder=' '>
+                        <label for='formPhone' class="form__label">+380 (__) __ __ __</label>
+                    </div>
+
+                    <div class="form__btn">
+                        <button type="submit" class='form__button' data-submit>Отправить менеджеру</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modal__registration">
+        <div class="modal__wrapper">
+            <div class="modal__close">
+                <img src="img/close.svg" alt="close">
+            </div>
+
+            <div class="modal__title">Регистрация блогера</div>
+    
+            <div class="form">
+                <form action="#" class="form__body">
+                    <div class="form__item">
+                        <input class="form__input" id='formNameReg' name='nameReg' placeholder=' '>
+                        <label for='formNameReg' class="form__label">Имя</label>
+                    </div>
+
+                    <div class="form__item">
+                        <input class="form__input" id='socialReg' name='social' placeholder=' '>
+                        <label for='socialReg' class="form__label">Instagram / You Tube</label>
+                    </div>
+
+                    <div class="form__item">
+                        <input class="form__input" id='formPhoneReg' name='phone' placeholder=' '>
+                        <label for='formPhoneReg' class="form__label">Номер телефона</label>
+                    </div>
+
+                    <div class="form__btn">
+                        <button type="submit" class='form__button' data-submit>Отправить менеджеру</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modal__thanks">
+        <div class="modal__wrapper">
+            <div class="modal__close">
+                <img src="img/close.svg" alt="close">
+            </div>
+
+            <div class="modal__title">Спасибо!</div>
+            <div class="modal__subtitle">Наш менеджер свяжется с вами в ближайшее время</div>
+            
+        </div>
+    </div>
+
+    <script src='../js/libs/nouislider.min.js'></script>
+    <script src='../js/range-slider.js'></script>
+    <script src='../js/spoilers.js'></script>
+    <script src='../js/modal.js'></script>
+</body>
+</html>

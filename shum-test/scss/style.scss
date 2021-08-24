@@ -1,0 +1,23 @@
+@import 'fonts';
+@import 'libs/normalize';
+@import 'libs/swiper-bundle.min';
+@import 'libs/nouislider.min';
+@import 'blocks/global';
+
+.container {
+    width: 1275px;
+    margin: 0 auto;
+}
+
+@import 'blocks/header';
+@import 'blocks/footer';
+@import 'blocks/modal';
+
+@import 'blocks/advertiserPage';
+@import 'blocks/bloggersPage';
+@import 'blocks/aboutPage';
+@import 'blocks/catalog';
+@import 'blocks/cardBlogger';
+@import 'blocks/packagePage';
+
+@import 'blocks/media';

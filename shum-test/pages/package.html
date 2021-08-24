@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <a href="../index.html" class="header__logo">
+                    <img src="../img/logo.png" alt="logo">
+                </a>
+
+                <nav class="header__menu">
+                    <ul class="header__menu-list">
+                        <li class="header__menu-item">
+                            <a href="../index.html" class="header__menu-link">Главная</a>
+                            
+                        </li>
+
+                        <li class="header__menu-item">
+                            <a href="about.html" class="header__menu-link">О проекте</a>
+                        </li>
+
+                        <li class="header__menu-item">
+                            <a href="catalog.html" class="header__menu-link">Каталог блогеров</a>
+                        </li>
+
+                        <li class="header__menu-item header__menu-item_account">
+                            <span class='header__menu-link'>Привет, <span class='header__menu-link_active header__menu-link_active_ml'>Катя</span></span>
+                        </li>
+
+                        <li class="header__menu-item header__menu-item_offsetL">
+                            <a href='package.html' class='button button_black'>Мой пакет</a>
+                            <span class="count">2</span>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header> 
+
+    <main class="packagePage">
+        <section class='package'>
+            <div class="container">
+                <h2 class="title title_h2 title_h2_black">Мой пакет</h2>
+
+                <div class="package__wrapper">
+                    <div class="package__header">
+                        <div class="package__header-title">Блогер</div>
+                        <div class="package__header-title">Услуга</div>
+                        <div class="package__header-title">Цена</div>
+                        <div class="package__header-title">Охват</div>
+                        <div class="package__header-title">CPM</div>
+                    </div>
+
+                    <div class="package__item">
+                        <div class="package__img">
+                            <img src="../img/bloggers/card-1.jpg" alt="card-1">
+                        </div>
+
+                        <div class="package__blogger">Drake</div>
+                        <div class="package__service">Пост + stories</div>
+                        <div class="package__price">4000$</div>
+                        <div class="package__coverage">3 000 000</div>
+                        <div class="package__cpm">3</div>
+
+
+                    </div>
+
+                    <div class="package__btn">
+                        <button class='button button_black' data-submit>Отправить в обработку</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="overlay"></div>
+
+    <div class="modal modal__thanks">
+        <div class="modal__wrapper">
+            <div class="modal__close">
+                <img src="../img/close.svg" alt="close">
+            </div>
+
+            <div class="modal__title">Спасибо!</div>
+            <div class="modal__subtitle">Наш менеджер свяжется с вами в ближайшее время</div>
+            
+        </div>
+    </div>
+
+    <script src='../js/modal.js'></script>
+</body>
+</html>

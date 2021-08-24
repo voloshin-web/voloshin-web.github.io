@@ -1,0 +1,120 @@
+.advertiser {
+    .btns {
+        margin-top: 35px;
+        display: flex;
+
+        .button_black {
+            padding: 15px 0;
+            width: 350px;
+            margin-right: 22px;
+            font-weight: 600;
+        }
+        .button_white {
+            padding: 15px 0;
+            width: 405px;
+            background-color: #E5E5E5;
+            font-weight: 600;
+            &:hover {
+                background: #000000;
+            }
+        }
+    }
+
+    .promo {
+        background: #E5E5E5;
+        padding: 143px 0 150px 0;
+        &__wrapper {
+            max-width: 965px;
+        }
+        .title {
+            max-width: 890px;
+            br {
+                display: none;
+            }
+        }
+        &__subtitle {
+            margin: 20px 0 0 0;
+            font-family: 'Gilroy';
+            font-weight: 600;
+            font-size: 50px;
+            line-height: 139.6%;
+            color: #000000;
+        }
+        .button_black:hover {
+            background: #E5E5E5;
+        }
+    }
+
+    .bloggers {
+        padding-top: 50px;
+    }
+
+    .catalog {
+        padding-top: 85px;
+    }
+}
+
+@media (max-width: 991px) {
+    .advertiser {
+        .promo {
+            padding: 119px 0 110px 0;
+            .title {
+                font-size: 58px;
+            }
+            &__subtitle {
+                font-size: 40px;
+                line-height: 45px;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .advertiser {
+        .btns {
+            flex-direction: column;
+            margin-top: 35px;
+
+            .button {
+                font-size: 20px;
+                width: auto;
+                padding: 10px 0 !important;
+                margin: 0;
+                max-width: 270px;
+            }
+            .button_black {
+                margin-bottom: 12px;
+            }
+        }
+        .promo {
+            padding: 110px 0 60px 0;
+
+            .title {
+                br {
+                    display: block;
+                }
+                font-size: 44px;
+                line-height: 113.1%;
+            }
+
+            &__subtitle {
+                margin-top: 25px;
+                font-size: 25px;
+                line-height: 32px;
+            }
+        }
+    }
+}
+
+@media (max-width: 410px) {
+    .advertiser {
+        .promo {
+            .title {
+                font-size: 34px;
+            }
+            &__subtitle {
+                font-size: 21px;
+            }
+        }
+    }
+}
